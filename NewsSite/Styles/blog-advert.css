@@ -1,0 +1,61 @@
+body{background-color:transparent; padding-left:10px}
+
+#marquee_replacement{
+ border:2px;
+ border-style:dotted;
+ border-color:#ddd;
+ width:270px;
+ height:150px;
+ overflow:auto;
+ background-color:transparent;
+ position:relative;
+ left:13px
+}
+#marquee_replacement p.spacer{
+ height:0px;
+}
+ 
+.linked	
+{
+    font-family:Century Gothic;
+    font-weight:bold;
+    font-size:10px;
+    color:Green;
+    text-decoration:underline;    
+}
+ 
+.words	
+{
+    font-family:Century Gothic;
+    font-weight:bold;
+    font-size:10px;
+    color:#444;
+    text-decoration:none;    
+}
+
+.words-in	
+{
+    font-family:Century Gothic;
+    font-weight:bold;
+    font-size:10px;
+    color:#555;
+    text-decoration:none;    
+}
+
+.comments-in	
+{
+    font-family:Century Gothic;
+    font-weight:bold;
+    font-size:12px;
+    color:#000;
+    text-decoration:none;    
+}
+
+
+
+.words ul li
+{
+	font-size:9px;
+	font-weight:normal;
+	color:#000
+}

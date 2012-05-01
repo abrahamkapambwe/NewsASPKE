@@ -1,0 +1,768 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<title>News - South Africa</title>
+    <link href="Styles/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="supersleight-min.js"></script>
+<![endif]-->
+
+    <script src="Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+
+<script type="text/javascript"> 
+$(document).ready(function() {	
+	$(".main_image .desc").show();
+	$(".main_image .block").animate({ opacity: 0.85 }, 1 );
+	$(".image_thumb ul li:first").addClass('active'); 
+	$(".image_thumb ul li").click(function(){ 
+		var imgAlt = $(this).find('img').attr("alt"); 
+		var imgTitle = $(this).find('a').attr("href"); 
+		var imgDesc = $(this).find('.block').html(); 
+		var imgDescHeight = $(".main_image").find('.block').height();		
+		if ($(this).is(".active")) { 
+			return false;
+		} else {		
+			$(".main_image .block").animate({ opacity: 0, marginBottom: -imgDescHeight }, 250 , function() {
+				$(".main_image .block").html(imgDesc).animate({ opacity: 0.85,	marginBottom: "0" }, 250 );
+				$(".main_image img").attr({ src: imgTitle , alt: imgAlt});
+			});
+		}
+		$(".image_thumb ul li").removeClass('active');
+		$(this).addClass('active');
+		return false;
+		
+	}) .hover(function(){
+		$(this).addClass('hover');
+		}, function() {
+		$(this).removeClass('hover');
+	});
+	$("a.collapse").click(function(){
+		$(".main_image .block").slideToggle();
+		$("a.collapse").toggleClass("show");
+	});
+	
+});
+</script> 
+
+
+
+</head>
+
+
+
+<body class="main-body">
+<div id="home-page-advert">
+
+
+
+<div id="main-news-bar">
+	<div id="container-menu">
+    	<div id="main-left">
+        	<div>
+	        	<a href="link.html" target="_parent" >
+    	        	CBSNEWS.COM
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	CBS EVENING NEWS
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	48 HOURS
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	60 MINUTES
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	FACE THE NATION
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	UP TO THE MINUTE
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	CBS EVENING NEWS
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	CBS EVENING NEWS
+        	    </a>
+            </div>
+            <div class="clear"></div>            
+        </div>
+        
+        <div id="news-magazine">
+        	<div>
+	        	<a href="link.html" target="_parent" id="selected-news">
+    	        	REGISTER
+        	    </a>
+            </div>
+        	<div >
+	        	<a href="link.html" target="_parent" id="selected-a">
+    	        	LOG IN
+        	    </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        </div>
+        <div class="clear"></div>        
+    </div>
+    
+
+
+<div id="top-top">
+<div id="main-title">
+          <div id="keywords">
+                  <div id="banner">	
+                      <a href="" title="Count">
+                          <div class="space-small"></div>
+                          <div class="space-small"></div>
+                          <img src="images/logo.png" title="News times" alt="Logo Image"border="0px" />
+                          <div class="space-small"></div>
+                          <div class="space-small"></div>
+                      </a>
+                  </div>
+                  
+                  <div class="clear"
+                  </div>
+              </div>
+          </div>
+          
+          <div id="description" style="margin-left:4px">
+              <br /><br />
+              <div id="search-area">
+                  <form action="" id="cse-search-box" name="serachform">
+                      <input type="text" name="q" size="31" id="q" />
+                      <input type="image" src="images/search-button.png" border="0px" name="sa" value="Search" />
+                  
+                  </form>
+                  
+             </div>
+             </div>
+          </div>
+    
+
+
+	<div id="main-news-bar-nav">
+   	  <div id="main-left-nav">
+        	<div>
+	        	<a href="link.html" target="_parent" >
+    	        	VIDEO
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	U.S. 
+                </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	WORLD        	   
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	POLITICS
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	ENTERTAINMENT
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	HEALTH WATCH
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	MONEY WATCH
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	TECH
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	SPORTS
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	PHOTOS
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	LOCAL
+        	    </a>
+            </div>
+            <div id="last">
+	        	<a href="link.html" target="_parent">
+    	        	MORE
+        	    </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    
+    
+    <div id="main-news-bar-nava">
+    	<div id="main-left-nava">
+        	<div id="start">
+	        	<a href="link.html" target="_parent" >
+    	        	Blogs:
+
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	Political 
+
+                </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	Hotsheet
+   	   
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	Crimesider
+  
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	Investigates
+
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	Dash
+ 
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	Celebrity 
+
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	Circuit Tech 
+
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	Talk
+
+        	    </a>
+            </div>
+            <div>
+	        	<a href="link.html" target="_parent">
+    	        	More
+
+        	    </a>
+            </div>
+            <div id="start">
+	        	<a href="link.html" target="_parent">
+    	        	&nbsp;&nbsp;&nbsp;&nbsp;Shows: 
+
+        	    </a>
+            </div>
+            <div id="last">
+	        	<a href="link.html" target="_parent">
+    	        	60: Overtime
+
+        	    </a>
+            </div>
+                   <div id="last">
+	        	<a href="link.html" target="_parent">
+    	       		Hotsheet 
+        	    </a>
+            </div>
+             <div id="last">
+	        	<a href="link.html" target="_parent">
+					Live
+        	    </a>
+            </div>
+            <div id="last">
+	        	<a href="link.html" target="_parent">
+					Radio
+        	    </a>
+            </div>
+            <div id="last">
+	        	<a href="link.html" target="_parent">
+					Mobile
+        	    </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+	
+    <div id="headline">
+    	<div class="left">
+        	<span class="red">&nbsp;LIVE:&nbsp;&nbsp;&nbsp;</span><span class="text"><a href="">AG announces antitrust suit against Apple, others over e-book pricing</a></span>
+        </div>
+        
+        <div class="right">
+        <span>&nbsp;&nbsp;<a href=""><img src="images/facebook.jpg" alt="Facebook" border="0px" /></a>&nbsp;&nbsp;<a href=""><img src="images/twitter.jpg" alt="Twitter" border="0px" /></a></span><span class="share">SHARE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+    
+    
+    <div id="sslideshow">
+        <div id="slideplusprevious">
+           <div id="slide-show">
+                <div id="main" class="container"> 
+                <div class="main_image"> 
+                    <img src="images/schoolchildren.jpg" alt="School children image" title="School children"  /> 
+                <div class="desc"> 
+                <a href="#" class="collapse">Close Me!</a> 
+                <div class="block"> 
+                    <h2>Mega Study Tips</h2> 
+                        <small><b>Submitted</b>: 09/03/2011</small>  
+                    
+                    <p>Coffee Is NECESSARY – if you don’t like coffee, go for the tea or energy drink. If you want to actually stay awake, your biology notes aren’t going to make...<br /><a href="http://store.glennz.com/slowingdown.html" target="_blank">Continue reading...</a> </p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="image_thumb"> 
+            <ul> 
+                <li> 
+                    <a href="images/schoolchildren.jpg"><img src="images/schoolchildren.jpg" alt="School children image" title="School children" /></a> 
+                    <div class="block"> 
+                        <h2>Mega Study Tips</h2> 
+                        <small><b>Submitted</b>: 09/03/2011</small> 
+                        
+                        <p>Coffee Is NECESSARY – if you don’t like coffee, go for the tea or energy drink. If you want to actually stay awake, your biology notes aren’t going to make...<br /><a href="studytips.html" target="_blank">Continue reading...</a> </p> 
+                    </div> 
+                </li> 
+                <li> 
+                    <a href="images/strike1.jpg"><img src="images/strike1.jpg" alt="The SA Strike" /></a> 
+                    <div class="block"> 
+                        <h2>The Downside of Striking</h2> 
+                        <small><b>Submitted</b>: 09/03/2011</small>
+                        <p>Johannesburg - The ruling African National Congress and labor unions have condemned the violence, which comes amid a national public workers strike that has shut down schools and seen patients turned away from hospitals across the country. <a href="strike.html" target="_blank">Read more...</a></p> 
+                    </div> 
+                </li> 
+                <li> 
+                    <a href="images/strike.jpg"><img src="images/strike.jpg" alt="The SA Strike" /></a> 
+                    <div class="block"> 
+                        <h2>Education Policy</h2> 
+                        <small><b>Submitted</b>: 09/03/2011</small>
+                        <p>Johannesburg - The ruling African National Congress and labor unions have condemned the violence, which comes amid a national public workers strike that has shut down schools and seen patients turned away from hospitals across the country. <a href="strike.html" target="_blank">Read more...</a></p> 
+                    </div> 
+                </li> 
+                <li> 
+                    <a href="images/whoonga.jpg"><img src="images/whoonga.jpg" alt="The SA Strike" /></a> 
+                    <div class="block"> 
+                        <h2>The New Death Drug - Whoonga</h2> 
+                        <small><b>Submitted</b>: 09/03/2011</small>
+                        <p>Whoonga is a new killer drug that has hit South Africa. It is highly addictive and is changing South Africa in to a wild jungle where senseless crimes are commited by addicts so that they feed their addiction. It is highly addictive and is a mixture of substances such as rat poison and HIV medication.  <a href="whoonga.html" target="_blank">Read more...</a></p> 
+                    </div> 
+                </li> 
+                <li> 
+                    <a href="images/mxit.jpg"><img src="images/mxit.jpg" alt="The SA Strike" /></a> 
+                    <div class="block"> 
+                        <h2>Dangers of MXIT in Schools</h2> 
+                        <small><b>Submitted</b>: 09/03/2011</small>
+                        <p>Johannesburg - The ruling African National Congress and labor unions have condemned the violence, which comes amid a national public workers strike that has shut down schools and seen patients turned away from hospitals across the country. <a href="strike.html" target="_blank">Artwork By Glenn Jones</a></p> 
+                    </div> 
+                </li> 
+                
+                </ul> 
+            </div> 
+	</div>
+</div></div>    
+    <div class="inbrief">       
+    	<div class="brief-stories">
+        	<p>
+                <a href="">DOJ files e-book price-fixing suit against Apple</a><br />
+                <a href="">Obama: Buffett rule could be called "Reagan Rule"</a><br />
+                <a href="">Ark. judge fines J&J $1.1B over Risperdal fraud</a><br />
+                <a href="">Quakes bring worry, not tsunami, to Indonesia</a><br />
+                <a href="">Syria vows to end assault, but hedges</a><br />
+                <a href="">N. Korea fuels rocket as launch window nears</a><br />
+                <a href="">Romney: Obama is waging "the real war on women"</a><br />
+                <a href="">George Zimmerman's whereabouts an issue</a><br />
+                <a href="">S. Alabama coach Crain dead of apparent suicide</a><br />
+                <a href="">S. Alabama coach Crain dead of apparent suicide</a><br />
+                <a href="">9 suspected illegal immigrants die in Texas wreck</a><br />
+                <a href="">Pizza Hut adds hot dog stuffed crust to U.K. menu</a><br />
+                <a href="">Best Buy CEO left amid "personal conduct" probe</a><br />
+                <a href="">"DWTS": Sherri Shepherd leaves ballroom in tears</a><br />
+                <a href="" class="highlighted">More Headlines »</a>| <a href="" class="highlighted">Most Popular »</a>
+            </p>
+        </div>
+        <div class="brief-titles">
+            <div class="top-story">
+            <h2>Will social conservatives rally around Romney?</h2>
+            <p><a href="">Santorum's departure leaves the social conservative movement without a candidate in the Republican race.</a></p>
+            </div>
+            <div class="top-thumbs">
+            	<div class="space"></div>
+                <div class="thumbs">
+                    <img src="images/gingrich-louisiana.jpg" alt="Gingrich" />
+                </div>
+                <div class="thumbs-text">
+                    <a href="">
+                        Gingrich's check bounces in Utah
+                    </a>
+                </div>
+                <div class="clear"></div>
+                <div class="space"></div>
+                <div class="dotted-small"></div>
+                <div class="space"></div>
+                <div class="thumbs">
+                    <img src="images/Ozzie_Guillen.jpg" alt="Gingrich" />
+                </div>
+                <div class="thumbs-text">
+                    <a href="">
+                        Gingrich's check bounces in Utah
+                    </a>
+                </div>
+                <div class="clear"></div>
+                <div class="space"></div>
+                <div class="dotted-small"></div>
+                <div class="space"></div>
+                <img src="images/advert-one.jpg" alt="Advert" />
+                <div class="space"></div>
+                <div class="dotted-small"></div>
+                <div class="space"></div>
+                
+                <div class="side-bar-story">
+                	<span class="head-story">Most Popular on CBS News</span><br />
+                    <div class="space"></div>
+                    <span class="line-line">
+                        <span class="black">01</span>
+                        <span class="line"><a href="">Zimmerman to be charged</a></span>
+                        <span class="clear"></span>
+                        <span class="black">01</span>
+                        <span class="line"><a href="">Sherri Shepherd leaves</a></span>
+                        <span class="clear"></span>
+                        <span class="black">01</span>
+                        <span class="line"><a href="">Where is George Zimmerman?</a></span>
+                        <span class="clear"></span>
+                        <span class="black">01</span>
+                        <span class="line"><a href="">Quakes bring worry</a></span>
+                        <span class="clear"></span>
+                        <span class="black">01</span>
+                        <span class="line"><a href="">Tsunami, to Indonesia</a></span>
+                        <span class="clear"></span>
+                        <span class="black">01</span>
+                        <span class="line"><a href="">New tsunami alert</a></span>
+                        <span class="clear"></span>
+                        <span class="black">01</span>
+                        <span class="line"><a href="">Indonesia quake puts</a></span>
+                        <span class="clear"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="main-area">
+	<div class="main-para">
+    
+    	<!-- Divider -->           
+           <div class="story">
+        	  <div class="inner-design-large">
+            	<div class="sub-title">
+                	<span>CBS This Morning</span>
+                </div>
+                <div class="viewport"> 
+					<img src="images/ctm_bubba.jpg" alt="Dickson Tailor Website" width="105%" height="105%" title="Dickson Tailors Website" />
+            	</div>
+           
+                <div class="information-design">
+                	<div class="template-name">
+                    	<span><a href="" class="brand type-of-story">Golfer on Obama call: Hey buddy, how you doing?</a><br /><a href="" class="template-author">Masters champion Bubba Watson laughs describing phone conversation with president; He has yet to be invited to golf with him</a></span>
+                     </div>
+                    <div class="template-information">
+                        <span>
+                     		<a href="">Suburban safari ends for 400-lb. black bear.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">McDonnell: Santorum should back Romney.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">Smartphone thefts skyrocket, officials on alert.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">More from CBS This Morning »</a>
+                        </span>
+                    </div>
+                    <div class="clear"></div>
+                   
+                    <div class="clear"></div>
+                    <div class="spacer"></div>
+                </div>
+				<div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+    	</div>
+        <div class="clear"></div>
+        <!-- Divider --> 
+        <div class="space-big"></div>
+        <!-- Divider --> 
+        <div class="story">
+        	  <div class="inner-design-large">
+            	<div class="sub-title">
+                	<span>CBS This Morning</span>
+                </div>
+                <div class="viewport"> 
+					<img src="images/ambulance_200x150.gif" alt="Dickson Tailor Website" width="105%" height="105%" title="Dickson Tailors Website" />
+            	</div>
+           
+                <div class="information-design">
+                	<div class="template-name">
+                    	<span><a href="" class="brand type-of-story">Golfer on Obama call: Hey buddy, how you doing?</a><br /><a href="" class="template-author">Masters champion Bubba Watson laughs describing phone conversation with president; He has yet to be invited to golf with him</a></span>
+                     </div>
+                    <div class="template-information">
+                        <span>
+                     		<a href="">Suburban safari ends for 400-lb. black bear.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">McDonnell: Santorum should back Romney.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">Smartphone thefts skyrocket, officials on alert.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">More from CBS This Morning »</a>
+                        </span>
+                    </div>
+                    <div class="clear"></div>
+                   
+                    <div class="clear"></div>
+                    <div class="spacer"></div>
+                </div>
+				<div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+    	</div>
+       <!-- Divider -->
+       <div class="space-big"></div>
+        <!-- Divider --> 
+        <div class="story">
+        	  <div class="inner-design-large">
+            	<div class="sub-title">
+                	<span>CBS This Morning</span>
+                </div>
+                <div class="viewport"> 
+					<img src="images/120410-Syria-AP120410111179_200x150.jpg" alt="Dickson Tailor Website" width="105%" height="105%" title="Dickson Tailors Website" />
+            	</div>
+           
+                <div class="information-design">
+                	<div class="template-name">
+                    	<span><a href="" class="brand type-of-story">Golfer on Obama call: Hey buddy, how you doing?</a><br /><a href="" class="template-author">Masters champion Bubba Watson laughs describing phone conversation with president; He has yet to be invited to golf with him</a></span>
+                     </div>
+                    <div class="template-information">
+                        <span>
+                     		<a href="">Suburban safari ends for 400-lb. black bear.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">McDonnell: Santorum should back Romney.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">Smartphone thefts skyrocket, officials on alert.</a><br />
+                            <span class="smaller"></span>
+                     		<a href="">More from CBS This Morning »</a>
+                        </span>
+                    </div>
+                    <div class="clear"></div>
+                   
+                    <div class="clear"></div>
+                    <div class="spacer"></div>
+                </div>
+				<div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+    	</div>
+       <!-- Divider -->
+        <div class="clear"></div>    
+  </div>
+   <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+</div><div class="clear"></div>
+</div><div class="clear"></div>
+</div>
+
+
+
+
+
+<div class="FooterBackground">
+<div id="Footer" section="ftr"> 
+<div class="brandLogo"> 
+<a href="" class="logo-news">NSA News</a> <br>Copyright © News South Africa Interactive Inc. All rights reserved. 
+</div> 
+<div class="search"> 
+<div class="loginSearch" section="loginSearch"> 
+<form method="get" action="http://www.cbsnews.com/1770-5_162-0.html" class="universalSearch" name="tsearch" section="srch"> 
+<div class="searchBoxWrap"> <span> 
+<input type="text" name="query" size="20" maxlength="255" class="searchBox" id="acpro_inp10"> </span> </div> <input type="hidden" name="tag" value="srch"> <input type="hidden" name="searchtype" value="cbsSearch"> 
+<input type="submit" class="searchGo" value="Go"> 
+</form> 
+</div> 
+</div> 
+<div class="footerColumns"> 
+<ul class="footerLinks cbsnews"> <li class="title">CBSNews.com</li> 
+<li><a href="">Site Map</a></li> 
+<li><a href="">Video Site Map</a></li> 
+<li><a href="http://wap.cbsnews.com/">Mobile/WAP Site</a></li> 
+<li><a href="" onclick="">Help</a></li> 
+<li><a href="" onclick="">Contact Us</a></li>
+<li><a href="">CBS Bios</a></li> 
+<li><a href="">Careers</a></li> 
+<li><a href="">Internships</a></li> 
+<li class="last"><a href="">Development Programs</a></li> 
+</ul> 
+
+
+<ul class="footerLinks"> 
+	<li class="title">Topics</li> 
+	<li><a href="#">China</a></li>
+	<li><a href="#">United Nations</a></li>
+	<li><a href="#">Social Security</a></li>
+	
+	<li><a href="#">North Korea</a></li>
+	<li><a href="#">Terrorism</a></li>
+	<li><a href="#">Capital Punishment</a></li>
+	<li><a href="">Immigration</a></li>
+	
+	<li class="last"><a href="">Gay Marriage</a></li>
+</ul>
+<ul class="footerLinks topics">
+	<li><a href="">Disaster in Japan</a></li>
+	<li><a href="">Foreclosures</a></li>
+	<li><a href="">Debt Crisis</a></li>
+	<li><a href="">Massacre in Norway</a></li>
+	<li><a href="">Election 2012</a></li>
+	<li><a href="">Marijuana</a></li>
+	<li><a href="">Rupert Murdoch</a></li>
+	<li><a href="">9/11: Tragedy</a></li>
+</ul>
+
+<ul class="footerLinks followus"> 
+<li class="title">Follow Us</li> 
+
+<li class="footerFacebook"><a href="">Facebook</a></li> 
+<li class="footerTwitter"><a href="">Twitter</a></li> 
+<li class="footerRSS"><a href="">RSS</a></li> 
+<li class="footerNewsletters"><a href="">Email Newsletters</a></li> 
+<li class="footerYouTube"><a href="">YouTube</a></li> 
+<li class="footerMobile"><a href="">CBS Mobile</a></li> 
+</ul>
+
+<ul class="footerLinks promoMod">
+	<li>
+		<h3><a href="http://itunes.apple.com/us/app/cbs-this-morning/id495212737?ls=1&mt=8">CBS This Morning iPad App</a></h3>
+		<a href="http://itunes.apple.com/us/app/cbs-this-morning/id495212737?ls=1&mt=8"><img src="images/CBSTM.jpg"></a> 
+		<p>
+		Enjoy CBS This Morning all day long!  Get instant access to original news stories, videos and interviews from Gayle King, Erica Hill and more. 
+	</p>
+	</li>
+</ul>
+
+<div class="networkCopy">
+            <ul class="footerLinks">
+		    <li class="noline first">
+                  <form id="networkSites">
+                     <span class="text">Visit other CBS Interactive sites:</span>
+                     <select id="siteTarget" name="target" class="searchTarget" onchange="window.open(this.options[this.selectedIndex].value,&#39;_top&#39;)">
+						<option selected="selected" value="">Select Site</option>
+						<option value="http://www.bnet.com">BNET</option>
+						<option value="http://www.sportsline.com/cbscollegesports/">CBS College Sports</option>
+						<option value="http://www.cbsradio.com/streaming/">CBS Radio</option>
+						<option value="http://www.cbs.com">CBS.com</option>
+						<option value="http://www.cbsnews.com">CBSNews.com</option>
+						<option value="http://www.sportsline.com">CBSSports.com</option>
+						<option value="http://www.chow.com">CHOW</option>
+						<option value="http://www.cnet.com">CNET</option>
+						<option value="http://www.cnetchannel.com/">CNET Channel</option>
+						<option value="http://www.gamespot.com">GameSpot</option>
+						<option value="http://www.cnetnetworks.com/advertise/media-kit/international.html?tag=ft">International</option>
+						<option value="http://www.last.fm">Last.fm</option>
+						<option value="http://www.maxpreps.com">MaxPreps</option>
+						<option value="http://www.moblogic.tv">Moblogic</option>
+						<option value="http://www.mp3.com">MP3.com</option>
+						<option value="http://www.mysimon.com">mySimon</option>
+						<option value="http://www.ncaa.com">NCAA</option>
+						<option value="http://www.search.com">Search.com</option>
+						<option value="http://www.techrepublic.com">TechRepublic</option>
+						<option value="http://www.theinsider.com">The Insider</option>
+						<option value="http://www.tv.com">TV.com</option>
+						<option value="http://www.urbanbaby.com">UrbanBaby.com</option>
+						<option value="http://www.uwire.com">UWIRE</option>
+						<option value="http://www.wallstrip.com">Wallstrip</option>
+						<option value="http://www.zdnet.com">ZDNet</option>
+                      </select>
+					</form>
+                </li>
+				
+		<noscript>
+			&lt;li&gt;&lt;a href="http://www.bnet.com"&gt;BNET&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.sportsline.com/cbscollegesports/"&gt;CBS College Sports&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.cbsradio.com/streaming/"&gt;CBS Radio&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.cbs.com"&gt;CBS.com&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.cbsnews.com"&gt;CBSNews.com&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.sportsline.com"&gt;CBSSports.com&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.chow.com"&gt;CHOW&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.cnet.com"&gt;CNET&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.cnetchannel.com/"&gt;CNET Channel&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.gamespot.com"&gt;GameSpot&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.cnetnetworks.com/advertise/media-kit/international.html?tag=ft"&gt;International&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.last.fm"&gt;Last.fm&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.maxpreps.com"&gt;MaxPreps&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.moblogic.tv"&gt;Moblogic&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.mp3.com"&gt;MP3.com&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.mysimon.com"&gt;mySimon&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.ncaa.com"&gt;NCAA&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.search.com"&gt;Search.com&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.techrepublic.com"&gt;TechRepublic&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.theinsider.com"&gt;The Insider&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.tv.com"&gt;TV.com&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.urbanbaby.com"&gt;UrbanBaby.com&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.uwire.com"&gt;UWIRE&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.wallstrip.com"&gt;Wallstrip&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.zdnet.com"&gt;ZDNet&lt;/a&gt;&lt;/li&gt;
+		</noscript>
+			<style>#otherCBSsites {display:none;}</style>
+		<li><a rel="nofollow" href="http://legalterms.cbsinteractive.com/privacy">Privacy Policy</a></li>
+		<li><a rel="nofollow" href="http://www.cbsinteractive.com/info/tou">Terms of Use</a></li>
+		<li><a rel="nofollow" href="http://www.cbsinteractive.com/info/eula">Mobile User Agreement</a></li>
+		<li><a href="http://www.cbscorporation.com/" title="About CBS">About CBS</a></li>
+		<li><a href="http://www.cbsinteractive.com/advertise/" title="Advertise">Advertise</a></li>
+	    </ul>
+</div>
+
+
+
+</body>
+</html>
+                   

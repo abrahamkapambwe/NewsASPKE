@@ -1,0 +1,234 @@
+/* body.desktop {background:url(/bitmaps/home/campaign/0610-opera1060/bg-html.png) 0 0 repeat-x !important; } */
+
+
+#south africa website design{font-size:18px}
+
+.website-designer{background-color:#006;}
+
+.highlight-text{color:#fff; font-weight:bold; background-color:#cc0; font-size:1.3em}
+
+.cms-hr{width:25%; text-align:center; height:2px; color:#550px; background-color:#aa0}
+
+.cms-container{width:292px; height:187px; background-image:url(../images/cms-border.png); background-repeat:no-repeat; background-position:center top}
+.cms-container .cms-text{margin-left:10px; margin-right:10px}
+.cms-container u {font-size:1.5em; margin-left:10px; margin-top:18px; text-decoration:none }
+.cms-container img { margin-left:10px; margin-top:18px }
+
+/* campaign images */
+#splashes div {width:100%;height:500px;background:50% 0 no-repeat;position:absolute;top:0;left:0;z-index:0;}
+#splashes #bg-phones {background-image:url(../images/bg-body0.jpg);}
+#splashes #bg-tips, #splashes #bg-tips2 {background-image:url(../images/tipsbg00.jpg);}
+#splashes #bg-desktop {background-image:url(../images/bg-body1.png);}
+#splashes #bg-search {background:url(../images/bg-body0.png) center  no-repeat;}
+#splashes #bg-promo {background:url(../images/bg-body0.png) center no-repeat;}
+
+/* hiding/revealing the campaigns */
+body #campaigns li,
+body #splashes div {display:none;}
+
+body.desktop #bg-desktop,
+body.phones #bg-phones,
+body.search #bg-search,
+body.tips #bg-tips,
+body.tips2 #bg-tips2,
+body.southafricawebsitedesigner #website-designer,
+body.promo #bg-promo {display:block;z-index:1;}
+
+body.desktop #campaigns .desktop,
+body.phones #campaigns .phones,
+body.search #campaigns .search,
+body.tips #campaigns .tips,
+body.tips2 #campaigns .tips2,
+body.southafricawebsitedesigner #campaigns .southafricawebsitedesigner,
+body.promo #campaigns .promo {display:block;z-index:100;}
+
+
+#page {position:relative;z-index:10;}
+
+#campaigns > li {margin:20px 0 0 0;list-style:none;position:absolute;left:0;top:96px;}
+
+/* campaigns transition */
+#campaigns > li,
+#splashes div,
+#indicator li {
+  transition:opacity 1s ease-out;
+  -o-transition:opacity 1s ease-out;
+  -moz-transition:opacity 1s ease-out;
+  -webkit-transition:opacity 1s ease-out;
+}
+
+.third {padding-bottom:1em;}
+.third h3 a {color:#222;text-decoration:none;}
+.third h3 a:hover {color:#000;}
+.third img.icon {float:right;margin:0 0 1em .4em;}
+
+#campaigns {height:410px;overflow:hidden;padding:0;margin:0;}
+
+
+#campaigns .phones {width:650px;font-size:.9em;margin-bottom:20px;margin-top:30px;}
+#campaigns .phones h1 a {font-size:0.5em;font-weight:bold;letter-spacing:-1px;line-height:1em;margin-bottom:0.1em; color:#000}
+#campaigns .phones h2 {font-size:2.9em;font-weight:bold;letter-spacing:-1px;margin-bottom:.3em;}
+#campaigns .phones h2 a {color:#000;}
+#campaigns .phones h2 a:hover {color:#110;}
+#campaigns .phones a {color:#000;text-decoration:none;}
+#campaigns .phones p {color:#000;text-decoration:none;}
+#campaigns .phones a:hover {color:#000;}
+#campaigns .phones ul {padding:0; margin:0; list-style:none;}
+#campaigns .phones ul li {display:inline; padding-right:1.5em;}
+#campaigns .phones a.more {background-image:url("../images/more-white.png");font-size:1.1em;font-weight:bold;text-decoration:underline;}
+#campaigns .phones a.new {color:#aa0;}
+#campaigns .phones p.download-mobile {margin-top:20px;}
+#campaigns .phones p.download-mobile a:hover {text-decoration:none;}
+
+
+#campaigns .desktop {width:650px;height:332px;color:#fff;}
+#campaigns .desktop-inner {width:650px;height:332px;color:#fff;margin-top:95px;}
+#campaigns .desktop .introduction {width:500px;margin-bottom:2em;}
+#campaigns .desktop h1 {color:#fff;font-size:1.5em;margin-bottom:.5em;}
+#campaigns .desktop h1 a {text-decoration:none;}
+#campaigns .desktop h1 strong {display:block;font-size:1.8em;margin:0;line-height:1.1;}
+#campaigns .desktop a {color:#fff;}
+#campaigns .desktop a:hover {text-decoration:underline;}
+#campaigns .desktop .topfeatures {background:#111;color:#ccc;padding:1.3em 0px .6em;}
+#campaigns .desktop h3 {color:#fff;font-size:1.3em;}
+#campaigns .desktop .f1 {padding-left:20px;width:196px;}
+
+
+#campaigns .search {height:200px;margin-top:225px;padding:0 35px;text-align:center;}
+#campaigns .search h1 {color:#333;font-size:2.7em;font-weight:bold;letter-spacing:-1px;margin-bottom:.3em;}
+#campaigns .search h1 strong {color:#cc0f16;}
+
+
+#campaigns .southafricawebsitedesigner {background-image:url("../images/cms-website-designs.jpg");width:936px;height:380px;color:#000;}
+#campaigns .southafricawebsitedesigner h1{margin:25px 0 0 20px;color:#000;letter-spacing:-1px;font-size:2.0em;font-weight:bold;text-shadow:#000 1px 1px 4px;}
+#campaigns .southafricawebsitedesigner p{margin:5px 0 0 21px;width:685px;line-height:19px;font-size:1.1em; }
+#campaigns .southafricawebsitedesigner p a{color:#330; text-decoration:none }
+#campaigns .southafricawebsitedesigner p a:hover{color:#000; text-decoration:underline }
+#campaigns .southafricawebsitedesigner .ico{margin:20px 100px 0px 0px; padding-left:100px; float:left}
+#contact-indexes {width:141px; min-height:40px; background-image:url('../images/contact-btn.png'); background-repeat:no-repeat; background-position:top; float:left;position:relative; top:10px; left:10px}
+#contact-indexes:hover {width:141px; min-height:40px; background-image:url('../images/contact-btn.png'); background-repeat:no-repeat; background-position:bottom; float:left;position:relative; top:10px; left:10px}
+
+#campaigns .tips, #campaigns .tips2 {width:936px;margin:-100px 0 0 0 0!important;}
+#campaigns .product-name a {color:#000;font-weight:bold;margin:0;padding:0 0 5px 0; text-decoration:none; letter-spacing:0px; font-family:Arial, Helvetica, sans-serif;}
+#campaigns .tips h1, #campaigns .tips2 h1{color:#000;text-align:center;font-weight:bold;font-size:2.0em;margin:10px 0 30px 0;}
+#campaigns .tips img, #campaigns .tips2 img  {}
+#campaigns .tips .box1, #campaigns .tips2 .box1 {background-image:url(../images/web-designer-bg.png); background-repeat:no-repeat; text-align:center;padding:20px 0 0 0;}
+#campaigns .tips .box2, #campaigns .tips2 .box2 {background-image:url(../images/hosting-bg.png); background-repeat:no-repeat; text-align:center;padding:20px 0 0 0;}
+#campaigns .tips .box3, #campaigns .tips2 .box3  {background-image:url(../images/graphic-bg.png); background-repeat:no-repeat;  text-align:center;padding:20px 0 0 0;}
+#campaigns .tips .box4, #campaigns .tips2 .box4 {background-image:url(../images/seo-price.png); top:-5px; background-repeat:no-repeat;   text-align:center;padding:20px 0 0 0;}
+#campaigns .tips .box-b, #campaigns .tips2 .box-b {color:#fff;font-weight:bold;font-size:1.1em}
+#campaigns .tips .box-b a, #campaigns .tips2 .box-b a{color:#fff;text-decoration:none;}
+#campaigns .tips .box-b1, #campaigns .tips2 .box-b1  {margin:40px 0 0 0; z-index:999}
+#campaigns .tips .box-b12, #campaigns .tips2 .box-b12  {margin:40px 0 0 0; z-index:999}
+#campaigns .tips .box-b2, #campaigns .tips2 .box-b2 {margin:40px 0 0 0; z-index:999}
+#campaigns .tips .box-b3, #campaigns .tips2 .box-b3 {margin:40px 0 0 0; z-index:999}
+#campaigns .tips .box-b4, #campaigns .tips2 .box-b4 {margin:40px 0 0 0; z-index:999}
+#campaigns .tips .box-b42, #campaigns .tips2 .box-b42  {margin:40px 0 0 0;}
+
+
+
+
+.textcontainer {display:table;height:110px;width:168px;overflow:hidden;}
+.textcontainer .textinnercontainer {display:table-cell;vertical-align:middle;margin:0 auto;text-align:center;width:150px;padding:0 0px;}
+
+/* Significance campaign */
+#campaigns .promo {width:750px;margin:80px 0 0 20px;padding:1.5em;}
+#campaigns .promo h1 {color:#cc0f16;font-size:2.9em;font-weight:bold;letter-spacing:-1px;margin-bottom:.5em;text-shadow:1px 1px 1px #fff;width:800px;}
+#campaigns .promo h1 strong {color:#cc0f16;display:block;}
+
+
+#screenshots {margin:0; padding:0; float:left;}
+#screenshots li {width:100px;height:78px;float:left;list-style:none;margin-right:10px;overflow:hidden;position:relative;}
+#screenshots li.last {margin:0;}
+#screenshots li a img {
+	border-radius:2px;
+	opacity:.5;
+	z-index:1;
+	-o-transition-property:opacity;
+	-o-transition-duration:.3s;
+	-webkit-transition-property:opacity;
+	-webkit-transition-duration:.3s;
+	-moz-transition-property:opacity;
+	-moz-transition-duration:.3s;
+}
+#screenshots li a:hover img {opacity:1;}
+#screenshots li a {text-decoration:none !important;}
+#screenshots li a span {
+	width:100%;
+	height:20px;
+	background:#000;
+	background:rgba(0,0,0,0.7);
+	display:block;
+	padding:2px 10px;
+	position:absolute;
+	margin:0;
+	z-index:999;
+	-o-transition-property:margin-top;
+	-o-transition-duration:.3s;
+	-webkit-transition-property:margin-top;
+	-webkit-transition-duration:.3s;
+	-moz-transition-property:margin-top;
+	-moz-transition-duration:.3s;
+}
+#screenshots li a:hover span {margin-top:-24px;}
+
+/* campaign switcher */
+#indicator {height:50px;background:url(/* /bitmaps/common/arrowhead-small-right.png */) 100% 18px no-repeat;clear:both;list-style:none;margin:0 0 35px 0;text-align:center;}
+#indicator li {width:229px;border-bottom:solid 2px #ccc;float:left;margin-right:5px;padding:0;position:relative;}
+#indicator li a {height:30px;color:#777;display:block;font-size:11px;padding-top:5px;;position:relative;bottom:-10px;text-decoration:none;}
+#indicator li a span {width:10px;height:8px;display:block;background:#fff;border:2px solid #ccc;border-radius:4px;-moz-border-radius:4px;font-size:1px;position:absolute;left:0;bottom:3px;}
+#indicator li a em {display:none;border-bottom:2px solid #cc0f16;position:absolute;bottom:-5px;}
+
+body.phones #indicator li.phones,
+body.desktop #indicator li.desktop,
+body.search #indicator li.search,
+body.tips #indicator li.tips,
+body.tips2 #indicator li.tips2,
+body.southafricawebsitedesigner #indicator li.southafricawebsitedesigner,
+body.promo #indicator li.promo {font-weight:bold;border-bottom-color:#cc0;}
+
+body.phones #indicator li.phones a,
+body.desktop #indicator li.desktop a,
+body.search #indicator li.search a,
+body.tips #indicator li.tips a,
+body.tips2 #indicator li.tips2 a,
+body.southafricawebsitedesigner #indicator li.southafricawebsitedesigner a,
+body.promo #indicator li.promo a {color:#cc0;}
+
+body.phones #indicator li.phones a span,
+body.desktop #indicator li.desktop a span,
+body.search #indicator li.search a span,
+body.tips #indicator li.tips a span,
+body.tips2 #indicator li.tips2 a span,
+body.southafricawebsitedesigner #indicator li.southafricawebsitedesigner a span,
+body.promo #indicator li.promo a span {background:#cc0;border-color:#cc0;}
+
+body.phones #indicator li.phones a em,
+body.desktop #indicator li.desktop a em,
+body.search #indicator li.search a em,
+body.tips #indicator li.tips a em,
+body.tips2 #indicator li.tips2 a em,
+body.southafricawebsitedesigner #indicator li.southafricawebsitedesigner a em,
+body.promo #indicator li.promo a em {display:block;}
+
+#callouts {clear:both;overflow:hidden;}
+#callouts h3 {font-weight:bold;}
+
+
+/* @group News ticker */
+.billboard #front_news {background-image:url('../images/ticker-t.png');}
+
+#front_news {height:28px;border:1px solid #ddd;border-bottom:0;border-top-left-radius:6px;border-top-right-radius:6px;overflow:hidden;padding:3px 3px 0 7px;margin-top:2em;}
+#front_news h4,#front_news p,#front_news li {font-size:12px;line-height:24px;}
+#front_news h4 {background:url('../images/ico-radi.gif') 0 1px no-repeat;border-right:1px solid #ccc;float:left;padding-left:30px;padding-right:1.5em;margin-right:1.5em;}
+#front_news h4 a {color:#666;font-size:12px;text-decoration:none;}
+#front_news a:hover {color:#333;text-decoration:underline;}
+#front_news ul {margin:0 0 0 8em;list-style:none;}
+#front_news_text li {list-style-image:none;}
+#front_news li a {color:#777;text-decoration:none;}
+
+#page #footer div.navigation {border-top-left-radius:0;border-top-right-radius:0;margin-top:0;}
+#footer {margin-top:0;}
+
+#tick2,#tick3,#tick4,#tick5 {display:none;}
+/* @end */

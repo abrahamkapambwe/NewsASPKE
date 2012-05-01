@@ -1,0 +1,75 @@
+
+ 
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:999990000000000000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:600px;
+  height:361px;
+  display:none;
+  z-index:999990000000000000;
+  padding:0px;
+}
+ 
+#boxes #dialog {
+  width:600px; 
+  height:361px;
+  padding:0px;
+  background:url(../images/webform.png) top center no-repeat;
+  color:#aaa
+}
+
+
+
+ 
+#boxes #dialog1 {
+  width:400px; 
+  height:340px;
+  background:url(../images/webconnect.png) center top no-repeat;
+}
+ 
+ 
+ 
+#dialog1 .d-header {
+  width:500px; 
+  height:350px;
+}
+ 
+#dialog1 .d-header input {
+  position:relative;
+  top:60px;
+  left:100px;
+  border:3px solid #cccccc;
+  height:22px;
+  width:200px;
+  font-size:15px;
+  padding:5px;
+  margin-top:4px;
+}
+ 
+#dialog1 .d-blank {
+  float:left;
+  width:267px; 
+  height:53px;
+}
+ 
+#dialog1 .d-login {
+  float:left;
+  width:108px; 
+  height:53px;
+}
+ 
+#boxes #dialog2 {
+  width:326px; 
+  height:229px;
+  padding:50px 0 20px 25px;
+}

@@ -1,0 +1,170 @@
+﻿/*-----------------------------------------------------------------------------------------------*/
+/*                                             CSS RESET                                         */
+/*-----------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: "Century Gothic", Arial, "Times New Roman", Times, serif;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+body {line-height: 1; background:#444; margin:0px; position:relative}
+ol, ul {list-style: none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '"';}
+blockquote, q {quotes: '"' '"';}
+p{line-height:16px}
+.clear{clear:both; margin:0px; padding:0px; :outline:none; width:0px; height:0px}
+.space{width:100%; height:10px; margin:0px}
+.spacebig{width:100%; height:50px; margin:0px}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          GENERAL STYLES                                       */
+/*-----------------------------------------------------------------------------------------------*/
+#navigation {position:fixed; top:-12px !important; left:35px; border:0px solid #fff; height:450px; width:180px; background:url(../images/bg2.png) bottom no-repeat; margin:0px}
+#navigation #logo {height:177px; width:15px; margin:0px auto; position:relative; left:-62px}
+#navigation .toplinks {border-top:1px solid #fff; height:130px; width:180px;  margin:0px}
+#navigation .toplinks ul {margin-left:10px}
+#navigation .toplinks ul li {font-size:11px; display:block; width:140px; text-align:right}
+#navigation .toplinks ul li a{font-size:11px; line-height:20px; color:#FFFFFF; text-decoration:none}
+#navigation .toplinks ul li a:hover{font-size:11px; line-height:20px; color:#F30; text-decoration:none}
+#navigation .toplinks ul li #selected{font-size:11px; line-height:20px; color:#aaa; text-decoration:none}
+
+
+#homepage {position:absolute; top:30px; left:230px; border:0px solid #cccccc;  width:700px; background:none; margin:0px}
+#navigation #bottomlinks{border-top:1px solid #fff; height:160px; width:180px;margin:0px}
+#navigation #bottomlinks ul {margin-left:10px; list-style:none}
+#navigation #bottomlinks ul li {font-size:11px; display:block; width:140px; text-align:right; line-height:25px}
+#navigation #bottomlinks ul li a{font-size:11px; line-height:25px; color:#FFFFFF; text-decoration:none}
+#navigation #bottomlinks ul li a:hover{font-size:11px; line-height:25px; color:#000000; text-decoration:none}
+#navigation #bottomlinks ul li img {position:relative; top:4px; left:8px}
+
+	
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          HOME PAGE                                            */
+/*-----------------------------------------------------------------------------------------------*/
+.innercontainer{width:680px; margin:0px; background:url(../images/bgnew.png) bottom repeat-x; border:1px solid #fff; display:block}
+.innercontainer .homearea {width:400px; margin-left:30px; float:left}
+.innercontainer .homearea #h1 {color:#000000; font-size:33px; font-family:'Century Gothic', arial; font-weight:normal}
+.innercontainer .homearea #h1 a{color:#bbb; font-size:92px; font-family:'Century Gothic', arial; font-weight:normal; text-decoration:none}
+.innercontainer .homearea .left {width:170px; float:left; margin-left:0px; margin-right:30px}
+.innercontainer .homearea .left h2 {color:#F00; font-weight:normal; font-size:20px}
+.innercontainer .homearea .left p {font-size:11px; font-family:'Century Gothic', arial; color:#333; text-align:justify}
+.innercontainer .homearea .right {width:170px; float:left; margin-left:0px; margin-right:00px}
+.innercontainer .homearea .right p {font-size:11px; font-family:'Century Gothic', arial; color:#333; text-align:justify}
+
+.innercontainer .rightportfolio {width:200px; float:left; border-left:1px solid #ddd; margin-top:40px}
+.innercontainer .rightportfolio .imagegallery {background:url(../images/slides.png) top center no-repeat; width:180px; height:160px; margin-left:30px}
+.innercontainer .rightportfolio .imagegallery img {width:160px; height:87px; position:relative; left:10px; top:8px}
+
+#lowerhr {width:368px; border-bottom:1px solid #eee; position:relative; left:-20px; border-top:1px solid #eee; border-left:1px solid #eee }
+#lowerhrs {width:368px; border-bottom:1px solid #eee; position:relative; left:-20px; border-top:1px solid #eee; border-left:1px solid #eee }
+.innercontainer .rightportfolio #morelink {position:relative; left:27px}
+
+.left p strong {font-size:15px; font-style:italic; font-weight:normal; color:#aaa; font-family:'Times New Roman', arial; line-height:18px  }
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          CONTACT PAGE                                         */
+/*-----------------------------------------------------------------------------------------------*/
+
+#brandingtop {position:absolute; top:940px; left:230px;}
+#branding {position:absolute; top:990px; left:230px; border:1px solid #cccccc; height:550px; width:620px; /*background:#ffffff; */ margin:0px}
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background {background-color: rgba(15, 15, 15, 0.6); color: #fff;	text-shadow: #000 0px 0px 20px;}
+.dark-background em {color: #ccc;}
+
+#about #contacttitle {position:relative; left:-32px}
+
+
+
+
+#mainform {width:360px}
+#mainform .nameinputbox .labels {float:left; width:140px}
+#mainform .nameinputbox .labels label{font-size:11px; color:#444; text-shadow:1px 1px 1px #eee; position:relative; top:9px}
+#mainform .nameinputbox .nameinput {float:right; text-align:left; border:1px solid #ddd; margin-right:0px; width:218px; height:30px; background:#fff;}
+#textareabox {width:353px; height:80px; border:1px solid #ddd}
+#mainform .nameinputtext label{font-size:11px; color:#444; text-shadow:1px 1px 1px #eee; position:relative; top:9px}
+
+#mainform .submit {float:right; width:123px; height:50px; margin-right:44px; border-radius:5px; position:relative; top:0px; left:42px }
+#mainform .submit .inputbox {width:123px; height:50px; margin-top:20px; margin-bottom:40px; background:url(../images/submit.png) center bottom no-repeat; }
+#mainform .submit .inputbox:hover {width:123px; height:50px; margin-top:20px; margin-bottom:40px; background:url(../images/submit.png) center top no-repeat}
+#mainform .submit .inputbox #submitbtn {width:123px; height:50px; margin:0px;}
+
+.contactsx {font-size:11px; color:#aaa; position:relative; left:0px; line-height:40px}
+.contactsx b{font-size:21px; color:#000; margin-left:20px; line-height:40px; display:block; width:30px; float:left; text-align:left}
+.contactsx strong{font-size:11px; color:#000; margin-left:20px; line-height:40px; display:block; width:120px; float:left; text-align:left; font-weight:normal}
+
+
+.aboutushome {position:relative; left:-1px}
+.aboutushome .email {background:url(../images/email.png) right top no-repeat; width:80px; height:75px; display:block; text-decoration:none; border:0px; text-align:center; color:#ccc; position:relative; left:15px; margin-bottom:30px; float:left; margin-right:15px}
+.aboutushome .email:hover {background:url(../images/email.png) left top no-repeat; width:80px; height:75px; display:block; text-decoration:none; border:0px; text-align:center; color:#fff}
+.aboutushome .email span{width:80px; height:75px; display:block; text-decoration:none; border:0px; line-height:75px; font-size:10px; color:#FFF}
+.arrows {position:relative; left:5px; top:3px}
+
+
+
+
+
+
+
+
+
+
+#fb{position:relative; left:-27px}
+
+
+img{ border:none; }
+	
+#supersized-loader { position:absolute; top:50%; left:50%; z-index:10; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background-color:#111; background:rgba(0,0,0,0.8) url(../img/progress.gif) no-repeat center center; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+	
+#supersized { position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
+#supersized img{ width:auto; height:auto; position:relative; display:none; outline:none; border:none; }
+#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
+#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
+		
+#supersized a { z-index:-30; position:absolute; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111;}
+#supersized a.prevslide { z-index:-20; }
+#supersized a.activeslide { z-index:-10; }
+#supersized a.prevslide img, #supersized a.activeslide img{ display:inline; }
+	
+/*Controls Section*/
+#controls-wrapper { margin:0 auto; height:62px; width:100%; bottom:0; left:0; z-index:4; background:url(../images/footer.png) bottom center repeat-x; position:fixed; }
+#controls { overflow:hidden; height:100%; text-align:left; z-index:5; padding:0 114px; /* Increase padding to give thumbnails room */ }
+#slidecounter { float:left; color:#888; font:23px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:bold; text-shadow:#000 0 -1px 0; margin:19px 10px 18px 20px; }
+#slidecaption { overflow:hidden; float:left; color:#FFF; font:16px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:bold; text-shadow:#000 0 2px 0; margin:23px 20px 23px 0; }
+#navigation { float:right; margin:10px 20px 0 0; }
+	
+
+	
+	/*Thumbnail Navigation*/	
+#nextthumb,#prevthumb { z-index:6; display:none; height:20px; width:20px; overflow:hidden; background:#ddd; border:1px solid #333; -webkit-box-shadow:0 0 5px #000;  -moz-border-radius:100px; border-radius:100px; margin-bottom:20px }
+#nextthumb { }
+#prevthumb {  }
+#nextthumb img, #prevthumb img { width:150px; height:auto; -moz-border-radius:100px; border-radius:100px  }
+#nextthumb:active, #prevthumb:active { bottom:10px; }
+#navigation > :hover,#nextthumb:hover, #prevthumb:hover { cursor:pointer; }
+#slide-show-controls{position:fixed; right:12px; bottom:22px; height:100px; width:50px}
+
+			

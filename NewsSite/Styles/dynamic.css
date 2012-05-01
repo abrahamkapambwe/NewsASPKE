@@ -1,0 +1,201 @@
+﻿
+
+/*---------------------------------------- SLIDE STYLES - HOME PAGE -----------------------------*/
+#sliding_website_menu {width:944px; margin:0px auto; position:relative}
+#website_durban_main_n {width:944px; margin:0px auto; position:relative; border-radius:7px; -moz-border-radius:7px; height:104px; background:url(../images/website_packages.jpg) center top no-repeat}
+#website_durban_main_n #navigation {width:200px !important; float:left; position:relative}
+#website_durban_main_n .toplinks {}
+#website_durban_main_n ul {margin-top:5px}
+#website_durban_main_n ul #selected_list_in {width:170px; height:24px; background:url(../images/slide_bg.png) center bottom no-repeat}
+#website_durban_main_n ul .references  {width:170px; height:24px; background:url(../images/slide_bg.png) center top no-repeat; margin-bottom:6px; margin-left:5px}
+#website_durban_main_n ul .references .cross-link {line-height:24px; width:170px}
+#website_durban_main_n ul .references #selected {line-height:24px; width:170px}
+#website_durban_main_n ul .references #selected span {line-height:24px; position:relative; left:15px; color:#000; font-size:12px}
+#website_durban_main_n ul .references .cross-link span {line-height:24px; position:relative; left:15px; color:#777; font-size:12px}  
+
+
+#sliding_website_menu #homepage {height:70px !important; width:730px !important; float:left}
+#sliding_website_menu #homepage .slider-wrap {height:70px !important}
+#sliding_website_menu #homepage .slider-wrap #slider1 {height:70px !important}
+#sliding_website_menu #homepage .slider-wrap #slider1 .csw  {height:70px !important}
+#sliding_website_menu #homepage .panelContainer {height:70px !important}
+#sliding_website_menu #homepage .panelContainer .panel{height:70px !important}
+#sliding_website_menu #homepage .panelContainer .panel .wrapper{height:70px !important}
+		
+
+.website_design_logo_slides {float:left; margin-right:1px; margin-left:1px}
+.website_design_logo_slides img {position:relative; top:-12px}
+
+
+
+.wrapper {width:944px}
+.wrapper .prices_of_website_designs {width:740px; position:relative; left:-37px}
+.wrapper .prices_of_website_designs .prices_left_bigs {width:210px; margin-left:20px; float:left}
+.wrapper .prices_of_website_designs .prices_left_bigs h1 {font-size:80px; font-weight:normal; position:relative; top:-20px}
+.wrapper .prices_of_website_designs .prices_right_bigs {width:490px; float:left; position:relative; left:30px }
+.wrapper .prices_of_website_designs .prices_right_bigs h1 {font-size:18px; font-weight:bold; display:block; width:440px; position:relative; top:-10px; line-height:18px}
+.wrapper .prices_of_website_designs .prices_right_bigs #pricing_ruler {background:#fff; border-top:#fff 1px solid; margin-top:0px; margin-bottom:0px; position:relative; top:-5px}
+.wrapper .prices_of_website_designs .prices_right_bigs span {font-size:13px; color:#000; position:relative; top:-5px}
+.wrapper .prices_of_website_designs .prices_right_bigs span a{font-size:10px; font-weight:bold; text-decoration:none; color:#000; position:relative; top:4px}
+
+
+
+.new_work_container {width:182px; float:left; margin-right:10px; position:relative; top:-21px}
+#genesis_training_design{width:182px; float:left; margin-right:10px; background:url(../images/genesis_website_durban.png) bottom left no-repeat; height:90px; margin-right:10px}
+#genuine_training_design{width:182px; float:left; margin-right:10px; background:url(../images/genuine_website_durban.png) bottom left no-repeat; height:90px; margin-right:10px}
+#buyacar_website_design{width:182px; float:left; margin-right:10px; background:url(../images/buyacar_website_durban.png) bottom left no-repeat; height:90px; margin-right:10px}
+
+.new_work_container h1 {font-size:12px; text-align:right; display:block; width:130px; float:right; font-weight:bold; margin-right:12px; position:relative; top:10px}
+.new_work_container .designer_keywords {float:right; width:90px}
+.new_work_container .designer_keywords ul li {}
+.new_work_container .designer_keywords ul li strong {font-size:12px; color:#000}
+.new_work_container .designer_durban_link {width:56px; height:22px; background:url(../images/continue_button.png) center top no-repeat; position:relative; top:60px; left:120px}
+.new_work_container .designer_durban_link a {display:block; width:56px; height:22px; border:0px}
+.new_work_container .work_link_in{display:block; width:148px; height:51px; border:0px; position:relative; top:19px; left:-19px}
+
+
+
+
+
+.deals {width:200px; float:left; margin-right:45px; height:215px}
+#dealsin {width:200px; float:left; margin-right:0px}
+.deals .website_designer_deals {width:100%}
+.deals .website_designer_deals a img  {border:0px !important}
+.deals .designer_action {width:200px; margin:0px}
+.deals .designer_action .more {width:60px; height:22px; float:left; text-align:center; background:url(../images/more_links.jpg) top center no-repeat; position:relative; left:-20px}
+.deals .designer_action .more:hover {width:60px; height:22px; float:left; text-align:center; background:url(../images/more_links.jpg) bottom center no-repeat}
+.deals .designer_action .more a {display:block; width:60px; height:22px; border:0px; margin:0px; text-align:center}
+.deals .designer_action .more a span{display:block; width:60px; height:22px; border:0px; margin:0px; text-align:center; font-size:10px; color:#000; text-shadow:1px 1px 1px #fff; line-height:22px; font-weight:normal}
+  
+.deals .designer_action .signup {width:60px; height:22px; float:right; text-align:center; background:url(../images/more_links.jpg) top center no-repeat}
+.deals .designer_action .signup:hover {width:60px; height:22px; float:right; text-align:center; background:url(../images/more_links.jpg) bottom center no-repeat}
+.deals .designer_action .signup a {display:block; width:60px; height:22px; border:0px; margin:0px; text-align:center}
+.deals .designer_action .signup a span{display:block; width:60px; height:22px; border:0px; margin:0px; text-align:center; font-size:10px; color:#000; text-shadow:1px 1px 1px #fff; line-height:22px; font-weight:normal}
+ 
+							
+
+
+
+
+
+
+p.intro { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding: 20px 0 30px 0; text-align: center; width: 100% }
+p#cross-links { text-align: center }
+p#cross-links { border-bottom: 1px solid #ccc; margin-bottom: 30px; padding-bottom: 30px }
+noscript p, noscript ol { color: #a00; font-size: 13px; line-height: 1.4em; text-align: left }
+noscript a { color: #a00; text-decoration: underline }
+noscript ol { margin-left: 25px; }
+
+
+
+.stripViewer .panelContainer .panel ul {
+	text-align: left;
+	margin: 0 15px 0 30px;
+}
+
+.slider-wrap { /* This div isn't entirely necessary but good for getting the side arrows vertically centered */
+	margin: 20px 0;
+	position: relative;
+	width: 100%;
+}
+
+/* These 2 lines specify style applied while slider is loading */
+.csw {width: 100%; height: 120px; background: #fff; overflow: scroll}
+.csw .loading {margin: 100px 0 100px 0; text-align: center}
+
+.stripViewer { /* This is the viewing window */
+	position: relative;
+	overflow: hidden; 
+	border: 0px solid #000; /* this is the border. should have the same value for the links */
+	margin: auto;
+	width: 700px; /* Also specified in  .stripViewer .panelContainer .panel  below */
+	/* height: 460px; */
+	clear: both;
+	/* background: #fff; */
+}
+
+.stripViewer .panelContainer { /* This is the big long container used to house your end-to-end divs. Width is calculated and specified by the JS  */
+	position: relative;
+	left: 0; top: 0;
+	width: 100%;
+	list-style-type: none;
+	/* -moz-user-select: none; // This breaks CSS validation but stops accidental (and intentional - beware) panel highlighting in Firefox. Some people might find this useful, crazy fools. */
+}
+
+.stripViewer .panelContainer .panel { /* Each panel is arranged end-to-end */
+	float:left;
+	position: relative;
+	width:700px; /* background:#ffffff;  Also specified in  .stripViewer  above */
+}
+
+.stripViewer .panelContainer .panel .wrapper { /* Wrapper to give some padding in the panels, without messing with existing panel width */
+	padding: 10px;
+}
+
+.stripNav { /* This is the div to hold your nav (the UL generated at run time) */
+	margin: auto;
+}
+
+.stripNav ul { /* The auto-generated set of links */
+	list-style: none;
+}
+
+.stripNav ul li {
+	float: left;
+	margin-right: 2px; /* If you change this, be sure to adjust the initial value of navWidth in coda-slider.1.1.1.js */
+}
+
+.stripNav a { /* The nav links */
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 32px;
+	background: #c6e3ff;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 0 15px;
+}
+
+.stripNav li.tab1 a { background: #60f }
+.stripNav li.tab2 a { background: #60c }
+.stripNav li.tab3 a { background: #63f }
+.stripNav li.tab4 a { background: #63c }
+.stripNav li.tab5 a { background: #00e }
+
+.stripNav li a:hover {
+	background: #333;
+}
+
+.stripNav li a.current {
+	background: #000;
+	color: #fff;
+}
+
+.stripNavL, .stripNavR { /* The left and right arrows */
+	position: absolute;
+	top: 230px;
+	text-indent: -9000em;
+}
+
+.stripNavL a, .stripNavR a {
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+
+.stripNavL {
+	left: 0;
+}
+
+.stripNavR {
+	right: 0;
+}
+
+.stripNavL {
+	background: url("images/arrow-left.gif") no-repeat center;
+}
+
+.stripNavR {
+	background: url("images/arrow-right.gif") no-repeat center;
+}

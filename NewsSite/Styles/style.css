@@ -1,0 +1,335 @@
+/*-----------------------------------------------------------------------------------------------*/
+/*                                             CSS RESET                                         */
+/*-----------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+    font-family:'LatoLight', 'Century Gothic', arial;
+	vertical-align: baseline;
+}
+:focus {outline: 0;}
+body {line-height: 1; margin:0px; padding:0px; border:0px;}
+ol, ul {list-style: none;}
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '"';}
+blockquote, q {quotes: '"' '"';}
+p{line-height:1.5em}
+.clear{clear:both; margin:0px; padding:0px; outline:none; width:0px; height:0px; display:block}
+
+/*advert */
+#home-page-advert{margin:0px; background:none; position:relative}
+
+
+/* background */
+.main-body {background:#001 url(../images/mainbackground.png) center top repeat-x; background-attachment:fixed}
+.space-small {margin:0px; border:0px; height:5px; width:100%}
+.space {margin:0px; border:0px; height:20px; width:100%}
+.space-big {margin:0px; border:0px; height:50px; width:100%}
+
+/* school times south africa */
+#topspace{width:350px; height:3px}
+#top-top{width:960px;  margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; background:#fff url(../images/bg.jpg) repeat-x}
+#top-top #main-title{width:100%; height:100px; margin:0px;  border:0px #777 solid;}
+#top-top #main-title #social{width:500px; float:left}
+#top-top #main-title #social .social-button{float:left; margin-top:10px; margin-left:5px}
+#top-top #main-title #social .social-button a img{border:0px}
+#top-top #main-title #social .social-button span a{color:#fff; font-weight:bold; margin-top:-1px; margin-left:4px; font-size:8px; line-height:9px; text-decoration:none}
+#top-top #main-title #description{width:260px; float:right; border:0px}
+#top-top #main-title #description #search-area{background:url(../images/school-search.jpg) no-repeat}
+#top-top #main-title #description #search-area div{margin-top:2px}
+#top-top #main-title #description #search-area #q{position:relative; top:-10px !IMPORTANT; left:-3px !IMPORTANT; border:1px solid #fff!IMPORTANT; outline: #fff solid 0px!IMPORTANT;}
+
+#top-top #keywords{height:83px; margin:0px; margin-left:0px; margin-right:0px; width:600px; border-top:0px;  border-right:0px #777 solid; border-left:0px #777 solid; border-bottom:0px;  border-top:0px; float:left; text-align:right}
+#top-top #logoandintro{float:right; width:300px}
+#top-top #logoandintro #banner{float:right}
+#top-top #logoandintro #banner img {position:relative; top:-35px}
+#top-top #logoandintro #logo{float:left}
+#top-top #logoandintro #logo span{color:#ddd; font-size:11px; font-style:italic; position:relative; top:-5px; margin-top:0px; margin-left:7px}
+#top-top #logoandintro #logo span b{color:#ddd; font-size:11px; font-weight:normal; color:#F60}
+
+#top-top #newsletter-area {float:right; margin:0px; text-align:right}
+#top-top #newsletter-area #newsletter-header {float:right; margin:0px; text-align:right}
+#top-top #newsletter-area #newsletter-header h1{font-size:22px; color:#fff; font-weight:normal; text-align:right; margin-top:10px; margin-bottom:0px}
+#top-top #newsletter-area #newsletter-text {float:right; margin:0px; text-align:right}
+#top-top #newsletter-area #newsletter-text span{font-size:10px; color:#ccc; line-height:17px}
+#top-top #newsletter-area #newsletter-text img{font-size:9px; color:#ccc; text-align:right}
+#top-top #newsletter-area #newsletter-text #newsletter-news {float:right}
+#top-top #newsletter-area #newsletter-text #newsletter-arrow {float:right}
+#top-top #newsletter-area #newsletter-text #newsletter-arrow img {vertical-align:top}
+
+#newsletter-form #newsletter-name-divs{float:right; background:url(../images/school-name.jpg) no-repeat center; width:125px; height:25px; border:0px}
+#newsletter-form #newsletter-name-divs #newsletter-name {width:116px; height:13px; margin-top:4px; margin-left:0px; margin-right:4px; font-size:10px; color:#444}
+#newsletter-form #newsletter-email-divs{float:right; background:url(../images/school-emailname.jpg) no-repeat center; width:128px; height:25px; border:0px}
+#newsletter-form #newsletter-email-divs #newsletter-email {width:121px; height:13px; margin-top:4px; margin-left:0px; margin-right:4px;  font-size:10px; color:#444}
+#newsletter-form #newsletter-submit-divs {float:right}
+
+
+
+
+/* The Editor bars */
+#main-news-bar {background:#000; width:960px; margin:0px auto; height:40px; border-left:0px; border-right:0px; border-bottom:1px solid #222; position:relative; top:0px}
+#main-news-bar #main-left { float:left; margin-right:0px; position:fixed; top:8px; background:#000}
+#main-news-bar #main-left  div {float:left; margin-right:0px}
+#container-menu {position:fixed; background:#000; height:38px; width:960px; z-index:999990000000}
+#main-news-bar #main-left  div:hover{float:left; margin-right:0px}
+#main-news-bar #main-left  div a {margin-left:10px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#ddd; line-height:30px; font-size:10px; font-weight:normal}
+#main-news-bar #main-left  div a:hover {margin-left:10px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#fff; line-height:30px; font-size:10px; font-weight:normal}
+#main-news-bar #main-left  div #selected-news{margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#f60; line-height:30px; font-weight:normal; font-size:15px; }
+#main-news-bar #news-magazine {float:right; margin-right:0px; position:relative; top:8px}
+#main-news-bar #news-magazine div {float:right; margin-right:0px}
+#main-news-bar #news-magazine div:hover{float:right; margin-right:0px}
+#main-news-bar #news-magazine div a{margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#888; line-height:30px; font-weight:bold;  font-size:10px;}
+
+#main-news-bar #selected-a{margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#F00 !important; line-height:30px; font-weight:bold;  font-size:10px;}
+
+
+
+#main-news-bar-nav {background:#222; width:960px; margin:0px auto; height:30px; border-left:0px; border-right:0px; border-bottom:1px solid #777; border-top:1px solid #777}
+#main-news-bar-nav #main-left-nav { float:left; margin-right:0px; position:relative; top:0px}
+#main-news-bar-nav #main-left-nav  div {float:left; margin-right:0px; border-right:1px solid #777; background:#222}
+#main-news-bar-nav #main-left-nav  div:hover{float:left; margin-right:0px}
+#main-news-bar-nav #main-left-nav  div a {margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#ddd; line-height:30px; font-size:14px; font-weight:bold}
+#main-news-bar-nav #main-left-nav  #last {border-right:0px !important}
+#main-news-bar-nav #main-left-nav  div a:hover{margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#fff; line-height:30px; font-size:14px; font-weight:bold}
+#main-news-bar-nav #main-left-nav  div #selected-news{margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#f60; line-height:30px; font-weight:normal; font-size:15px; }
+#main-news-bar-nav #news-magazine-nav {float:right; margin-right:0px; position:relative; top:0px}
+#main-news-bar-nav #news-magazine-nav div {float:right; margin-right:0px}
+#main-news-bar-nav #news-magazine-nav div:hover{float:right; margin-right:0px}
+#main-news-bar-nav #news-magazine-nav div a{margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#888; line-height:30px; font-weight:bold;  font-size:10px;}
+
+
+#main-news-bar-nava {background:#222; width:960px; margin:0px auto; height:30px; border-left:0px; border-right:0px; border-bottom:0px solid #777; border-top:0px solid #777}
+#main-news-bar-nava #main-left-nava { float:left; margin-right:0px; position:relative; top:0px}
+#main-news-bar-nava #main-left-nava  div {float:left; margin-right:0px; border-right:0px solid #777; background:#222}
+#main-news-bar-nava #main-left-nava  div:hover{float:left; margin-right:0px}
+#main-news-bar-nava #main-left-nava  div a {margin-left:7px; margin-right:7px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#ddd; line-height:30px; font-size:11px; font-weight:bold}
+#main-news-bar-nava #main-left-nava  #last {border-right:0px !important}
+#main-news-bar-nava #main-left-nava  div a:hover{margin-left:7px; margin-right:7px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#fff; line-height:30px; font-size:11px; font-weight:bold}
+#main-news-bar-nava #main-left-nava  div #selected-news{margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#f60; line-height:30px; font-weight:normal; font-size:15px; }
+#main-news-bar-nava #news-magazine-nava {float:right; margin-right:0px; position:relative; top:0px}
+#main-news-bar-nava #news-magazine-nava div {float:right; margin-right:0px}
+#main-news-bar-nava #news-magazine-nava div:hover{float:right; margin-right:0px}
+#main-news-bar-nava #news-magazine-nava div a{margin-left:5px; margin-right:5px; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#888; line-height:30px; font-weight:bold;  font-size:10px;}
+#main-news-bar-nava #main-left-nava  #start a {margin-left:2px; margin-right:0px !important; margin-top:0px; margin-bottom:0px; text-decoration:none; color:#f00 !important; line-height:30px; font-size:11px; font-weight:bold}
+
+
+/* In Pictures    */
+#in-pictures{border-left:1px solid #ddd; border-right:1px solid #ddd; border-bottom:0px solid #ddd; margin:0px; width:960px; height:35px; background:url(../images/whitedot.png) repeat}
+#in-pictures h1{font-size:19px; font-weight:normal; color:#fff; line-height:35px; margin-left:5px; vertical-align:bottom}
+#sslideshow{width:962px; margin:0px; height:375px; background:#fff; border-left:0px solid #ddd; border-right:0px solid #ddd; border-bottom:0px solid #ddd}
+/* Small month thumbnails   */
+
+
+/* Slide show plus previous tabs */
+#slideplusprevious {width:440px; margin:0px; float:left; background:#fff ; border-right:0px solid #000}
+#slideplusprevious #slide-show{float:left; width:325px; height:270px; border:0px; margin:0px}
+#slideplusprevious #schools-previous-latest-news{float:left; width:335px; height:470px; margin:0px; border:0px}
+
+/* Slide show image rotator */
+* {margin: 0; padding: 0; outline: none;}
+img {border: none;}
+.container {	overflow: hidden; float:left;	width: 430px; height:375px; margin-top:7px; margin-left:7px; margin-right:7px; margin-bottom:0px; border:0px}
+#main {	padding: 0px;	background: #fff; height:365px;	border:0px solid #ccc;	font: 10px normal 'Century Gothic',arial , Helvetica, sans-serif; border:0px}
+#main a {color: #fff;}
+ 
+ 
+/*--Main Image Preview--*/
+.main_image {	width: 300px; height:365px;	float: left;	background: #fff;	position: relative;	overflow: hidden;	color: #fff;}
+.main_image h2 {	font-size: 2em;	font-weight: normal;	margin: 0 0 5px;	padding: 10px;}
+.main_image p {	font-size: 1.2em;	padding: 10px;	margin: 0;	line-height: 1.6em;}
+.block small { 	padding: 0 0 0 00px; 	background: url(../icon_calendar.gif) no-repeat 0 center; 	font-size: 1em; }
+.main_image .block small {margin-left: 10px;}
+.main_image .desc{	position: absolute;	bottom: 0;	left: 0;	width: 100%;	display: none;}
+.main_image .block{	width: 100%; background: #111;	border-top: 0px solid #000;}
+.main_image a.collapse {background: url(../btn_collapse.gif) no-repeat left top; height: 27px; width: 100px;	text-indent: -99999px;	position: absolute; 	top: -27px; right: 20px; }
+.main_image a.show {background-position: left bottom;} 
+.image_thumb {	float: left;	width: 50px;	background: #f0f0f0;	border-right:0px; margin-top:1px; border-bottom:1px solid #fff !important}
+.image_thumb img {border-bottom:2px solid #fff; border-left:2px solid #fff; border-right:0px solid #fff; border-top:0px solid #fff;	padding: 0px; 	width:120px; height:91px;	background: #fff;	float: left;}
+.image_thumb ul {	margin: 0; padding: 0;	list-style: none;}
+.image_thumb ul li{	margin:0; padding: 0px 0px;background: #f0f0f0 url(../nav_a.gif) repeat-x;	width: 100px; float: left; border-bottom: 0px solid #ccc; border-top:0px solid #fff; border-right:0px solid #ccc;}
+.image_thumb ul li.hover {	background: #ddd;	cursor: pointer;}
+.image_thumb ul li.active {	background: #fff;	cursor: default;}
+html .image_thumb ul li h2 {	font-size: 1.5em; 	margin: 5px 0; padding: 0;}
+.image_thumb ul li .block {	float: left; 	margin-left: 10px;	padding: 0;	width: 100px;	display: none;}	
+.image_thumb ul li p{display: none;}
+
+
+
+/* Headline */
+#headline {width:100%; height:35px; background:url(../images/headline.png) repeat-x}
+#headline .left {float:left; width:600px}
+#headline .left .red {color:#fff; text-shadow:1px 1px 1px #900; line-height:35px; font-size:20px; font-weight:bold !important; margin-right:10px; margin-left:10px}
+#headline .left .text a{color:#000; line-height:35px; font-size:15px; font-weight:bold; text-decoration:none; color:#000}
+#headline span {float:left}
+
+#headline .right {float:right; width:300px; text-align:right; margin-right:10px}
+#headline .right span {float:right}
+#headline .right .share {color:#000; line-height:35px; font-size:12px; font-weight:bold; text-decoration:none; color:#555 !important}
+#headline .right img {position:relative; top:6px}
+
+
+/* In Brief Section */
+.inbrief {float:left; height:300px; width:520px; background:#fff}
+.inbrief .brief-stories {width:280px; float:left; margin-left:10px}
+.inbrief .brief-stories p {margin:0px; position:relative; top:4px}
+.inbrief .brief-stories p a {line-height:24px; font-size:12px; color:#337; text-decoration:none}
+.inbrief .brief-stories p a:hover{line-height:24px; font-size:12px; color:#000; text-decoration:none; border-bottom:2px solid #dde}
+.inbrief .brief-stories p .highlighted {font-weight:bold !important; font-size:15px !important; line-height:35px !important}
+
+.inbrief .brief-titles {width:200px; float:left}
+.inbrief .brief-titles .top-story {height:130px; border-bottom:1px dotted #aad}
+.inbrief .brief-titles .top-story h2 {font-size:16px; line-height:22px; font-weight:bold; color:#337; margin-top:5px; margin-bottom:10px}
+.inbrief .brief-titles .top-story p a {font-size:11px; font-weight:normal; line-height:18px; color:#000; text-decoration:none}
+
+.inbrief .brief-titles .top-thumbs {margin-top:10px}
+.inbrief .brief-titles .top-thumbs .thumbs {width:100px; float:left; margin-right:15px; text-align:left}
+.inbrief .brief-titles .top-thumbs .thumbs img {text-align:left}
+.inbrief .brief-titles .thumbs-text {width:70px; margin:0px; float:left}
+.inbrief .brief-titles .thumbs-text a {font-size:13px !important; font-weight:bold; line-height:17px !important; color:#337; text-decoration:none}
+.inbrief .brief-titles .thumbs-text a:hover{font-size:13px !important; font-weight:bold; line-height:17px !important; color:#000; text-decoration:none}
+.inbrief .brief-titles .top-thumbs .dotted-small {height:3px; border-bottom:1px dotted #aad; width:100%}
+
+
+
+/* Main Styles */
+.main-area {width:962px; margin:0px auto; background:#fff; height:auto}
+.main-areaother {width:700px; margin:0px auto; background:#fff; height:auto}
+.main-area .main-para {width:706px; height:auto; float:left; margin-top:0px; margin-left:7px}
+.main-area .main-para-side-bar {width:220px; float:left; margin-left:17px; height:400px}
+.sub-title {width:100%; height:40px; border-bottom:1px dotted #aad}
+.sub-title span {font-size:18px; font-weight:bold; color:#223; line-height:40px}
+    .sidebar{width:300px}
+     .sidebardetails{ width: 200px;float:left}
+.template-author {font-size:12px; color:#000; text-decoration:none; line-height:19px; position:relative; top:10px}
+.template-name .template-author {font-size:12px; color:#000; text-decoration:none; line-height:19px; position:relative; top:10px}
+.template-name .type-of-story {font-size:14px !important; color:#000; text-decoration:none; line-height:23px !important; font-weight:bold}
+/* the blog part */
+.story {width:700px;  position:relative; left:0px; background:#fff; border:01px solid #fff; float:left; margin:0px}
+.story .inner-design-large {width:700px;  margin:3px; position:relative}
+.story .inner-design-large .viewport {	border: 0px solid #eee;	float: left;	height: 150px; width:200px !important;	margin-left:00px;	overflow: hidden;	position: relative; top:20px; left:-2px; float:left; margin-right:0px	}
+.story .inner-design-large .no-margin {	margin-right: 0;}
+.story .dark-background {background-color: rgba(15, 15, 15, 0.6); color: #fff;	text-shadow: #000 0px 0px 20px; position:relative}
+.story .dark-background em {color: #ccc;}
+.story .dark-background .design-inpiration {width:105px; position:relative; top:4%; left:15px; margin-left:auto; margin-right:auto}
+.information-design {width:200px; float:left; height:64px; right top repeat-y}
+.information-designonther {width:355px; float:left; height:64px; right top repeat-y}
+.information-design .template-name {width:215px; float:left; margin-left:10px; margin-right:0px; position:relative; top:20px}
+.information-design .template-nameother {width:370px; float:left; margin-left:10px; margin-right:0px; position:relative; top:20px}
+.information-design .template-name .template-author {font-size:12px; color:#000; text-decoration:none; line-height:19px; position:relative; top:10px}
+.information-design .template-name .type-of-story {font-size:14px !important; color:#000; text-decoration:none; line-height:23px !important; font-weight:bold}
+.information-design .template-information {width:250px; float:left; margin-left:15px; margin-right:10px; position:relative; top:20px}
+.information-design .template-information  span {line-height:17px; color:#223; font-size:12px !important; text-decoration:none !important}
+.information-design .template-information  span a{line-height:17px; color:#447; line-height:15px; font-weight:bold; font-size:13px !important; text-decoration:none !important; border-bottom:1px dotted #dde}
+.information-design .template-information .smaller {height:9px; line-height:9px; display:block; width:100%}
+
+
+/* New Advert Side   */
+.side-bar-story {width:100%; margin:0px}
+.side-bar-story .head-story {font-size:14px; font-weight:bold; color:#337}
+.side-bar-story .line-line {height:30px; line-height:30px; border-bottom:0px dotted #aae}
+.side-bar-story .line-line .black {float:left; display:block; background:#f00; margin-right:10px; margin-bottom:9px; color:#fff; font-size:12px; text-align:center; width:25px; border-right:1px dotted #aae}
+.side-bar-story .line-line .line {height:30px; line-height:30px; font-size:13px !important}
+.side-bar-story .line-line .line a {color:#000; text-decoration:none}
+
+
+
+
+
+
+.FooterBackground{width:100%;background:#000;height:320px;margin:0 auto;}
+#Footer{overflow:hidden; padding:27px 22px 2px; position:relative; width:936px; margin:0 auto;background:none;}
+#Footer .brandLogo{float:left;width:50%;font-family:Arial;font-size:75%;color:#fff;}
+#Footer .logo-news{background:url(../images/smaller-logo.png) no-repeat;background-position:left top;width:220px;height:30px;overflow:hidden;text-indent:-2000px;display:block;}
+#Footer .search{float:left;width:50%;}
+#Footer .search .loginSearch{height:40px;width:325px;background:url(../images/rd_footer.png) no-repeat;background-position:0 -460px;float:right;}
+#Footer .search .loginSearch .searchBox{background:transparent none repeat scroll 0 0;border:0 none;color:#585858;font:normal normal normal 108.5%/normal arial,helvetica,sans-serif;margin:5px 0 0 6px;width:290px;float:left;}
+#Footer .search .loginSearch .searchGo{background:transparent none repeat scroll 0 0;border:0 none;color:transparent;cursor:pointer;height:26px;overflow:hidden;text-indent:-2000px;width:27px;float:left;*text-transform:capitalize;}
+#Footer .footerColumns{width:100%;float:left;border-top:2px solid #2C2D30;margin-top:17px;padding-top:20px;}
+#Footer .footerLinks{float:left;width:150px;}
+#Footer .footerLinks li{font-size:75%;color:#e7e7e7;background-position:right 1px;}
+#Footer .footerLinks li a{font-size:75%;color:#bbb !important;background-position:right 1px; line-height:17px; text-decoration:none !important}
+#Footer .footerLinks li a:hover{font-size:75%;color:#fff !important;background-position:right 1px;}
+#Footer .networkCopy .footerLinks li{font-size:80%;}
+#Footer .footerLinks .news{border-right:1px solid #2c2d30;margin-right:10px;}
+#Footer .footerLinks.topics{padding-top:30px;border-right:1px solid #2c2d30;height:138px;}
+#Footer .footerLinks.followus{padding-left:10px;border-right:1px solid #2c2d30;height:168px;}
+#Footer.footerLinks.followus li.title{border-left:0;padding-left:0;background-image:none;}
+#Footer.footerLinks.followus li{background-image:url(../images/rd_footer.png);margin-bottom:2px;padding-left:20px;}
+#cbsFooter .footerLinks.followus li.footerFacebook{background-position:-393px -460px;}
+#Footer .footerLinks.followus li.footerTwitter{background-position:-393px -478px;}
+#Footer .footerLinks.followus li.footerRSS{background-position:-393px -496px;}
+#Footer .footerLinks.followus li.footerNewsletters{background-position:-393px -514px;}
+#Footer .footerLinks.followus li.footerYouTube{background-position:-393px -532px;}
+#Footer .footerLinks.followus li.footerMobile{background-position:-393px -550px;}
+#Footer .footerLinks.graphicpromo{padding-left:10px;height:168px;}
+#Footer .footerLinks.promoMod{padding-left:10px;height:168px;width:300px;}
+#Footer .footerLinks.promoMod img{float:left;border:1px solid #424346;width:100px;height:75px;}
+#Footer .footerLinks.promoMod p{line-height:15px;color:#fff;font-size:100%;padding-left:12px;float:left;width:185px;}
+#Footer .footerLinks.promoMod h3{font-size:130%;padding-bottom:12px;font-weight:bold;}
+div#cbsFooter ul.footerLinks.promoMod a{padding:0;}
+#Footer .footerLinks.promoMod a,#Footer .footerLinks.promoMod a:link,
+#Footer .footerLinks.promoMod a:visited,#cbsFooter .footerLinks.promoMod a:hover,
+#Footer .footerLinks.promoMod a:active{color:#a7C0ff;}
+.footerLinks li.last{background:transparent;}
+#Footer .footerLinks .title{font-weight:bold;background:transparent;padding-bottom:16px;}
+#cbsFooterWrap .footerLinks a,#cbsFooterWrap .footerLinks a:link,#cbsFooterWrap .footerLinks a:visited,#cbsFooterWrap .footerLinks a:hover,#cbsFooterWrap .footerLinks a:active,#cbsFooterWrap .footerLinks li.copy{color:#999;padding:0 8px 0 0;}
+.networkCopy .footerLinks li{font-size:100%;}
+.networkCopy{color:#a7a7a7;font-size:92%;}
+#Footer .networkCopy .footerLinks{text-align:center;margin:60px 0 0;width:100%;}
+.networkCopy .footerLinks li{float:left;color:#909295;border-left:1px solid #909295;padding-left:7px;}
+.networkCopy .footerLinks li.noline{border-left:0;}
+.networkCopy .footerLinks li.first{padding-left:0;}
+.networkCopy .footerLinks a,.networkCopy .footerLinks a:link,.networkCopy .footerLinks a:visited,.networkCopy .footerLinks a:hover,.networkCopy .footerLinks a:active,.networkCopy #networkSites .text,.networkCopy .footerLinks li.copy{color:#a7a7a7}
+.networkCopy #networkSites{display:inline;}
+.networkCopy #networkSites .text{padding:1px 0 1px 0;font-weight:bold;
+}.networkCopy #networkSites .searchTarget{-x-system-font:none;background:#DFDFDF none repeat scroll 0 0;border:1px solid #CCC;color:#777;font-family:arial,helvetica,sans-serif;font-size:91%;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;height:16px;line-height:normal;margin:0 0 0 5px;padding:0;vertical-align:bottom;}
+.networkCopy #networkSites img{vertical-align:bottom;}
+.flexButton{background-position:-350px -151px;_background-position:-350px -90px;font-size:100%;font-weight:bold;float:left;height:22px;text-transform:uppercase;overflow:hidden;}.flexButton span{background-position:right -151px;_background-position:right -90px;margin:0 0 0 4px;padding:4px 7px 3px 3px;display:block;_display:inline-block;height:22px;_color:#333;}
+a.flexButton,a.flexButton:link,a.flexButton:visited,a.flexButton:hover,a.flexButton:active{text-decoration:none;}
+.textbox
+{
+    height: 17px;
+    color: #333333;
+    width: 400px;
+    line-height: 19px;
+    border: solid 1px #ccc;
+    padding: 5px 4px;
+    display: block;
+    font-family: Arial,Verdana,Sans-Serif;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.comments
+{
+  border: 1px solid #E3E3E3;
+  background:#F5F5F5;
+  border-radius:3px 3px 3px 3px;
+}
+.commentItem
+{
+    border-radius:3px 3px 3px 3px;
+    border: 1px solid #E3E3E3;
+    padding:15px 10px 0 20px;
+    margin:15px 15px 0;
+    background-color:#FFFFFF;
+}
+.comment
+{
+    margin-bottom:10px;
+}

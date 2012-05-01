@@ -1,0 +1,907 @@
+.portfolio-table-branding{border:1px #ccc solid; width:480px}
+
+
+
+.portfolio-table-branding .right_bar_news{color: #FF0000;    font-size: 18px;    font-family: 'Century Gothic' , Candara, Calibri, Arial;}
+.portfolio-table-branding .compatibility_table{border-color: #bbcb00;	color:#000}
+.portfolio-table-branding .compatibility_row_header{background-color: #aaba00;    color: #000;	font-size:14px;	font-weight:bold}
+.portfolio-table-branding .web-site-designs-for-2010 a{	color:#bbcb00;	font-weight:bold}
+.portfolio-table-branding .website_specs_header{font-family: "Century Gothic" , Candara, Calibri, Arial;    font-size: 14px;    font-weight: bold;}
+.portfolio-table-branding .website_specs_cell{font-family: "Century Gothic" , Candara, Calibri, Arial; font-size: 12px; font-weight: bold; width: 130px;  background-color: #111; color: #FFFFFF;}
+
+.h2inner{color:#fff; font-size:26px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-table{border:1px solid #111; padding:.2em .2em;}
+.portfolio-table td{padding:.2em .2em; font-size:12px; border-bottom:1px #111 solid; border-right:1px #111 solid}
+
+
+.h3-header-ins{margin-bottom:0px !important; border-bottom:0px !important; font-size:20px; color:#fff}
+
+
+.website_cell_info
+{
+
+    padding: 0px 0px 0px 0px;
+}
+
+.rating_text
+{
+    font-family: "Century Gothic", Arial;
+    font-size: 32px;
+	font-weight:normal !important
+}
+
+.rating_small
+{
+    font-family: "Century Gothic",Arial;
+    font-weight:normal !important;
+    font-size: 14px;
+}
+
+.rating_small_star
+{
+    font-family: "Century Gothic", Arial;
+    font-weight:normal !important;
+    font-size: 19px;
+}
+
+
+.views_text
+{
+    font-family: "Century Gothic", Arial;
+    font-size: 30px;
+    background-image: url('images/up_stat.jpg');
+    background-repeat: no-repeat;
+	font-weight:normal !important
+}
+
+.website_specs_table
+{
+    border: 1px;
+    border-color: #333;
+	width:100%
+}
+
+.website_specs_header
+{
+    font-family: "Century Gothic" , Candara, Calibri, Arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.website_specs_cell
+{
+    font-family: "Century Gothic" , Candara, Calibri, Arial;
+    font-size: 12px;
+    font-weight: bold;
+    width: 130px;
+    background-color: #111;
+    color: #FFFFFF;
+}
+
+.link_it
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #bbcb00;
+}
+
+.website_pending_table
+{
+    width: 510px;
+}
+
+.right_bar_news
+{
+    color: #FF0000;
+    font-size: 18px;
+    font-family: 'Century Gothic' , Candara, Calibri, Arial;
+}
+
+.compatibility_table
+{
+	border-color: #bbcb00;
+	color:#000
+
+}
+
+
+.compatibility_row_header
+{
+	background-color: #aaba00;
+    color: #000;
+	font-size:14px;
+	font-weight:bold
+}
+
+
+.web-site-designs-for-2010 a
+{
+	color:#bbcb00;
+	font-weight:bold
+}
+
+.post-entry
+{
+    width:514px; 
+	margin-top:0px; 
+	margin-right:20px; 
+	margin-bottom:0px; 
+	font-family: 'Century Gothic' , Candara, Calibri, Arial !important;
+}
+
+.need-right-line
+{
+	margin-top:0px; margin-left:0px; margin-bottom:0px; padding:0px 0px 0px 0px; width:100%; margin-right:1px solid #eee
+}
+
+.post-entry h2
+{
+    margin-top:3px; 
+	margin-left:0px !important; 
+	margin-right:10px !important; 
+    float: left;
+    width: 100%;
+    font-size:13px !important;
+    line-height: 1.5em;
+    font-weight: normal;
+    color: #555 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+
+.post-entry h1
+{
+    margin-top:3px; 
+	margin-left:10px !important; 
+	margin-right:30px !important; 
+    float: left;
+    width: 100%;
+    line-height: 1.0em;
+    font-weight: normal;
+    color: #fff !important;
+}
+
+#durbanwebsolution{font-size:26px}
+
+.post-entry h1 a
+{
+    margin-top:3px; 
+	margin-left:0px !important; 
+	margin-right:30px !important; 
+    float: left;
+    width: 100%;
+    font-size:15px !important;
+    line-height: 1.0em;
+    font-weight: normal;
+    color: #fff !important;
+
+}
+
+
+.post-entry h2 a
+{
+    color: #555 !important;
+    text-decoration: none;
+	font-size:20px !important;
+	margin-left:10px !important; 
+	margin-right:10px !important; 
+}
+.post-entry h2 a:hover
+{
+    color: #aa0 !important;
+    text-decoration: none;
+}
+
+
+.post-meta
+{
+    float: left;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.post-meta-content h1
+{
+    margin: 0px;
+    padding: 0px 0px 2px;
+    float: left;
+    width: 100%;
+    color: #000000;
+    text-decoration: none;
+    font-size: 2.0em;
+    font-weight: normal;
+    border-bottom: 1px solid #ededed;
+}
+.post-meta-content h1 a
+{
+    color: #ccc;
+    text-decoration: none;
+}
+.post-meta-content h1 a:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+.post-author
+{
+    font-size: 0.8em;
+   	margin-left:10px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    line-height: 20px;
+}
+
+.post-author b
+{
+    font-size: 0.9em; font-weight:bold
+}
+
+.post-author a
+{
+    color: #aaa;
+    text-decoration: none;
+}
+.post-author a:hover
+{
+    color: #fff;
+    text-decoration: underline;
+}
+.post-category
+{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    font-size: 1em;
+    line-height: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+.post-category a
+{
+    color: #006699;
+    text-decoration: none;
+    font-weight: normal;
+}
+.post-category a:hover
+{
+    color: #000000;
+    text-decoration: underline;
+}
+.post-rate
+{
+    margin-left:10px;
+    padding: 5px 0px;
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+	position:relative;
+	top:-10px
+}
+
+.post-web-content
+{
+    margin-left:5px;
+	margin-right:5px ;
+    width: 510px;
+    font-size: 13px ;
+    line-height: 16px;
+}
+
+.post-web-content .h2-header{margin-bottom:0px; text-decoration:none; font-size:18px; color:#fff}
+
+
+.post-web-content a
+{
+    color: #006699;
+    text-decoration: underline;
+}
+
+.span-inner
+{
+    margin-left:10px;
+	margin-right:10px;
+	font-size:13px;
+	color:#fff;
+}
+
+
+.span-inner a
+{
+    font-size:13px;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+
+
+.span-inner h4
+{
+    margin-left:30px;
+	margin-right:10px;
+	font-size:15p;
+	color:#eee;
+}
+
+.span-inner ul li
+{
+    margin-left:10px;
+	margin-right:10px;
+	font-size:11px;
+	color:#fff;
+	float:left; margin-left:10px
+}
+
+
+.span-inner h2
+{
+	width:490px
+}
+
+
+#2010-portfolio-of-websites td
+{
+	border:0px !important;
+	margin-left:10px !important;
+	margin-right:10px !important;
+	padding:5px  !important;
+	
+}
+	
+.text-link
+{
+	font-weight:bold; color:#333 !important
+}
+.post-web-content a:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+.post-web-content img
+{
+    border-width: 0px;
+}
+.post-social
+{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+.post-social ul
+{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    list-style-type: none;
+}
+.post-social ul li
+{
+    display: inline;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 0px 0px 30px;
+    float: left;
+    background: url(images/social-left.gif) no-repeat left center;
+    height: 33px;
+    line-height: 31px;
+}
+.post-social ul li a
+{
+    background: url(../images/social-right.gif) no-repeat right center;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+    height: 33px;
+    float: left;
+    display: inline-block;
+    color: #555555;
+    text-decoration: none;
+}
+.post-social ul li a:hover
+{
+    background: url(images/social-right.gif) no-repeat right center;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+    height: 33px;
+    float: left;
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+}
+
+.comment-list
+{
+    float: left;
+    width: 100%;
+    padding: 0px 0px 2.5em;
+    margin-top:15px;
+}
+
+.comment-avatar
+{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    height: 52px;
+    width: 52px;
+}
+.comment-avatar img
+{
+    border-width: 0px;
+}
+.comment-block
+{
+    float: left;
+    width: 88%;
+    margin: 0px;
+    padding: 0px;
+}
+.comment-block .comment-author
+{
+    color: #000000;
+    margin: 0px;
+    padding: 0px 0px 2px;
+    float: left;
+    width: 99%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Trebuchet MS" , Tahoma, "VAGRounded BT" , Verdana;
+    font-weight: bold;
+    border-bottom: 1px dotted #CCCCCC;
+}
+.comment-block .comment-date
+{
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.9375em;
+}
+.comment-block .comment-date a
+{
+    color: #CCCCCC;
+    text-decoration: none;
+}
+.comment-block .comment-date a:hover
+{
+    color: #000000;
+    text-decoration: underline;
+}
+.comment-block .comment-text
+{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 99%;
+    color: #000000;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+}
+.comment-block .comment-text code
+{
+    font-family: "Courier New" , "MS Sans Serif" , sans-serif, serif;
+    font-size: 1em;
+    color: #000000;
+}
+.comment-block .comment-text blockquote
+{
+    margin: 10px 10px 10px 15px;
+    padding: 5px 5px 5px 8px;
+    clear: both;
+    border-left: 5px solid #000000;
+    font-size: 1.125em;
+    color: #000000;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.comment-block .comment-author a
+{
+    color: #0066CC;
+    text-decoration: none;
+}
+.comment-block .comment-author a:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+.comment-block .comment-text a
+{
+    color: #0066CC;
+    text-decoration: underline;
+}
+
+.comment-block .comment-text a:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+.comment-block-alt
+{
+    float: left;
+    width: 88%;
+    margin: 0px;
+    padding: 0px;
+}
+.comment-block-alt .comment-author
+{
+    color: #000000;
+    margin: 0px;
+    padding: 0px 0px 2px;
+    float: left;
+    width: 99%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Trebuchet MS" , Tahoma, "VAGRounded BT" , Verdana;
+    font-weight: bold;
+    border-bottom: 1px dotted #CCCCCC;
+}
+.comment-block-alt .comment-date
+{
+    font-size: 0.9375em;
+    color: #333333;
+    margin: 0px;
+    padding: 0px;
+}
+.comment-block-alt .comment-date a
+{
+    color: #660000;
+    text-decoration: none;
+}
+.comment-block-alt .comment-date a:hover
+{
+    color: #000000;
+    text-decoration: underline;
+}
+.comment-block-alt .comment-text
+{
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 99%;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+}
+.comment-block-alt .comment-author a
+{
+    color: #660000;
+    text-decoration: none;
+}
+.comment-block-alt .comment-author a:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+.comment-block-alt .comment-text a
+{
+    color: #660000;
+    text-decoration: underline;
+}
+.comment-block-alt .comment-text a:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+.comment-block-alt .comment-text code
+{
+    font-family: "Courier New" , "MS Sans Serif" , sans-serif, serif;
+    font-size: 1em;
+    color: #000000;
+}
+.comment-block-alt .comment-text blockquote
+{
+    margin: 10px 10px 10px 15px;
+    padding: 5px 5px 5px 8px;
+    clear: both;
+    border-left: 5px solid #000000;
+    font-size: 1.125em;
+    color: #000000;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+
+
+
+
+#seo-table
+{
+   width:550px;
+   height:1170px;
+   background-image:url('images/seo-bg.jpg');
+   background-repeat:no-repeat;
+   background-position:right top
+}
+
+
+#graphic-container{width:540px; margin-left:5px; margin-right:5px}
+
+
+#graphic-prices
+{
+	background-image:url(../branding/brandingdurban/images/seo-bg.jpg);
+   	background-repeat:no-repeat;
+   	background-position:right top;
+}
+
+#graphic-design-table
+{
+   width:550px;
+   height:1170px;
+   margin-left:71px; 
+   
+}
+
+
+#graphic-design-table td
+{
+   margin-left:9px; padding-left:10
+}
+
+
+
+#seo-detail
+{ 
+    height:18px;
+    width:233px;
+    font-family:Arial;
+    color:#fff;
+    font-size:18px;
+    vertical-align:bottom;
+    text-align:center
+    
+}
+
+#seo-detail-h1
+{ 
+
+    font-family:Arial;
+    color:#fff;
+    font-size:14px
+    
+}
+
+.seo-title
+{ 
+    height:18px;
+    width:103px;
+    vertical-align:top;
+}
+
+.seo-name
+{   
+    text-align:center;
+    line-height: 17px;
+    color: #000;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 20px;
+    float:left;
+    margin-left:8px;
+    margin-top:0px;
+    height:19px;
+    vertical-align:bottom;
+	width:90px
+    
+}
+
+.seo-pricing
+{   
+    text-align:center;
+    line-height: 15px;
+    color: #cc0;
+    font-style:normal;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 9px;
+    float:right;
+    margin-right:3px;
+    margin-top:8px;
+    height:10px
+}
+
+
+.seo-monthly
+{   
+    text-align:center;
+    line-height: 16px;
+    color: #0bb; 
+    font-style:italic;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 16px;
+    float:left;
+    margin-left:8px;
+    margin-top:8px;
+    height:10px
+}
+
+
+
+.duration
+{
+    color:#777;
+    font-size:8px;
+    font-weight:bold;
+    float:right;
+    margin-right:3px;
+    margin-top:12px;
+    vertical-align:top;
+    height:8px;
+    font-style:normal
+}
+
+.monthly
+{
+    color:#333;
+    font-size:8px;
+    font-weight:bold;
+    float:left;
+    margin-left:9px;
+    margin-top:12px;
+    vertical-align:top;
+    height:8px;
+    font-style:normal
+}
+
+
+.specs
+{
+    height:10px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.hr-specs
+{
+    margin-left:10px;
+}
+
+#options
+{ 
+    margin-top:7px;
+    margin-left:10px;
+    height:40px
+    
+}
+
+#options-h1
+{
+    color:#fff;
+    font-family:Arial;
+    font-size:24;
+    margin-bottom:0px;
+    border-bottom-width:0px
+}
+
+#custom-options
+{
+    margin-top:7px;
+    margin-left:10px;
+    height:20px
+}
+
+#custom-options a
+{
+    color:#555;
+    font-family:Arial;
+    font-size:10px;
+    text-decoration:none
+}
+
+#custom-options a:hover
+{
+    color:#fff;
+    font-family:Arial;
+    font-size:10px;
+}
+
+.left-specs
+{
+    color:#fff;
+    font-family:Arial;
+    font-size:11px;
+    padding:3px 3px 3px 3px
+}
+
+.right-specs
+{
+    color:#777;
+    font-family:Arial;
+    font-size:10px;
+    padding:3px 3px 3px 3px
+}
+
+.right-specs b
+{
+    font-size:14px;
+}
+
+.web-design-container-seo
+{
+    background-image: url('images/web-designer-bg-2.jpg');
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 182px;
+}
+ 
+.right
+{
+    float:right;
+}
+
+
+#flash-left
+{
+	float:left;
+	background-color:#03F
+}
+
+#flash-right-div
+{
+	float:left;
+	background-color:#099
+}
+
+
+.or
+{
+    font-size:25px;
+    color:#0cc
+}
+
+#graphic-design-paragraph
+{
+    font-family:Arial;
+    font-size:12px;
+    line-height:14px;
+    font-style:normal;
+    font-weight:lighter;
+    margin-top:15px;
+	margin-right:20px;
+    border-top-width:10px
+}
+    
+.graphic-design
+{
+    font-family:Arial;
+    font-size:11px;
+    line-height:13px;
+    font-style:normal;
+    font-weight:lighter;
+    color:#ccc;
+}
+
+.graphic-larger
+{
+    font-size:13px;
+    font-weight:bold
+}
+
+#principlesofbranding{border-bottom:0px}
+ 

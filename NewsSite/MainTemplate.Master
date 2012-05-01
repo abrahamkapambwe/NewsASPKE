@@ -1,0 +1,543 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainTemplate.master.cs"
+    Inherits="NewsSite.MainTemplate" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>News - Kenya</title>
+    <link href="Styles/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--[if lte IE 6]>
+<script type="text/javascript" src="supersleight-min.js"></script>
+<![endif]-->
+    <script src="Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".main_image .desc").show();
+            $(".main_image .block").animate({ opacity: 0.85 }, 1);
+            $(".image_thumb ul li:first").addClass('active');
+            $(".image_thumb ul li").click(function () {
+                var imgAlt = $(this).find('img').attr("alt");
+                var imgTitle = $(this).find('a').attr("href");
+                var imgDesc = $(this).find('.block').html();
+                var imgDescHeight = $(".main_image").find('.block').height();
+                if ($(this).is(".active")) {
+                    return false;
+                } else {
+                    $(".main_image .block").animate({ opacity: 0, marginBottom: -imgDescHeight }, 250, function () {
+                        $(".main_image .block").html(imgDesc).animate({ opacity: 0.85, marginBottom: "0" }, 250);
+                        $(".main_image img").attr({ src: imgTitle, alt: imgAlt });
+                    });
+                }
+                $(".image_thumb ul li").removeClass('active');
+                $(this).addClass('active');
+                return false;
+
+            }).hover(function () {
+                $(this).addClass('hover');
+            }, function () {
+                $(this).removeClass('hover');
+            });
+            $("a.collapse").click(function () {
+                $(".main_image .block").slideToggle();
+                $("a.collapse").toggleClass("show");
+            });
+
+        });
+    </script>
+</head>
+<body class="main-body">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="home-page-advert">
+        <div id="main-news-bar">
+            <div id="container-menu">
+                <div id="main-left">
+                    <div>
+                        <asp:HyperLink ID="home" NavigateUrl="~/Views/homepage.aspx" Target="_parent" runat="server">HOME</asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="politics" NavigateUrl="~/Views/othernews.aspx?category=Politics"
+                            Target="_parent" runat="server">POLITICS</asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="business" NavigateUrl="~/Views/othernews.aspx?category=Business"
+                            Target="_parent" runat="server">BUSINESS</asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="property" NavigateUrl="http://www.epropertysearch.co.za" Target="_blank"
+                            runat="server">PROPERTIES </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="worldnews" NavigateUrl="~/Views/othernews.aspx?category=WorldNews"
+                            Target="_blank" runat="server">WORLD NEWS </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink runat="server" ID="HyperLink6" NavigateUrl="~/Views/Adversite.aspx"
+                            Text="ADVERTISE"></asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink runat="server" ID="HyperLink7" NavigateUrl="~/Views/ContactUs.aspx"
+                            Text="CONTACT US"></asp:HyperLink></div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div id="news-magazine">
+                    <div>
+                        <asp:HyperLink NavigateUrl="Account/Register.aspx" Target="_parent" ID="selectednews"
+                            runat="server">REGISTER </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink NavigateUrl="Account/Login.aspx" Target="_parent" ID="selecteda" runat="server">LOG IN </asp:HyperLink>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div id="top-top">
+            <div id="main-title">
+                <div id="keywords">
+                    <div id="banner">
+                        <a href="" title="Count">
+                            <div class="space-small">
+                            </div>
+                            <div class="space-small">
+                            </div>
+                            <img src="../images/kenya.png" width="60px" height="60px" title="News times" alt="Logo Image"
+                                border="0px" />
+                            <div class="space-small">
+                            </div>
+                            <div class="space-small">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div id="description" style="margin-left: 4px">
+                    <br />
+                    <div id="search-area">
+                        <input type="text" runat="server" name="q" size="31" id="qsearch" />
+                        <asp:ImageButton ID="Image1" runat="server" ImageUrl="images/search-button.png" OnClick="Search_Click" />
+                    </div>
+                </div>
+            </div>
+            <div id="main-news-bar-nav">
+                <div id="main-left-nav">
+                    <div>
+                        <asp:HyperLink ID="hypHome" NavigateUrl="Views/homepage.aspx" Target="_parent" runat="server">HOME </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="hypPolitics" NavigateUrl="Views/othernews.aspx?category=Politics"
+                            Target="_parent" runat="server">POLITICS</asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="hypBusiness" NavigateUrl="Views/othernews.aspx?category=Business"
+                            Target="_parent" runat="server">BUSINESS </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="hyptechnology" NavigateUrl="Views/othernews.aspx?category=Technology"
+                            Target="_parent" runat="server">TECHNOLOGY</asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="hypentertain" NavigateUrl="Views/othernews.aspx?category=Entertainment"
+                            Target="_parent" runat="server">ENTERTAINMENT </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="hypSport" NavigateUrl="Views/othernews.aspx?category=Sport" Target="_parent"
+                            runat="server">SPORT </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="hypMultimedia" NavigateUrl="Views/multimedia.aspx?category=Multimedia"
+                            Target="_parent" runat="server">MULTIMEDIA</asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="hypliestyle" NavigateUrl="Views/othernews.aspx?category=Lifestyle"
+                            runat="server">LIFESTYLE </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="hypproperty" runat="server" NavigateUrl="http://www.epropertysearch.co.za"
+                            Target="_parent">PROPERTIES </asp:HyperLink>
+                    </div>
+                    <div>
+                        <asp:HyperLink ID="HyperLink5" NavigateUrl="~/Views/othernews.aspx?category=WorldNews"
+                            Target="_blank" runat="server">WORLD NEWS </asp:HyperLink></div>
+                    <div id="last">
+                        <%-- //<a href="link.html" target="_parent">MORE </a>--%>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div id="main-news-bar-nava">
+                <div id="main-left-nava" style="display: none">
+                    <div id="start">
+                        <a href="link.html" target="_parent">Blogs: </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">Political </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">Hotsheet </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">Crimesider </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">Investigates </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">Dash </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">Celebrity </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">Circuit Tech </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">Talk </a>
+                    </div>
+                    <div>
+                        <a href="link.html" target="_parent">More </a>
+                    </div>
+                    <div id="start">
+                        <a href="link.html" target="_parent">&nbsp;&nbsp;&nbsp;&nbsp;Shows: </a>
+                    </div>
+                    <div id="last">
+                        <a href="link.html" target="_parent">60: Overtime </a>
+                    </div>
+                    <div id="last">
+                        <a href="link.html" target="_parent">Hotsheet </a>
+                    </div>
+                    <div id="last">
+                        <a href="link.html" target="_parent">Live </a>
+                    </div>
+                    <div id="last">
+                        <a href="link.html" target="_parent">Radio </a>
+                    </div>
+                    <div id="last">
+                        <a href="link.html" target="_parent">Mobile </a>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div id="headline">
+                <div class="left">
+                    <span class="red">&nbsp;LIVE:&nbsp;&nbsp;&nbsp;</span><span class="text"><asp:HyperLink
+                        ID="hrheadline" runat="server"></asp:HyperLink></span>
+                </div>
+                <div class="right">
+                    <span>&nbsp;&nbsp;<a href=""><img src="../images/facebook.jpg" alt="Facebook" border="0px" /></a>&nbsp;&nbsp;<a
+                        href=""><img src="../images/twitter.jpg" alt="Twitter" border="0px" /></a></span><span
+                            class="share">SHARE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+            </div>
+            <div id="sslideshow">
+                <div id="slideplusprevious">
+                    <div id="slide-show">
+                        <div id="main" class="container">
+                            <div class="main_image">
+                                <a runat="server" id="hypTopNews">
+                                    <asp:Image runat="server" ID="imgHeadline" /></a>
+                                <div class="desc">
+                                    <a href="#" class="collapse">Close Me!</a>
+                                    <div class="block">
+                                        <h2>
+                                            <asp:Label runat="server" ID="lblHeadline"></asp:Label></h2>
+                                        <small><b>Submitted</b>:
+                                            <asp:Label runat="server" ID="lblheadlineAdded"></asp:Label></small>
+                                        <p>
+                                            <asp:Label runat="server" ID="lblSummaryContent"></asp:Label>...<br />
+                                            <asp:HyperLink ID="hyperHeadline" Target="_blank" runat="server">Continue reading...</asp:HyperLink>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_thumb">
+                                <asp:ListView runat="server" ID="lstheadlinePictures" OnItemDataBound="lstheadlinePictures_itemDatabound">
+                                    <LayoutTemplate>
+                                        <ul id="itemPlaceholder" runat="server">
+                                        </ul>
+                                    </LayoutTemplate>
+                                    <ItemTemplate>
+                                        <li style="list-style-type: none">
+                                            <asp:HyperLink ID="hyperNavi" runat="server">
+                                                <%#Eval("NewsHeadline") %></asp:HyperLink>
+                                            <%-- <div class="block">
+                                                <h2>
+                                                    <%#Eval("NewsHeadline")%></h2>
+                                                <small><b>Submitted</b>:<%# ((DateTime)Eval("NewsAdded")).ToString("yyyy-MMM-dd")%></small>
+                                                <p>
+                                                    <%#Eval("SummaryContent")%>...<br />
+                                                    <a href="~/Views/details.aspx.cs?NewsID=<%#Eval("NewsID") %>" target="_blank">Continue
+                                                        reading...</a>
+                                                </p>
+                                            </div>--%>
+                                        </li>
+                                    </ItemTemplate>
+                                </asp:ListView>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inbrief">
+                    <div class="brief-stories">
+                        <asp:ListView runat="server" ID="lstmainheadline" OnItemDataBound="lstmainheadline_itemDatabound">
+                            <LayoutTemplate>
+                                <div runat="server" id="itemPlaceholder">
+                                </div>
+                            </LayoutTemplate>
+                            <ItemTemplate>
+                                <p>
+                                    <asp:HyperLink runat="server" ID="hyperNavi">
+                                        <%#Eval("NewsHeadline")%> </asp:HyperLink><br />
+                                </p>
+                            </ItemTemplate>
+                        </asp:ListView>
+                        <p>
+                            <%-- <a href="">DOJ files e-book price-fixing suit against Apple</a><br />
+                            <a href="">Obama: Buffett rule could be called "Reagan Rule"</a><br />
+                            <a href="">Ark. judge fines J&J $1.1B over Risperdal fraud</a><br />
+                            <a href="">Quakes bring worry, not tsunami, to Indonesia</a><br />
+                            <a href="">Syria vows to end assault, but hedges</a><br />
+                            <a href="">N. Korea fuels rocket as launch window nears</a><br />
+                            <a href="">Romney: Obama is waging "the real war on women"</a><br />
+                            <a href="">George Zimmerman's whereabouts an issue</a><br />
+                            <a href="">S. Alabama coach Crain dead of apparent suicide</a><br />
+                            <a href="">S. Alabama coach Crain dead of apparent suicide</a><br />
+                            <a href="">9 suspected illegal immigrants die in Texas wreck</a><br />
+                            <a href="">Pizza Hut adds hot dog stuffed crust to U.K. menu</a><br />
+                            <a href="">Best Buy CEO left amid "personal conduct" probe</a><br />
+                            <a href="">"DWTS": Sherri Shepherd leaves ballroom in tears</a><br />--%>
+                            <asp:HyperLink ID="HyperLink8" class="highlighted" runat="server" NavigateUrl="~/Views/othernews.aspx?category=Politics"
+                                Target="_parent">More Headlines </asp:HyperLink>
+                            |<asp:HyperLink ID="HyperLink9" class="highlighted" runat="server" NavigateUrl="~/Views/othernews.aspx?category=Politics&value=popular"
+                                Target="_parent">Most Popular » </asp:HyperLink>
+                        </p>
+                    </div>
+                    <div class="brief-titles">
+                        <div class="top-story">
+                            <asp:ListView runat="server" ID="lstSingle" OnItemDataBound="lstSingle_itemDatabound">
+                                <LayoutTemplate>
+                                    <div runat="server" id="itemPlaceholder">
+                                    </div>
+                                </LayoutTemplate>
+                                <ItemTemplate>
+                                    <h2>
+                                        <%#Eval("NewsHeadline")%></h2>
+                                    <p>
+                                        <asp:HyperLink runat="server" ID="hyperNavi">
+                                        <%#Eval("SummaryContent")%> </asp:HyperLink>
+                                    </p>
+                                </ItemTemplate>
+                            </asp:ListView>
+                        </div>
+                        <div class="top-thumbs">
+                            <asp:ListView runat="server" ID="lstSidebarNews" OnItemDataBound="lstSidebarNews_itemDatabound">
+                                <LayoutTemplate>
+                                    <div id="itemPlaceholder" runat="server">
+                                    </div>
+                                </LayoutTemplate>
+                                <ItemTemplate>
+                                    <div class="space">
+                                    </div>
+                                    <div class="thumbs">
+                                        <asp:Image alt='<%#Eval("NewsHeadline") %>' Width="100px" Height="100px" ID="imgPhoto"
+                                            title='<%#Eval("NewsHeadline") %>' runat="server" />
+                                    </div>
+                                    <div class="thumbs-text">
+                                        <asp:HyperLink runat="server" ID="hyperNavi">
+                                        <%#Eval("NewsHeadline")%> </asp:HyperLink>
+                                    </div>
+                                    <div class="clear">
+                                    </div>
+                                    <div class="space">
+                                    </div>
+                                    <div class="dotted-small">
+                                    </div>
+                                </ItemTemplate>
+                            </asp:ListView>
+                            <%--<div class="space">
+                            </div>
+                            <div class="thumbs">
+                                <img src="../images/Ozzie_Guillen.jpg" alt="Gingrich" />
+                            </div>
+                            <div class="thumbs-text">
+                                <a href="">Gingrich's check bounces in Utah </a>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div class="space">
+                            </div>
+                            <div class="dotted-small">
+                            </div>
+                            <div class="space">
+                            </div>--%>
+                            <div>
+                                <asp:Literal ID="Literal2" runat="server"></asp:Literal>
+                            </div>
+                            <%--   <img src="../images/advert-one.jpg" alt="Advert" />--%>
+                            <div class="space">
+                            </div>
+                            <div class="dotted-small">
+                            </div>
+                            <div class="space">
+                            </div>
+                            <div class="side-bar-story">
+                                <span class="head-story">Most Popular on newske</span><br />
+                                <div class="space">
+                                </div>
+                                <div style="background-color: bisque; padding: 5px">
+                                    <asp:ListView runat="server" ID="lstPopularNews" OnItemDataBound="lstPopularNews_itemDatabound">
+                                        <LayoutTemplate>
+                                            <div runat="server" id="itemPlaceholder">
+                                            </div>
+                                        </LayoutTemplate>
+                                        <ItemTemplate>
+                                            <span class="line-line"><span class="black">
+                                                <asp:Label runat="server" ID="lblCommentNumber" Text='<%#Eval("CommentCount") %>'></asp:Label></span>
+                                                <span class="line">
+                                                    <asp:HyperLink runat="server" ID="hyperNavi">
+                                        <%#Eval("NewsHeadline")%> </asp:HyperLink></span> <span class="clear"></span>
+                                        </ItemTemplate>
+                                    </asp:ListView>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>
+                                    <b>Properties</b>
+                                </h2>
+                            </div>
+                            <div class="property">
+                                <asp:ListView runat="server" ID="lstProperties" OnItemDataBound="lstProperty_itemDataBound">
+                                    <LayoutTemplate>
+                                        <ul id="itemPlaceholder" runat="server" style="list-style-type: none">
+                                        </ul>
+                                    </LayoutTemplate>
+                                    <ItemTemplate>
+                                        <li style="list-style-type: none; padding-bottom: 10px; margin-bottom: 5px">
+                                            <div style="clear: both; margin-bottom: 5px; padding-bottom: 10px; padding-top: 5px">
+                                                <div style="float: left; margin-right: 8px">
+                                                    <a runat="server" id="hyparchor">
+                                                        <img alt="<%#Eval("City") %>" width="90px" height="90px" src="<%#Eval("ImageUrlAzures[0].thumbnailblob") %>" />
+                                                    </a>
+                                                </div>
+                                                <div style="float: left">
+                                                    <asp:Label runat="server" ID="lblPrice" Font-Size="9"></asp:Label><br />
+                                                    <asp:Label runat="server" ID="lblStreet" Font-Size="9"></asp:Label><br />
+                                                    <asp:Label runat="server" ID="lblSuburb" Font-Size="9"></asp:Label><br />
+                                                    <asp:Label runat="server" ID="lblCity" Font-Size="9"></asp:Label><br />
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ItemTemplate>
+                                </asp:ListView>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div class="main-area">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="FooterBackground">
+        <div id="Footer" section="ftr">
+            <div class="brandLogo">
+               <%-- <a href="" >KE News</a>--%>
+                <br>
+                Copyright © News Kenya Interactive Inc. All rights reserved.
+            </div>
+            <%--<div class="search">
+                <div class="loginSearch" section="loginSearch">
+                    <div class="searchBoxWrap">
+                        <span>
+                            <input type="text" name="query" size="20" maxlength="255" class="searchBox" id="acpro_inp10">
+                        </span>
+                    </div>
+                    <input type="hidden" name="tag" value="srch">
+                    <input type="hidden" name="searchtype" value="cbsSearch">
+                    <input type="submit" class="searchGo" value="Go">
+                </div>
+            </div>--%>
+            <div class="footerColumns">
+                <ul class="footerLinks cbsnews">
+                    <li class="title">newske.apphb.com</li>
+                    <%-- <li><a href="">Site Map</a></li>
+                    <li><a href="">Video Site Map</a></li>
+                    <li><a href="" onclick="">Help</a></li>
+                    <li><a href="" onclick="">Contact Us</a></li>--%>
+                </ul>
+                <ul class="footerLinks topics">
+                    <%-- <li><a href="">Disaster in Japan</a></li>
+                    <li><a href="">Foreclosures</a></li>
+                    <li><a href="">Debt Crisis</a></li>
+                    <li><a href="">Massacre in Norway</a></li>
+                    <li><a href="">Election 2012</a></li>
+                    <li><a href="">Marijuana</a></li>
+                    <li><a href="">Rupert Murdoch</a></li>
+                    <li><a href="">9/11: Tragedy</a></li>--%>
+                </ul>
+                <ul class="footerLinks followus">
+                    <%--<li class="title">Follow Us</li>
+                    <li class="footerFacebook"><a href="">Facebook</a></li>
+                    <li class="footerTwitter"><a href="">Twitter</a></li>
+                    <li class="footerRSS"><a href="">RSS</a></li>
+                    <li class="footerNewsletters"><a href="">Email Newsletters</a></li>
+                    <li class="footerYouTube"><a href="">YouTube</a></li>
+                    <li class="footerMobile"><a href="">CBS Mobile</a></li>--%>
+                </ul>
+                <ul class="footerLinks promoMod">
+                </ul>
+                <div class="networkCopy">
+                    <ul class="footerLinks">
+                        <li>
+                            <asp:HyperLink runat="server" ID="hypPrivacy" NavigateUrl="~/Views/PrivatePolicy.aspx"
+                                Text="Privacy Policy"></asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/Views/TermOfUse.aspx"
+                                Text="Terms of Use"></asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/Views/AboutUs.aspx"
+                                Text="About newske"></asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink runat="server" ID="HyperLink3" NavigateUrl="~/Views/Adversite.aspx"
+                                Text="Advertise"></asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink runat="server" ID="HyperLink4" NavigateUrl="~/Views/ContactUs.aspx"
+                                Text="Contact Us"></asp:HyperLink></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

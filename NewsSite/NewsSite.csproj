@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03BF7F6E-D13D-4A9E-81C9-B8186971F56B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewsSite</RootNamespace>
+    <AssemblyName>NewsSite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK, Version=1.4.6.2, Culture=neutral, PublicKeyToken=cd2d24cd2bace800, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\AWS SDK for .NET\bin\AWSSDK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JuiceUI">
+      <HintPath>..\packages\JuiceUI.0.9.1\lib\net40\JuiceUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="bin\AWSSDK.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\JuiceUI.dll" />
+    <Content Include="bin\NewsSite.dll" />
+    <Content Include="bin\NewsSite.pdb" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_diagonals-small_25_c9c9c9_40x40.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_flat_0_313f3c_40x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_flat_0_4d4d4d_40x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_flat_100_f1eeee_40x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_50_f7e17d_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_65_e9f245_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_75_59c9c0_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_75_d8ff94_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_inset-soft_95_f46f5d_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_16837f_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_186764_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_834916_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_9f1d1d_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\jquery-ui-1.8.18.custom.css" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_flat_0_303030_40x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_flat_100_383838_40x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_flat_75_f2f2f2_40x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-hard_5_2b2b2b_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-soft_15_5e5e5e_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-soft_45_ffc905_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-soft_75_ffec52_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-soft_95_ff6124_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_1c1c1c_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_303030_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_774322_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_8a4e19_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_ffbc0f_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_ffc905_256x240.png" />
+    <Content Include="Content\themes\Supercharged\jquery-ui-1.8.18.custom.css" />
+    <Content Include="default.html" />
+    <Content Include="defaults.html" />
+    <Content Include="images\120410-Syria-AP120410111179_200x150.jpg" />
+    <Content Include="images\advert-one.jpg" />
+    <Content Include="images\advert2012-04.jpg" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\ambulance_200x150.gif" />
+    <Content Include="images\bg-dd.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\CBSTM.jpg" />
+    <Content Include="images\collap1.png" />
+    <Content Include="images\ctm_bubba.jpg" />
+    <Content Include="images\editor-hover-up.jpg" />
+    <Content Include="images\editor-hover-ups.jpg" />
+    <Content Include="images\editor-hover.jpg" />
+    <Content Include="images\editor-hovereee.png" />
+    <Content Include="images\editor-hovers.png" />
+    <Content Include="images\facebook.jpg" />
+    <Content Include="images\footer-pointer.jpg" />
+    <Content Include="images\gingrich-louisiana.JPG" />
+    <Content Include="images\header-bg.png" />
+    <Content Include="images\headline-headline-storyYYYY.jpg" />
+    <Content Include="images\headline-headlineYYY.jpg" />
+    <Content Include="images\headline-not-selected-headlineYYYY.jpg" />
+    <Content Include="images\headline-not-selected.jpg" />
+    <Content Include="images\headline.jpg" />
+    <Content Include="images\headline.png" />
+    <Content Include="images\headlineYYY.jpg" />
+    <Content Include="images\home-btn.png" />
+    <Content Include="images\hover.png" />
+    <Content Include="images\kenya.png" />
+    <Content Include="images\laptopinfobg.png" />
+    <Content Include="images\laptopkeypad.jpg" />
+    <Content Include="images\lastweek.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo12.png" />
+    <Content Include="images\lower-t.png" />
+    <Content Include="images\lower.png" />
+    <Content Include="images\mainbackground.png" />
+    <Content Include="images\mainbackgroundd.png" />
+    <Content Include="images\more.jpg" />
+    <Content Include="images\nav-bg.png" />
+    <Content Include="images\Ozzie_Guillen.jpg" />
+    <Content Include="images\quotes.png" />
+    <Content Include="images\rd_footer.png" />
+    <Content Include="images\school-contact.jpg" />
+    <Content Include="images\school-editor-speaks.jpg" />
+    <Content Include="images\school-email.jpg" />
+    <Content Include="images\school-email.png" />
+    <Content Include="images\school-emailnamevvv.jpg" />
+    <Content Include="images\school-facebook.jpg" />
+    <Content Include="images\school-facebook.png" />
+    <Content Include="images\school-featured.jpg" />
+    <Content Include="images\school-home-bg.jpg" />
+    <Content Include="images\school-home.jpg" />
+    <Content Include="images\school-namevvv.jpg" />
+    <Content Include="images\school-over-600-views.jpg" />
+    <Content Include="images\school-regular.jpg" />
+    <Content Include="images\school-rss.jpg" />
+    <Content Include="images\school-rss.png" />
+    <Content Include="images\school-search-button.jpg" />
+    <Content Include="images\school-searchvvv.jpg" />
+    <Content Include="images\school-socialandsearch-bg.jpg" />
+    <Content Include="images\school-sparta.jpg" />
+    <Content Include="images\school-stayabreast.jpg" />
+    <Content Include="images\school-strictly.jpg" />
+    <Content Include="images\school-submit.jpg" />
+    <Content Include="images\school-twitter.jpg" />
+    <Content Include="images\school-twitter.png" />
+    <Content Include="images\schoolbars.png" />
+    <Content Include="images\schoolchildren.jpg" />
+    <Content Include="images\schoolchildrensmall.jpg" />
+    <Content Include="images\schoolfooters.png" />
+    <Content Include="images\schools-hover.jpg" />
+    <Content Include="images\schools.jpg" />
+    <Content Include="images\schoolsall.png" />
+    <Content Include="images\schoolshover.png" />
+    <Content Include="images\schoolso.jpg" />
+    <Content Include="images\schoolso.png" />
+    <Content Include="images\schoolsoo.jpg" />
+    <Content Include="images\schoolsooo.png" />
+    <Content Include="images\schoolsoooo.png" />
+    <Content Include="images\search-button.png" />
+    <Content Include="images\search.jpg" />
+    <Content Include="images\service-bars.png" />
+    <Content Include="images\slide-bg.png" />
+    <Content Include="images\smaller-logo.png" />
+    <Content Include="images\spryhover.jpg" />
+    <Content Include="images\spryhover.png" />
+    <Content Include="images\strike.jpg" />
+    <Content Include="images\strike1.jpg" />
+    <Content Include="images\strike1small.jpg" />
+    <Content Include="images\study-health.jpg" />
+    <Content Include="images\submit.jpg" />
+    <Content Include="images\thisweek.png" />
+    <Content Include="images\top-bar.jpg" />
+    <Content Include="images\top-nav.png" />
+    <Content Include="images\twitter.jpg" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\web-slides\arrows.png" />
+    <Content Include="images\web-slides\loading.gif" />
+    <Content Include="images\web-slides\loadingcc.gif" />
+    <Content Include="images\web-slides\loadingxss.gif" />
+    <Content Include="images\whitedot.png" />
+    <Content Include="images\whoonga.jpg" />
+    <Content Include="images\youtube.jpg" />
+    <Content Include="Scripts\amplify-vsdoc.js" />
+    <Content Include="Scripts\amplify.js" />
+    <Content Include="Scripts\amplify.min.js" />
+    <Content Include="Scripts\GPL-LICENSE.txt" />
+    <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.18.js" />
+    <Content Include="Scripts\jquery-ui-1.8.18.min.js" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="Scripts\json2.min.js" />
+    <Content Include="Scripts\juice.js" />
+    <Content Include="Scripts\juice.min.js" />
+    <Content Include="Scripts\MIT-LICENSE.txt" />
+    <Content Include="Scripts\README.txt" />
+    <Content Include="Styles\apple_dock.css" />
+    <Content Include="Styles\basic.css" />
+    <Content Include="Styles\black.css" />
+    <Content Include="Styles\blog-advert.css" />
+    <Content Include="Styles\blog.css" />
+    <Content Include="Styles\btn-dn.gif" />
+    <Content Include="Styles\btn-up.gif" />
+    <Content Include="Styles\caption.png" />
+    <Content Include="Styles\cms-based-design.php" />
+    <Content Include="Styles\content.css" />
+    <Content Include="Styles\dynamic.css" />
+    <Content Include="Styles\flyoutpanel.css" />
+    <Content Include="Styles\form.css" />
+    <Content Include="Styles\form0000.css" />
+    <Content Include="Styles\galleriffic-1.css" />
+    <Content Include="Styles\generator_config.txt" />
+    <Content Include="Styles\home0000-yellow-badges.css" />
+    <Content Include="Styles\home0000.css" />
+    <Content Include="Styles\home0000all.css" />
+    <Content Include="Styles\imageMenu.css" />
+    <Content Include="Styles\infinity-webfont.svg" />
+    <Content Include="Styles\InfinityRegular-demo.html" />
+    <Content Include="Styles\jquerypopupwindow.css" />
+    <Content Include="Styles\lato-black-webfont.svg" />
+    <Content Include="Styles\lato-blackitalic-webfont.svg" />
+    <Content Include="Styles\lato-hairline-webfont.svg" />
+    <Content Include="Styles\lato-light-webfont.svg" />
+    <Content Include="Styles\LatoBlack-demo.html" />
+    <Content Include="Styles\LatoBlackItalic-demo.html" />
+    <Content Include="Styles\LatoHairline-demo.html" />
+    <Content Include="Styles\LatoLight-demo.html" />
+    <Content Include="Styles\loader.gif" />
+    <Content Include="Styles\loaderWhite.gif" />
+    <Content Include="Styles\main %282%29.css" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Styles\maindefault.css" />
+    <Content Include="Styles\maindefaultall.css" />
+    <Content Include="Styles\maindefaultwork.css" />
+    <Content Include="Styles\maindefault_temp.css" />
+    <Content Include="Styles\mainwork.css" />
+    <Content Include="Styles\main_website_design.css" />
+    <Content Include="Styles\money-back.jpg" />
+    <Content Include="Styles\nextPageArrow.gif" />
+    <Content Include="Styles\nextPageArrowWhite.gif" />
+    <Content Include="Styles\prettyPh.css" />
+    <Content Include="Styles\prevPageArrow.gif" />
+    <Content Include="Styles\prevPageArrowWhite.gif" />
+    <Content Include="Styles\screen00.css" />
+    <Content Include="Styles\screen00all.css" />
+    <Content Include="Styles\search.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\slide-web.css" />
+    <Content Include="Styles\slide.css" />
+    <Content Include="Styles\specimen_files\easytabs.js" />
+    <Content Include="Styles\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="Styles\specimen_files\specimen_stylesheet.css" />
+    <Content Include="Styles\SpryCollapsiblePanel.css" />
+    <Content Include="Styles\SpryCollapsiblePanelseo.css" />
+    <Content Include="Styles\SpryTabbedPanels.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\styled.css" />
+    <Content Include="Styles\styledefault.css" />
+    <Content Include="Styles\styledefault_new.css" />
+    <Content Include="Styles\stylemainwork.css" />
+    <Content Include="Styles\styles-1.css" />
+    <Content Include="Styles\styles.css" />
+    <Content Include="Styles\stylesheet.css" />
+    <Content Include="Styles\tabs-styles.css" />
+    <Content Include="Styles\tabs-styles2.css" />
+    <Content Include="Styles\template.css" />
+    <Content Include="Styles\tutorial.css" />
+    <Content Include="Styles\WalkwaySemiBoldRegular-demo.html" />
+    <Content Include="Styles\walkway_semibold-webfont.svg" />
+    <Content Include="Styles\web-slider.css" />
+    <Content Include="Views\AboutUs.aspx" />
+    <Content Include="Views\Adversite.aspx" />
+    <Content Include="Views\ContactUs.aspx" />
+    <Content Include="Views\details.aspx" />
+    <Content Include="Views\Home.aspx" />
+    <Content Include="Views\multimedia.aspx" />
+    <Content Include="Views\multimediaItem.aspx" />
+    <Content Include="Views\othernews.aspx" />
+    <Content Include="Views\PrivatePolicy.aspx" />
+    <Content Include="Views\search.aspx" />
+    <Content Include="Views\homepage.aspx" />
+    <Content Include="Views\TermOfUse.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MainNews.Master.cs">
+      <DependentUpon>MainNews.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainNews.Master.designer.cs">
+      <DependentUpon>MainNews.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MainTemplate.Master.cs">
+      <DependentUpon>MainTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainTemplate.Master.designer.cs">
+      <DependentUpon>MainTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CacheApprovedItems.cs" />
+    <Compile Include="Models\Categories.cs" />
+    <Compile Include="Models\GetNewsFromAmazon.cs" />
+    <Compile Include="Models\NewsComponents.cs" />
+    <Compile Include="Models\NewsComponentViewModel.cs" />
+    <Compile Include="Models\TableItems.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SimpleDbMembershipProvider.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Util\BucketHelper.cs" />
+    <Compile Include="Util\DomainHelper.cs" />
+    <Compile Include="Util\FormFieldValidationExtensions.cs" />
+    <Compile Include="Views\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Adversite.aspx.cs">
+      <DependentUpon>Adversite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Adversite.aspx.designer.cs">
+      <DependentUpon>Adversite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\details.aspx.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\details.aspx.designer.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\multimedia.aspx.cs">
+      <DependentUpon>multimedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\multimedia.aspx.designer.cs">
+      <DependentUpon>multimedia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\multimediaItem.aspx.cs">
+      <DependentUpon>multimediaItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\multimediaItem.aspx.designer.cs">
+      <DependentUpon>multimediaItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\othernews.aspx.cs">
+      <DependentUpon>othernews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\othernews.aspx.designer.cs">
+      <DependentUpon>othernews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrivatePolicy.aspx.cs">
+      <DependentUpon>PrivatePolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PrivatePolicy.aspx.designer.cs">
+      <DependentUpon>PrivatePolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TermOfUse.aspx.cs">
+      <DependentUpon>TermOfUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TermOfUse.aspx.designer.cs">
+      <DependentUpon>TermOfUse.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MainNews.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Thumbs.db" />
+    <None Include="images\web-slides\Thumbs.db" />
+    <Content Include="MainTemplate.Master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Styles\infinity-webfont.eot" />
+    <None Include="Styles\infinity-webfont.ttf" />
+    <None Include="Styles\infinity-webfont.woff" />
+    <None Include="Styles\lato-black-webfont.eot" />
+    <None Include="Styles\lato-black-webfont.ttf" />
+    <None Include="Styles\lato-black-webfont.woff" />
+    <None Include="Styles\lato-blackitalic-webfont.eot" />
+    <None Include="Styles\lato-blackitalic-webfont.ttf" />
+    <None Include="Styles\lato-blackitalic-webfont.woff" />
+    <None Include="Styles\lato-hairline-webfont.eot" />
+    <None Include="Styles\lato-hairline-webfont.ttf" />
+    <None Include="Styles\lato-hairline-webfont.woff" />
+    <None Include="Styles\lato-light-webfont.eot" />
+    <None Include="Styles\lato-light-webfont.ttf" />
+    <None Include="Styles\lato-light-webfont.woff" />
+    <None Include="Styles\walkway_semibold-webfont.eot" />
+    <None Include="Styles\walkway_semibold-webfont.ttf" />
+    <None Include="Styles\walkway_semibold-webfont.woff" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1111</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1111/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

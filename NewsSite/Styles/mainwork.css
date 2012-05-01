@@ -1,0 +1,1509 @@
+﻿/*-----------------------------------------------------------------------------------------------*/
+/*                                             CSS RESET                                         */
+/*-----------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: arial;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '"';}
+blockquote, q {quotes: '"' '"';}
+p{text-shadow:1px 1px 1px #FFF; color:#111}
+.clear{clear:both; margin:0px; padding:0px; :outline:none; width:0px; height:0px}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          COMMON                                               */
+/*-----------------------------------------------------------------------------------------------*/
+.red{color:#F00; text-shadow:1px 1px 1px  #000}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          GENERAL STYLES                                       */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------  HOME PAGE   -----------------------------------*/
+/* .webdesigncompany{background:#fff url(../images/main-bg.jpg) center top no-repeat; width:100%; margin:0px} */
+
+
+#webdesign{background:#fff url(../images/main-bg.jpg) center top no-repeat; width:100%; margin:0px}
+#webdesigncompanycoza{width:100%; margin:0px; background:url(../images/topbg_1.jpg) center top no-repeat}
+#webdesignersinsouthafrica{background:#fff url(../images/main-bg-home.jpg) top center no-repeat ; width:100%; margin:0px}
+#cssawardsnominee {position:absolute; right:0px; top:5%}
+#plusonearea {position:relative; left:-5px; top:2px}
+#mask{position:absolute; top:0px; left:0px}
+
+
+/*-----------------------------------------  TOP NAVIGATION  -----------------------------------*/
+/* Menu */
+#durban{width:100%; height:0px; margin:0px; background:#222 url(../images/bg.png) top repeat} /* Line */
+
+#webdesignmenu {margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; width:940px; min-width:940px; height:120px}
+#webdesignmenu #webdesignhor {margin-left:0px; margin-right:0px; float:left; margin-top:0px; margin-bottom:10px; width:604px; height:100px}
+#hor {list-style:none; padding:0; margin:0; margin-left:70px; height:20px	}
+#hor li {float:left;padding:5px; text-align:center}
+#hor #selected{background:url(../images/homebg.png) center top no-repeat; width:65px; height:20px; text-align:center}
+#hor .selected1{background:url(../images/homebg.png) left top no-repeat; width:65px; height:20px; text-align:center} /* For About Us */
+#hor a {display:block;	height: 10px; text-indent:-999em;}
+#hor a.home {width:65px; 	background:url(../images/home.png) no-repeat 0 0 ; position:relative; left:13px	}
+#hor a.home1 {width:65px; 	background:url(../images/home1.png) no-repeat 0 0 ; position:relative; left:13px	}  /* For About Us */
+#hor a.about {width:37px;	background:url(../images/about.png) no-repeat 0 0;	}
+#hor a.about1 {width:42px;	background:url(../images/about1.png) no-repeat 0 0; } /* For About Us */
+#hor a.ethics {width:33px; background:url(../images/ethics.png) no-repeat 0 0;}
+#hor a.ethics1 {width:44px; background:url(../images/ethics1.png) no-repeat 0 0;} /* For the Ethics Page */
+#hor a.portfolio {width:51px; background:url(../images/portfolio.png) no-repeat 0 0;}
+#hor a.portfolio1 {width:56px; background:url(../images/portfolio1.png) no-repeat 0 0;} /* For Portfolio Page */
+#hor a.contact {width:50px; background:url(../images/contact.png) no-repeat 0 0;}
+#hor a.contact1 {width:54px; background:url(../images/contact1.png) no-repeat 0 0;} /* For Contact page */
+/* Goldtree Logo */
+#webdesignmenu #goldtree-logo{width:280px; margin-top:00px; text-align:left; height:50px}
+/* Search function */
+#webdesignmenu #customwebsearch {margin-left:0px; margin-right:0px; margin-top:0px; width:190px; float:right; position:relative;}
+#webdesignmenu #customwebsearch form {margin-left:20px; margin-right:0px; margin-top:0px; margin-bottom:3px; width:210px; textalign:right; background:url(../images/search.png)  left 13px no-repeat; position:relative; height:40px}
+#webdesignmenu #customwebsearch form  #searchinput {position:relative; left:10px; border:0px solid #fff; outline:solid #fff 0px; padding:3px; color:#111; font-family:'Century Gothic', arial; font-size:10px; :outline:none; height:16px }
+#webdesignmenu #customwebsearch form  #searchbutton {position:relative; left:15px; top:9px}
+/* Quote button  */
+#webdesignmenu #customwebsearch #quote{margin-top:10px; text-align:right}
+/* Contact Us Text  */
+#webdesignmenu #customwebsearch #contactus{margin-top:10px; text-align:right}
+#cse-search-box{}
+#cse-search-box #searchinput {position:relative; left:10px; border:0px solid #fff; outline:solid #fff 0px; padding:3px; color:#111; font-family:'Century Gothic', arial; font-size:10px; :outline:none; height:16px }
+#cse-search-box #searchbutton {position:relative; left:15px; top:9px}
+/* Quote button  */
+#cse-search-box #quote{margin-top:10px; text-align:right}
+/* Contact Us Text  */
+#cse-search-box #contactus{margin-top:10px; text-align:right}
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*--                                       BIG HEADERS                                       --*/
+/*---------------------------------------------------------------------------------------------*/
+
+
+#webcompany {width:100%; margin:0px; clear:both; height:30px}
+#webcompany #webdesignsouthafrica{width:940px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; position:relative}
+#webcompany #webdesignsouthafrica h1{font-size:34px; font-weight:normal;  text-shadow:1px 1px 1px #fff; color:#232; margin-left:5px; position:relative; top:-45px; left:0px}
+#webcompany #webdesignsouthafrica h1:hover{font-size:34px; font-weight:normal;  text-shadow:2px 2px 5px #fff, 1px 1px 1px #fff; color:#232; margin-left:5px; position:absolute; top:-45px; left:0px}
+#webcompany #webdesignsouthafrica h1 a{font-size:34px; font-weight:normal;  text-shadow:1px 1px 1px #fff; color:#232; text-decoration:none}
+#webcompany #webdesignsouthafrica h1 a:hover{font-size:34px; font-weight:normal;  text-shadow:2px 2px 5px #fff, 1px 1px 1px #fff; color:#232; text-decoration:none}
+#webcompany #webdesignsouthafrica h2{font-size:15px; font-weight:normal; line-height:12px; font-style:normal; text-shadow: 1px 1px 1px #fff; color:#222; margin-left:5px;  position:absolute; top:0px; left:0px}
+#webcompany #webdesignsouthafrica h3{font-size:12px; font-weight:normal; line-height:10px; font-style:normal; text-shadow: 1px 1px 1px #fff; color:#222; margin-left:5px;  position:absolute; top:30px; left:0px}
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*                                                                                                       */
+/*                                                MAIN PAGES                                             */
+/*                                                WEB DESIGNS                                            */
+/*                                                                                                       */
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------- NAVIGATION ----------------------------------------------*/
+.portfolioweb{background-image:url(../images/topbg.png); background-position:center top; background-repeat:no-repeat; background-color:transparent; height:112px; position:relative; top:8px; z-index:999990000} 
+#webdesignlinksmain{background:url(../images/designer2.png) repeat; position:absolute; margin-left:0px;  top:65px; height:395px; width:100%}
+#webdesignlinksmain #webdesignsignups{width:100%; height:395px}
+#webdesignlinksmain #webdesignsignups #bestdesigns {width:980px; margin:0px auto}
+#webdesignlinksmain #webdesignsignups #bestdesigns .infomenu {width:320px; float:left}
+#webdesignlinksmain #webdesignsignups #bestdesigns .info {width:650px; float:left; position:relative}
+#webdesignlinksmain #webdesignsignups #bestdesigns .info img {position:relative; z-index:999999999999999900000000000000000}
+
+
+
+
+
+
+/*-------------------------------------- MAIN SLIDE AND LINKS ---------------------------------*/
+#webdesignslide {width:100%; margin:0px; margin-top:0px;  height:434px;}
+#webdesignslide #webdesignslidearea {width:940px; height:434px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; background:url(../images/center-1.png) no-repeat; position:relative }
+#webdesignslide #webdesignslidearea #webdesignsliders {height:310px; width: 430px; position:relative; top:12px; left:16px;   }
+#webdesignslide #webdesignslidearea #shadow{position:absolute; top:69px; left:233px}
+				  
+#mover { width: 2880px; position: relative; }
+#slider {height: 325px; overflow: hidden; position: relative; top:5px; left:1px; margin: 0px 0; }
+.slide { padding: 10px 10px; width: 900px; float: left; position: relative; }
+.slide h1 {font-size: 30px; letter-spacing: -1px; color: #fff; text-shadow:1px 1px 4px #000;  position:absolute; left:520px; top:60px}
+.slide p { color: #999; text-shadow:1px 1px 2px #000; font-size: 12px; line-height: 22px; width: 300px; position:absolute; left:600px; top:120px}
+.slide img { position: absolute; top: 8px; left:48px; }
+#slider-stopper { position: absolute; top: 20px; right: 20px; background:url(../images/slide.png) center top no-repeat; width:50px; height:25px; color: white; padding: 3px 8px; font-size: 10px; text-transform: uppercase; z-index: 1000; text-align:center; text-decoration:none; line-height:13px; text-shadow:1px 1px 1px #000 }
+#slider-stopper a{text-decoration:none}
+
+#web-design-go{background:url(../images/webdesignproject.png) center bottom no-repeat; width:154px; height:35px; position:absolute; top:270px; left:709px; cursor:pointer} 
+#web-design-go:hover{background:url(../images/webdesignproject.png) center top  no-repeat; width:154px; height:35px; position:absolute; top:270px; left:709px; cursor:pointer} 
+
+
+#web-design-samples{background:url(../images/webdesignsamples.png) center bottom no-repeat; width:154px; height:35px; position:absolute; top:270px; left:520px; cursor:pointer} 
+#web-design-samples:hover{background:url(../images/webdesignsamples.png) center top no-repeat; width:154px; height:35px; position:absolute; top:270px; left:520px; cursor:pointer} 
+
+
+
+
+/*--------------------------------------- SLIDE AREA HORIZONTAL POPUP -------------------------*/
+.durbanweb{height:80px; position:relative; top:31px; margin-bottom:10px; left:0px; background:url(../images/webnav.png) center top no-repeat; border:0px; clear:both; text-align:left; font-size:10px}
+
+#websiteredesigners{width:184px; height:59px; float:left; margin-right:0px; text-align:left; vertical-align:top; z-index:999}
+#websiteredesigners h1{color:#777; font-size:10px; text-decoration:none}
+#websiteredesigners h1 a{color:#777; font-size:10px; text-decoration:none; font-weight:normal}
+#websiteredesigners h1 a img{top:0px}
+#websiteredesigners h1 span{font-size:0.01em}
+
+
+#brandingsouthafricas{width:184px; height:59px; float:left; margin-left:40px; text-align:left; z-index:999}
+#brandingsouthafricas h1{color:#777; font-size:10px; text-decoration:none}
+#brandingsouthafricas h1 a{color:#777; font-size:10px; text-decoration:none; font-weight:normal}
+#brandingsouthafricas h1 span{font-size:0.01em}
+
+#seosouthafricas{width:190px; height:59px; float:left; margin-right:6px; text-align:left; z-index:999}
+#seosouthafricas h1{color:#777; font-size:10px; text-decoration:none}
+#seosouthafricas h1 a{color:#777; font-size:10px; text-decoration:none; font-weight:normal}
+#seosouthafricas h1 span{font-size:0.01em}
+
+
+#cmswebdurban{width:184px; height:59px; float:left;  margin-right:6px; text-align:left; z-index:999}
+#cmswebdurban h1{color:#777; font-size:10px; text-decoration:none}
+#cmswebdurban h1 a{color:#777; font-size:10px; text-decoration:none; font-weight:normal}
+#cmswebdurban h1 span{font-size:0.01em}
+
+#emarketing{width:120px; height:59px; float:left; margin-left:10px; text-align:left; z-index:999}
+#emarketing h1{color:#777; font-size:10px; text-decoration:none}
+#emarketing h1 a{color:#777; font-size:10px; text-decoration:none; font-weight:normal}
+#emarketing h1 span{font-size:0.01em}
+
+
+
+/*-----------------------------------------  VERTICAL MENU  -----------------------------------*/
+
+#hide {	position:absolute;	top:30px;	left:-190px;}
+ul.sliding-navigation{	list-style: none;	font-size: .75em;	margin: 30px 0;	padding: 0;}
+ul.sliding-navigation li.sliding-element h3, ul.sliding-navigation li.sliding-element a {display: block; width: 150px;	padding: 5px 18px;	margin: 0;	margin-bottom: 5px;}
+ul.sliding-navigation li.sliding-element h3{	color: #fff; text-shadow:1px 1px 2px #000; font-weight: normal;}
+ul.sliding-navigation li.sliding-element a{	color: #fff; text-shadow:1px 1px 2px #000; font-weight:bold;	background: transparent url(../images/background.png) top left no-repeat; text-decoration: none;}
+ul.sliding-navigation li.sliding-element a:hover { color:#ffff66; 	background: transparent url(../images/background.png) top left no-repeat;  }
+
+
+
+/*-----------------------------------------  HOW WE WORK  -----------------------------------*/
+
+#companywebsite{height:125px; margin-bottom:10px; margin-top:00px; margin-left:auto; margin-right:auto; width:940px; background:url(../images/howtosignup.png) center top no-repeat; border:0px; clear:both; text-align:center; font-size:10px}
+#companywebsite #companywebsitetitle {width:200px; float:left; height:125px; margin:0px; text-align:left}
+#companywebsite #companywebsitetitle h1 {font-size:25px; line-height:30px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#999; margin-left:25px; margin-top:30px; font-weight:normal; text-align:left}
+#companywebsite #companywebsteps {width:735px; height:125px; margin:0px; float:left}
+#companywebsite #companywebsteps #companywebnumber {width:735px; height:50px; margin:0px}
+#companywebsite #companywebsteps #companywebnumber .companywebnumbersteps {width:125px; height:63px; float:left; margin:0px; text-align:center}
+#companywebsite #companywebsteps #companywebnumber .companywebnumbersteps span{line-height:60px; color:#999; font-size:30px; font-weight:bold; text-shadow:1px 1px 1px #fff}
+#companywebsite #companywebsteps #companywebnumber #companywebnumbersteps {width:135px; height:63px; float:left;  margin-left:50px; margin-top:0px; margin-right:0px; text-align:center}
+#companywebsite #companywebsteps #companywebnumber #companywebnumbersteps span{line-height:60px; color:#777; font-size:30px; font-weight:bold; text-shadow:1px 1px 1px #fff}
+#companywebsite #companywebsteps #companywebstepsinfo {width:735px; height:30px; margin:0px}
+#companywebsite #companywebsteps #companywebstepsinfo .companywebstepsdurban{width:125px; height:30px; float:left; margin:0px; text-align:left}
+#companywebsite #companywebsteps #companywebstepsinfo .companywebstepsdurban p{padding:5px; font-size:11px; line-height:15px; margin:0px; color:#444; text-shadow:1px 1px 1px #fff}
+#companywebsite #companywebsteps #companywebstepsinfo #companywebstepsdurban{width:175px; height:30px; float:left; margin-left:50px; margin-top:0px; margin-right:0px; text-align:left}
+#companywebsite #companywebsteps #companywebstepsinfo #companywebstepsdurban p{padding:5px; font-size:11px; line-height:15px; margin:0px; color:#000; text-shadow:1px 1px 1px #fff}
+                		
+
+
+
+/*-----------------------------------------  OUR CLIENTS  -----------------------------------*/
+#web_company {width:940px; height:174px; margin-left:auto; margin-right:auto; margin-bottom:10px; margin-top:30px; z-index:200; min-width:940px; background:url(../images/web_company.png) center top no-repeat; clear:both}
+#web_company #webcompanyheader{height:50px; margin-left:15px; margin-bottom:10px; margin-top:10px}
+#web_company #webcompanyheader h1 {font-size:25px; line-height:50px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#999; margin-left:10px; margin-top:20px; font-weight:normal; text-align:left}
+#web_company #webdesigncompany {width:930px; margin-left:5px; margin-right:5px}
+#web_company #webdesigncompany .webcompanyclients {width:132px; float:left; margin-right:0px; margin-top:0px; margin-left:0px}
+#web_company #webdesigncompany .webcompanyclients:hover{width:132px; float:left; margin-right:0px; margin-top:0px; margin-left:0px; background:url(../images/portfoliohover.png) center top no-repeat}
+#web_company #webdesigncompany .webcompanyclients img {margin-left:0px; margin-right:0px; width:132px; height:115px}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         URGENT BUTTON FORM                                    */
+/*-----------------------------------------------------------------------------------------------*/
+
+#exitbutton{margin-top:0px; margin-left:575px}
+#urgentcontact-us {margin-top:100px; margin-left:10px}
+
+#urgentcontact-us #urgentcontact-form h1 {margin-left:10px; font-size:18px; line-height:21px; color:#444; text-shadow:1px 1px 1px #fff; font-weight:bold}
+#urgentcontact-us #urgentcontact-form label{color:#000; text-shadow:1px 1px 1px #fff; font-size:11px; margin-left:10px}
+#urgentcontact-us #urgentcontact-form #urgenttextinput8634bjm5398hwv98vsdivsd789sdb78gvb{height:20px; width:170px; margin-left:30px; margin-top:65px;  border:0px; outline:0px; font-family:'Century Gothic',arial; font-size:12px; color:#111; padding:2px;}
+#urgentcontact-us #urgentcontact-form #urgenttextinput8634bjm5398hwv98vsdivsd789sdb78gvbbdfd{height:20px; width:150px; margin-left:24px; margin-top:65px; border:0px; font-family:'Century Gothic',arial; font-size:12px; color:#111;}
+#urgentcontact-us #urgentcontact-form #urgentcontactinput8634bjm5398hwv98vsdivsd789sdb78gvbbdfd{height:20px; width:130px; margin-left:20px; margin-top:65px; border:0px; font-family:'Century Gothic',arial; font-size:12px; color:#111; }
+#urgentcontact-us #urgentcontact-form #urgentinfoinput8634bjm5398hwv98vsdivsd789sdb78gvbbdfd{height:20px; width:350px; margin-left:30px; margin-top:20px; border:0px; font-family:'Century Gothic',arial; font-size:12px; color:#111; float:left}
+#urgentcontact-us #urgentcontact-form #submit {margin-left:03px; margin-top:15px; float:left}
+#urgentcontact-us #urgentcontact-form #back-previous{position:relative; left:214px; top:35px}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          ABOUT US PAGE                                        */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------- MAIN AREA  -------------------------------------*/
+#webcompanyabout {width:100%; margin:0px; clear:both; height:600px; background:url(../images/aboutusbg.png) center top no-repeat}
+#webcompanyabout #webdesignsouthafricaabout{width:940px; height:240px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px}
+#webcompanyabout #webdesignsouthafricaabout img{width:240px; height:160px; margin-top:0px; margin-bottom:0px}
+#webcompanyabout #webdesignsouthafricaabout #aboutgoldtreewebdesigner{width:920px;  margin-left:auto; margin-right:auto; height:300px; margin-top:90px}
+#webcompanyabout #webdesignsouthafricaabout #aboutgoldtreewebdesigner p{font-size:14px}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         ETHICS PAGE                                           */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------- MAIN AREA  -------------------------------------*/
+#webcompanyethics {width:100%; margin:0px; clear:both; height:696px; background:url(../images/ethicsweb.png) center top no-repeat}
+#webcompanyethics #webdesignsouthafricaethics{width:940px; height:240px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px}
+#webcompanyethics #webdesignsouthafricethics img{width:240px; height:160px; margin-top:0px; margin-bottom:0px}
+#webcompanyethics #webdesignsouthafricaethics #aboutgoldtreewebdesigner{width:920px;  margin-left:auto; margin-right:auto; height:300px; margin-top:80px}
+#webcompanyethics #webdesignsouthafricaethics #aboutgoldtreewebdesigner p{font-size:14px; margin-left:10px; margin-right:20px}
+#webcompanyethics #webdesignsouthafricaethics #aboutgoldtreewebdesigner p a{font-size:14px; color:#222; text-decoration:none; font-weight:bold}
+#webcompanyethics #webdesignsouthafricaethics #aboutgoldtreewebdesigner p a:hover{font-size:14px; color:#222; text-decoration:underline}
+#webcompanyethics #webdesignsouthafricaethics #aboutgoldtreewebdesigner h1 {font-size:25px; line-height:50px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#777; margin-left:10px; margin-top:30px; font-weight:normal; text-align:left}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         PORTFOLIO PAGE                                        */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------- MAIN AREA  ---------------------------------------*/
+#webcompanyportfolio {width:100%; margin:0px; clear:both; height:529px; background:url(../images/portfolioweb.png) center top no-repeat}
+#webcompanyportfolio #webdesignsouthafricaportfolio{width:940px; height:240px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px}
+#webcompanyportfolio #webdesignsouthafricportfolio img{width:240px; height:160px; margin-top:0px; margin-bottom:0px}
+#webcompanyportfolio #webdesignsouthafricaportfolio #aboutgoldtreewebdesigner{width:920px;  margin-left:auto; margin-right:auto; height:300px; margin-top:00px}
+#webcompanyportfolio #webdesignsouthafricaportfolio #aboutgoldtreewebdesigner p{font-size:14px; color:#000; margin-left:10px; margin-right:20px}
+#webcompanyportfolio #webdesignsouthafricaportfolio #aboutgoldtreewebdesigner p a{font-size:14px; color:#000; text-decoration:none; font-weight:bold}
+#webcompanyportfolio #webdesignsouthafricaportfolio #aboutgoldtreewebdesigner p a:hover{font-size:14px; color:#000; text-decoration:underline}
+#webcompanyportfolio #webdesignsouthafricaportfolio #aboutgoldtreewebdesigner h1 {font-size:25px; line-height:50px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#999; margin-left:10px; margin-top:00px; text-align:left}
+#webcompanyportfolio #webdesignsouthafricaportfolio #aboutgoldtreewebdesigner h1 b{font-size:25px; font-weight:normal; color:#0fF; text-shadow:1px 1px 1px #333 }
+.menusx{font-size:11px; text-decoration:none; color:#000; text-shadow:1px 1px 2px #fff;}
+.menusx:hover{font-size:11px; text-decoration:none; color:#000; text-shadow:0px 0px 0px ;}
+#web-clients-lists{padding:0px; width:910px; margin-left:15px; margin-top:30px}
+#web-clients-lists tr td{width:100px; margin-left:50px}
+#webcompanyportfolio a img{margin-left:10px}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         CONTACT US PAGE                                       */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------- MAIN AREA  --------------------------------------*/
+#webcompanycontact {width:100%; margin:0px; clear:both; height:639px; background:url(../images/contactusbg.png) center top no-repeat}
+#webcompanycontact #webdesignsouthafricacontact{width:940px; height:240px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px}
+#webcompanycontact #webdesignsouthafricacontact img{margin-top:0px; margin-bottom:0px}
+#contact-us {width:940px; margin-left:auto; margin-right:auto; height:500px}
+#contact-us #contact-form {width:580px; float:left; margin:0px; height:345px}
+
+#contact-us #contact-form h1{font-size:25px; text-shadow:1px 1px 1px #fff; margin-left:15px; line-height:35px}
+#contact-us #contact-form label{color:#222; text-shadow:1px 1px 1px #fff; font-size:13px; margin-left:25px}
+#contact-us #contact-form #textinput8634bjm5398hwv98vsdivsd789sdb78gvb{height:30px; width:220px; margin-left:5px; background:url(../images/formweb.png) repeat; border:dotted 1px #fff; font-family:'Century Gothic',arial; font-size:12px; color:#111; text-shadow:1px 1px 1px #fff; padding:5px}
+#contact-us #contact-form #textinput8634bjm5398hwv98vsdivsd789sdb78gvbbdfd{height:30px; width:160px; margin-left:5px; background:url(../images/formweb.png) repeat; border:dotted 1px #fff; font-family:'Century Gothic',arial; font-size:12px; color:#111; text-shadow:1px 1px 1px #fff; padding:5px;}
+#contact-us #contact-form #bdfd7653965938789y93yfg3i {font-family:'Century Gothic',arial; font-size:12px; color:#111; text-shadow:1px 1px 1px #fff; margin-left:25px; border:1px dotted #fff; width:530px; height:130px; background:url(../images/formweb.png) left repeat; padding:5px}
+
+
+
+#contact-us #contact-info {width:500px ; margin-left:5px; margin-right:0px; margin-top:00px; margin-bottom:10px; height:150px; background:url(../images/contactdetails.png) top left no-repeat; }
+#contact-us #contact-info #titleofcontact{text-align:center; width:300px; margin-left:40px; position:relative; top:-6px}
+#contact-us #contact-info ul{list-style:none; color:#333; text-shadow:1px 1px 1px #fff; font-family:'Century Gothic',arial; margin-left:15px}
+#contact-us #contact-info ul li{list-style:none; color:#333; text-shadow:1px 1px 1px #fff; font-family:'Century Gothic',arial; margin-left:5px; line-height:42px; font-size:11px}
+#contact-us #contact-info ul li b{color:#333; text-shadow:1px 1px 1px #fff; font-family:'Century Gothic',arial; line-height:20px; font-size:15px; width:120px}
+#contact-us #contact-info ul .dottedcontact{border:1px dotted #eee;  width:450px; margin-left:10px}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/*                                         WEB DESIGN PROJECT INFO                                    */
+/*----------------------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------- UPDATE -----------------------------------------------*/
+.signupformnew{width:960px; margin:0px auto; height:340px; position:relative}
+.signupformnew .webdesignsignup{width:320px; margin:0px; margin-left:20px; float:left}
+.signupformnew .webdesignsignup h1{font-size:15px; font-weight:bold; line-height:20px}
+.signupformnew .webdesignsignup label{font-size:12px; line-height:22px}
+.signupformnew .webdesignsignup em{font-size:9px; color:#777; position:relative; top:-3px}
+.signupformnew .webdesignsignup input{}
+.signupformnew .webdesignsignup .input-text-only-bg {height:30px; width:250px; background:url(../images/input-project.png) top right no-repeat}
+.signupformnew .webdesignsignup .input-text-only-bg:hover {height:30px; width:250px; background:url(../images/input-project.png) top left no-repeat}
+.signupformnew .webdesignsignup .input-text-only-bg:selected {height:30px; width:250px; background:url(../images/input-project.png) top left no-repeat}
+.signupformnew .webdesignsignup .input-text-only-bg .input-text-only {height:25px; width:245px; background:transparent; border:0px; :outline:0px; outline:0px; position:relative; top:2px; left:2px}
+#projectformname{background:transparent; outline:0px; border:0px; color:#888; font-size:12px; padding-left:10px}
+#projectformemail{background:transparent; outline:0px; border:0px; color:#888; font-size:12px; padding-left:10px}
+#projectformnumber{background:transparent; outline:0px; border:0px; color:#888; font-size:12px; padding-left:10px}
+
+
+.signupformnew .webdesignsignup-next{width:320px; margin:0p; position:absolute; top:0px; left:320px; float:left}
+.signupformnew .webdesignsignup-next h1{font-size:15px; font-weight:bold}
+.signupformnew .webdesignsignup-next label{font-size:12px}
+.signupformnew .webdesignsignup-next em{font-size:9px; color:#777; position:relative; top:2px}
+.signupformnew .webdesignsignup-next input{border:1px #aba solid}
+
+.designwebcontainer {width:152px; height:90px; float:left}
+.designwebcontainer .designerscheck {width:140px; height:35px; position:relative; top:5px}
+.designwebcontainer .designerscheck .styled{width:30px; float:left; margin-left:30px; position:relative; left:30px; text-align:right}
+.designwebcontainer .designerscheck .projectnature{float:left; position:relative; top:3px}
+
+.textareadiv {width:320px; height:140px; margin-top:40px; background:url(../images/checkbox-main.png) bottom left no-repeat}
+#textarea-part{background:transparent; border:0px; outline:0px; margin-top:11px}
+
+#submit-area {width:300px}
+#submit-area #submitproject {margin-top:7px; float:right}
+#submit-area #submitproject input {outline:0px; border:0px}
+
+#southafricandesigners{float:left; position:relative; left:310px; width:300px; text-align:right}
+#southafricandesigners h1{font-size:15px; font-weight:bold; color:#BCB}
+#southafricandesigners ul{list-style-position:inside; margin-top:20px; text-align:right}
+#southafricandesigners ul li{list-style-type:disc; font-size:11px; color:#CDC; line-height:21px}
+
+
+/*------------------------------------------- CUSTOM RADIO --------------------------------------------*/
+.checkbox, .radio {	width: 19px;	height: 25px;	padding: 0 5px 0 0;	background: url(../images/checkbox.png) no-repeat;	display: block;	clear: left;	float: left;}
+.radio {	background: url(../images/radio.gif) no-repeat;}
+.select {position: absolute;	width: 218px; /* With the padding included, the width is 190 pixels: the actual width of the image. */	height: 30px;	padding: 10px 24px 9px 8px; color: #888;
+font: 12px/21px arial,sans-serif;	background: url(../images/select-project.png) right no-repeat;	overflow: hidden;}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------- SIGN UP STAGE 1  --------------------------------------------*/
+#webcompanyproject #webdesignsouthafricaproject #designpromo #launchwebdesign{font-size:49px; line-height:60px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#454; margin-left:10px; margin-top:00px; font-weight:bold; text-align:left}
+
+.designforweb {background:url(../images/webproject.png) top center no-repeat; width:300px; height:171px; margin-left:25px; margin-bottom:50px; margin-top:40px}
+.designforweb h1{font-size:14px; line-height:14px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#222; margin-left:14px; margin-right:14px; margin-top:13px; padding-top:14px; font-weight:normal; margin-bottom:10px; text-align:left; font-weight:bold}
+.designforweb p{font-size:13px; line-height:14px; font-weight:normal; text-shadow:1px 1px 1px #dfd; color:#333; margin-left:14px; margin-right:14px; margin-top:13px; font-weight:normal; margin-bottom:10px; text-align:left}
+.designforweb .webprojectnavigation{width:272px; margin-left:14px; height:48px; cursor:pointer}
+.designforweb .webprojectnavigation .webabout{margin:0px; width:88px; height:48px; background:url(../images/webbutton.png) top left no-repeat; float:left}
+.designforweb .webprojectnavigation .webprices{margin:0px; width:96px; height:48px; background:url(../images/webbutton.png) top center no-repeat; float:left}
+.designforweb .webprojectnavigation .webproject{margin:0px; width:88px; height:48px; background:url(../images/webbutton.png) top right no-repeat; float:left}
+.designforweb .webprojectnavigation .webabout:hover{margin:0px; width:88px; height:48px; background:url(../images/webbutton.png) bottom left no-repeat; float:left}
+.designforweb .webprojectnavigation .webprices:hover{margin:0px; width:96px; height:48px; background:url(../images/webbutton.png) bottom center no-repeat; float:left}
+.designforweb .webprojectnavigation .webproject:hover{margin:0px; width:88px; height:48px; background:url(../images/webbutton.png) bottom right no-repeat; float:left}
+   
+
+
+
+
+
+
+/*---------------------------------------------- PROMO AREA  -----------------------------------------*/
+#webcompanyproject {width:100%; margin:0px; clear:both; height:696px}
+#webcompanyproject #webdesignsouthafricaproject{width:940px; height:240px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; min-width:940px}
+#webcompanyproject #webdesignsouthafricaproject #designpromo{float:left; width:580px;  margin-left:0; margin-right:5px; margin-top:40px}
+#webcompanyproject #webdesignsouthafricaproject #designpromo h1{font-size:40px; line-height:60px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#565; margin-left:10px; margin-top:00px; font-weight:bold; text-align:left}
+#webcompanyproject #webdesignsouthafricaproject #designpromo h2{font-size:18px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#454; margin-left:10px; margin-top:20px; font-weight:bold; text-align:left}
+#webcompanyproject #webdesignsouthafricaproject #designpromo h2 span{font-size:40px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#fc0; }
+#webcompanyproject #webdesignsouthafricaproject #designpromo p{font-size:17px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#333; margin-left:10px; margin-top:13px; font-weight:normal; text-align:left}
+
+
+/*------------------------------------------- CONTACT SIDE AREA  -------------------------------------*/
+#webcompanyproject #webdesignsouthafricaproject #designcontact{float:left; background:url(../images/webcontact.png) center top no-repeat; width:350px; height:717px; margin-left:3px}
+#webcompanyproject #webdesignsouthafricaproject #designcontact #designcontactheader {width:350px; }
+#webcompanyproject #webdesignsouthafricaproject #designcontact #designcontactheader h1{font-size:19px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; margin-left:30px; margin-right:30px; margin-top:20px; font-weight:bold; text-align:left}
+#webcompanyproject #webdesignsouthafricaproject #designcontact #designcontactheader #designcontact-transparentwall{margin-left:30px; margin-right:30px; margin-top:20px}
+#webcompanyproject #webdesignsouthafricaproject #designcontact #designcontactforms {width:310px}
+#webcompanyproject #webdesignsouthafricaproject #designcontact form {margin-top:00px; margin-left:30px; margin-right:30px}
+#webcompanyproject #webdesignsouthafricaproject #designcontact .weblabel {margin-top:20px; margin-left:0px; margin-right:30px; margin-bottom:10px; font-size:13px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; vertical-align:bottom}
+#webcompanyproject #webdesignsouthafricaproject #designcontact em{margin-top:0px; margin-left:0px; margin-right:30px; font-size:9px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; font-style:italic}
+#webcompanyproject #webdesignsouthafricaproject #designcontact .text-input{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#010; width:270px; height:23px; margin-bottom:0px; background:#fff; border:1px; outline:1px dotted #fff}
+#webcompanyproject #webdesignsouthafricaproject #form3select{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#010; width:280px; height:27px; margin-bottom:0px; border:1px; outline:1px dotted #fff}
+
+
+
+
+.stage2 #designcontactforms {width:310px}
+.stage2 form {margin-top:00px; margin-left:30px; margin-right:30px}
+.stage2 .weblabel {margin-top:20px; margin-left:0px; margin-right:30px; margin-bottom:10px; font-size:13px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; vertical-align:bottom}
+.stage2 em{margin-top:0px; margin-left:0px; margin-right:30px; font-size:9px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; font-style:italic}
+.stage2 .text-input{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#010; width:270px; height:23px; margin-bottom:0px; background:#fff; border:1px; outline:1px dotted #fff}
+.stage2 #webcompanyproject #webdesignsouthafricaproject #form3select{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#010; width:280px; height:27px; margin-bottom:0px; border:1px; outline:1px dotted #fff}
+
+
+
+/*------------------------------------------- STAGE TWO - PRICES  -------------------------------------*/
+
+#webcompanyprojects {width:100%; margin:0px; clear:both;}
+#webcompanyprojects #webdesignsouthafricaprojects{width:940px; height:240px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; min-width:940px}
+#webcompanyprojects #webdesignsouthafricaprojects #designpromos{float:left; width:580px;  margin-left:0px; margin-right:5px; height:300px; margin-top:40px}
+#webcompanyprojects #webdesignsouthafricaprojects #designpromos h1{font-size:40px; line-height:50px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#565; margin-left:10px; margin-top:00px; font-weight:bold; text-align:left; margin-right:50px}
+#webcompanyprojects #webdesignsouthafricaprojects #designpromos h2{font-size:18px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#333; margin-left:10px; margin-top:20px; font-weight:bold; text-align:left}
+#webcompanyprojects #webdesignsouthafricaprojects #designpromos h2 span{font-size:40px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#fc0; }
+#webcompanyprojects #webdesignsouthafricaprojects #designpromo p{font-size:17px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#333; margin-left:10px; margin-top:13px; font-weight:normal; text-align:left}
+
+
+#web-designprices{background:url(../images/webprices.png) center top no-repeat; width:500px; margin-left:5px; height:297px}
+#web-designprices #web-priceheader {height:80px; width:500px; margin:0px; vertical-align:middle}
+#web-designprices #web-priceheader #web-pricetitle{height:50px; width:140px; margin-left:10px; vertical-align:middle; float:left; font-size:12px}
+#web-designprices #web-priceheader #web-pricetitle #budget{font-size:22px; color:#565; text-shadow:1px 1px 1px #fff} 
+#web-designprices #web-priceheader #web-pricetitle #budget2{font-size:22px; color:#565; text-shadow:1px 1px 1px #fff; line-height:18px !important} 
+
+#web-designprices #web-priceheader .web-pricetitle1{height:50px; line-height:22px; width:112px; margin:0px; vertical-align:middle; float:left; font-size:12px; text-align:center; font-weight:bold}
+#web-designprices #web-priceheader .web-pricetitle1 h1 span{font-size:20px; padding-top:25px;  line-height:41px; color:#898; text-shadow:1px 1px 1px #fff; text-align:center; font-weight:bold}   
+#web-designprices #web-priceheader .web-pricetitle1 h1 strong{font-size:17px; line-height:18px; color:#9A9; text-shadow:1px 1px 1px #fff; text-align:center; font-weight:normal}    
+
+.webpricesection {width:500px; height:55px; float:left}
+.webpricesection  .webpricesectionheader {width:140px; margin-left:10px; height:40px; float:left; margin-right:10px}
+.webpricesection  .webpricesectionheader .webpricesectionheaderfigure{font-size:14px; padding-top:0px;  line-height:15px; color:#565; text-shadow:1px 1px 1px #fff; text-align:left; font-weight:bold; margin-left:5px} 
+.webpricesection .webpricesectioncell {width:112px; height:40px; float:left; margin:0px}
+.webpricesection .webpricesectioncell .webpricesectioncellfigure {font-size:13px; padding-top:0px;  line-height:18px; color:#454; text-shadow:1px 1px 1px #fff; text-align:left; font-weight:normal; margin-left:5px} 
+.webpricesection .webpricesectioncell .webpricesectioncellfigure sup{font-size:11px; color:#F00}
+.webpricesection .webpricesectioncell .webpricesectioncellfigure p{font-size:12px; padding-top:0px; margin:0px; margin-right:8px;  line-height:18px; color:#F00; font-weight:normal; text-decoration:none; font-weight:bold; text-shadow:1px 1px 1px #fff}
+.webpricesection .webpricesectioncell .moreinfo{font-size:13px; padding-top:0px;  line-height:15px; color:#454; font-weight:bold; text-decoration:none; margin-left:5px}
+
+
+
+
+/*------------------------------------------- STAGE TWO - NEW PRICES  -------------------------------------*/
+#webdesignpricesdurbanonlys1 h1{font-size:40px; line-height:50px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#565; margin-left:10px; margin-top:00px; font-weight:bold; text-align:left; margin-right:50px}
+
+#webdesignpricesdurbanonlys1 h2{font-size:18px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#333; margin-left:10px; margin-top:20px; font-weight:bold; text-align:left}
+
+#webdesignpricesdurbanonlys {width:520px; margin-left:10px; background:#f60}
+#webdesignpricesdurbanonlys #topprice {height:30px; border-bottom:1px solid #aca; border-top:1px solid #aca; background:#fff}
+#webdesignpricesdurbanonlys #topprice .price1 {width:50px; background:#fff; border:#aca 1px solid; border-right:0px}
+#webdesignpricesdurbanonlys #topprice .price1 h3{font-size:11px; color:#132; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice .price2 {width:22px; background:#fff; border:#aca 1px solid; border-right:0px}
+#webdesignpricesdurbanonlys #topprice .price2 h3{font-size:11px; color:#132; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice .price3 {width:40px; background:#fff; border:#aca 1px solid; border-right:0px}
+#webdesignpricesdurbanonlys #topprice .price3 h3{font-size:11px; color:#132; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice .price4 {width:30px; background:#fff; border:#aca 1px solid; border-right:0px}
+#webdesignpricesdurbanonlys #topprice .price4 h3{font-size:11px; color:#132; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice .price5 {width:40px; background:#fff; border:#aca 1px solid; border-right:0px}
+#webdesignpricesdurbanonlys #topprice .price5 h3{font-size:11px; color:#132; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice .price6 {width:60px; background:#fff; border:#aca 1px solid; border-right:0px}
+#webdesignpricesdurbanonlys #topprice .price6 h3{font-size:11px; color:#132; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice .price7 {width:50px; background:#fff; border:#aca 1px solid; border-right:0px}
+#webdesignpricesdurbanonlys #topprice .price7 h3{font-size:11px; color:#132; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice .price8 {width:49px; background:#fff; border:#aca 1px solid}
+#webdesignpricesdurbanonlys #topprice .price8 h3{font-size:12px; color:#132; font-weight:bold; padding-left:5px; line-height:30px}
+
+#webdesignpricesdurbanonlys #topprice1 .price11 {width:50px; border:0px}
+#webdesignpricesdurbanonlys #topprice1 .price11 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice1 .price12 {width:22px; border:0px}
+#webdesignpricesdurbanonlys #topprice1 .price12 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice1 .price13 {width:40px; border:0px}
+#webdesignpricesdurbanonlys #topprice1 .price13 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice1 .price14 {width:30px; border:0px}
+#webdesignpricesdurbanonlys #topprice1 .price14 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice1 .price15 {width:40px;  border:0px}
+#webdesignpricesdurbanonlys #topprice1 .price15 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice1 .price16 {width:60px; border:0px}
+#webdesignpricesdurbanonlys #topprice1 .price16 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice1 .price17 {width:50px; border:0px}
+#webdesignpricesdurbanonlys #topprice1 .price17 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice1 .price18 {width:49px; border:0px}
+#webdesignpricesdurbanonlys #topprice1 .price18 h4{font-size:12px; color:#fff; font-weight:bold; padding-left:5px; line-height:30px}
+
+
+#webdesignpricesdurbanonlys #topprice2 .price11 {width:50px; border:0px}
+#webdesignpricesdurbanonlys #topprice2 .price11 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice2 .price12 {width:22px; border:0px}
+#webdesignpricesdurbanonlys #topprice2 .price12 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice2 .price13 {width:40px; border:0px}
+#webdesignpricesdurbanonlys #topprice2 .price13 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice2 .price14 {width:30px; border:0px}
+#webdesignpricesdurbanonlys #topprice2 .price14 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice2 .price15 {width:40px;  border:0px}
+#webdesignpricesdurbanonlys #topprice2 .price15 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice2 .price16 {width:60px; border:0px}
+#webdesignpricesdurbanonlys #topprice2 .price16 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice2 .price17 {width:50px; border:0px}
+#webdesignpricesdurbanonlys #topprice2 .price17 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice2 .price18 {width:49px; border:0px}
+#webdesignpricesdurbanonlys #topprice2 .price18 h4{font-size:12px; color:#fff; font-weight:bold;  padding-left:5px; line-height:30px}
+
+
+
+#webdesignpricesdurbanonlys #topprice3 .price11 {width:50px; border:0px}
+#webdesignpricesdurbanonlys #topprice3 .price11 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice3 .price12 {width:22px; border:0px}
+#webdesignpricesdurbanonlys #topprice3 .price12 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice3 .price13 {width:40px; border:0px}
+#webdesignpricesdurbanonlys #topprice3 .price13 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice3 .price14 {width:30px; border:0px}
+#webdesignpricesdurbanonlys #topprice3 .price14 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice3 .price15 {width:40px;  border:0px}
+#webdesignpricesdurbanonlys #topprice3 .price15 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice3 .price16 {width:60px; border:0px}
+#webdesignpricesdurbanonlys #topprice3 .price16 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice3 .price17 {width:50px; border:0px}
+#webdesignpricesdurbanonlys #topprice3 .price17 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice3 .price18 {width:49px; border:0px}
+#webdesignpricesdurbanonlys #topprice3 .price18 h4{font-size:12px; color:#fff; font-weight:bold;  padding-left:5px; line-height:30px}
+
+#webdesignpricesdurbanonlys #topprice4 .price11 {width:50px; border:0px}
+#webdesignpricesdurbanonlys #topprice4 .price11 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice4 .price12 {width:22px; border:0px}
+#webdesignpricesdurbanonlys #topprice4 .price12 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice4 .price13 {width:40px; border:0px}
+#webdesignpricesdurbanonlys #topprice4 .price13 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice4 .price14 {width:30px; border:0px}
+#webdesignpricesdurbanonlys #topprice4 .price14 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice4 .price15 {width:40px;  border:0px}
+#webdesignpricesdurbanonlys #topprice4 .price15 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice4 .price16 {width:60px; border:0px}
+#webdesignpricesdurbanonlys #topprice4 .price16 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice4 .price17 {width:50px; border:0px}
+#webdesignpricesdurbanonlys #topprice4 .price17 h4{font-size:10px; color:#fff; font-weight:normal; padding-left:5px; line-height:30px}
+#webdesignpricesdurbanonlys #topprice4 .price18 {width:49px; border:0px}
+#webdesignpricesdurbanonlys #topprice4 .price18 h4{font-size:12px; color:#fff; font-weight:bold; padding-left:5px; line-height:30px}
+
+
+/*---- MAIN SIDE AREA ----*/
+
+
+
+/*---CONTACT SIDE AREA ---*/
+
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact {float:left; background:url(../images/webcontact.png) center top no-repeat; width:350px; height:717px; margin-left:3px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 {width:320px; margin-left:25px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 h1{font-size:15px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; margin-left:30px; margin-right:30px; margin-top:20px; font-weight:bold; text-align:left}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 h2{font-size:13px; line-height:17px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#787; margin-left:0px; margin-right:0px; margin-top:00px; font-weight:bold; text-align:left}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .formular{height:500px; width:320px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .weblabel {margin-top:0px; margin-left:0px; margin-right:30px; margin-bottom:10px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#232; vertical-align:bottom}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 em{margin-top:0px; margin-left:0px; margin-right:30px; font-size:9px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; font-style:italic}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .text-input{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal;color:#888; width:290px; height:23px; margin-bottom:0px; border:1px; outline:1px dotted #fff}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #form358345bh1578fbjfsvbjstage23{height:80px; width:295px;  border:1px; outline:1px dotted #fff; color:#777}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #form3selectstage2{margin-top:3px; margin-left:0px; margin-right:0px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:148px; height:27px; margin-bottom:0px; border:1px dotted #fff}
+
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .websouthafrica4 .weblabel {margin-top:30px; margin-left:8px; margin-right:3px; margin-bottom:10px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#000; vertical-align:bottom; width:130px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .websouthafrica5 .weblabel{margin-top:30px; margin-left:0px; margin-right:3px; margin-bottom:10px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#000; vertical-align:bottom}
+
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #siteupdates{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #sitesamples{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #pages{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #logocolor{margin-top:3px; margin-left:0px; font-size:12px; line-height:20px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px; text-shadow:1px 1px 1px 3px #000}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #backgroundcolor{margin-top:3px; margin-left:0px; margin-right:0px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #foregroundcolor{margin-top:3px; margin-left:0px; margin-right:0px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .websitesamples{width:300px; height:40px; margin-left:10px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .websitesamples .labelboxes{width:50px; float:left; margin-left:-10px; margin-right:20px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .websitesamples .labelboxes .weblabels {margin-top:04px; margin-left:0px; margin-right:30px; margin-bottom:00px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#000; vertical-align:bottom; float:left; width:70px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .websitesamples .text-inputbox{margin-top:0px; margin-left:0px; margin-right:00px; font-size:12px; line-height:10px; font-weight:normal;color:#888; width:230px; height:23px; margin-bottom:0px; border:1px; outline:1px dotted #fff; float:left}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 .websitesamples .text-inputbox .text-inputss{margin-top:0px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal;color:#888; width:230px; height:23px; margin-bottom:0px; border:1px; outline:1px dotted #fff}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact #designcontactheader1 
+.websouthafrica{width:300px; height:60px}
+.websouthafrica .websouthafrica{width:120px; float:left}
+.websouthafrica .websouthafrican{width:120px; float:left; margin-left:30px}
+.websouthafrica .websouthafrica5{width:120px; float:left}
+.websouthafrica .websouthafrica4{width:140px; float:left; margin-left:30px}
+.websouthafrica .websouthafrica1{width:70px; float:left; margin-right:45px}
+.websouthafrica .websouthafrica2{width:70px; float:left; margin:0px}
+.websouthafrica .websouthafricans{width:70px; float:left; margin-right:45px;}
+.websouthafrica .websouthafricansx{width:70px; float:left; margin-right:0px;}
+.websouthafrica .websouthafrican #duedatefuture{width:120px}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*- 								FOOTER DESIGNER PROJECTS									----*/
+/*--------------------------------------------------------------------------------------------------*/
+
+#designfooter{width:100%; background:#fff; margin:0px; margin-top:30px; border-top:1px solid #cdc}
+.durbanwebdesigners{height:120px; width:100%; margin:0px auto; text-align:center}
+.footerwebdesigners{width:960px; margin:0px auto; border-bottom:0px solid #ded; position:relative; top:30px;}
+
+
+
+
+
+#designcontact-next {float:left; background:url(../images/contactwebsite.png) center top no-repeat; width:350px; height:717px; margin-left:3px}
+#designcontact-next #designcontactheader1 {width:320px; margin-left:25px}
+#designcontact-next #designcontactheader1 h1{font-size:15px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; margin-left:30px; margin-right:30px; margin-top:20px; font-weight:bold; text-align:left}
+#designcontact-next #designcontactheader1 h2{font-size:13px; line-height:17px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#787; margin-left:0px; margin-right:0px; margin-top:00px; font-weight:bold; text-align:left}
+#designcontact-next #designcontactheader1 .formular{height:500px; width:320px}
+#designcontact-next #designcontactheader1 .weblabel {margin-top:0px; margin-left:0px; margin-right:30px; margin-bottom:10px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#232; vertical-align:bottom}
+#designcontact-next #designcontactheader1 em{margin-top:0px; margin-left:0px; margin-right:30px; font-size:9px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; font-style:italic}
+#designcontact-next #designcontactheader1 .text-input{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal;color:#888; width:290px; height:23px; margin-bottom:0px; border:1px; outline:1px dotted #fff}
+
+
+
+
+
+#designcontactmain {float:left; position:relative; left:10px; top:-20px; width:350px; background:url(../images/webcontact.png) center top; height:670px; margin-left:3px}
+#designcontactmain #designcontactheader1 {width:320px; margin-left:25px}
+#designcontactmain #designcontactheader1 h1{font-size:15px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; margin-left:30px; margin-right:30px; margin-top:20px; font-weight:bold; text-align:left}
+#designcontactmain #designcontactheader1 h2{font-size:13px; line-height:17px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#787; margin-left:0px; margin-right:0px; margin-top:00px; font-weight:bold; text-align:left}
+#designcontactmain #designcontactheader1 .formular{height:500px; width:320px}
+#designcontactmain #designcontactheader1 .weblabel {margin-top:0px; margin-left:0px; margin-right:30px; margin-bottom:10px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#232; vertical-align:bottom}
+#designcontactmain #designcontactheader1 em{margin-top:0px; margin-left:0px; margin-right:30px; font-size:9px; line-height:10px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#030; font-style:italic}
+#designcontactmain #designcontactheader1 .text-input{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal;color:#888; width:290px; height:23px; margin-bottom:0px; border:1px; outline:1px dotted #fff}
+#designcontactmain  #designcontactheader1 #form358345bh1578fbjfsvbjstage23{height:80px; width:295px;  border:1px; outline:1px dotted #fff; color:#777}
+#designcontactmain  #designcontactheader1 #form3selectstage2{margin-top:3px; margin-left:0px; margin-right:0px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:148px; height:27px; margin-bottom:0px; border:1px dotted #fff}
+
+#designcontactmain #designcontactheader1 .websouthafrica4 .weblabel {margin-top:30px; margin-left:8px; margin-right:3px; margin-bottom:10px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#000; vertical-align:bottom; width:130px}
+#designcontactmain #designcontactheader1 .websouthafrica5 .weblabel{margin-top:30px; margin-left:0px; margin-right:3px; margin-bottom:10px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#000; vertical-align:bottom}
+
+#designcontactmain  #designcontactheader1 #siteupdates{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#designcontactmain  #designcontactheader1 #sitesamples{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#designcontactmain  #designcontactheader1 #pages{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+
+#designcontactmain  #designcontactheader1 #logocolor{margin-top:3px; margin-left:0px; font-size:12px; line-height:20px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px; text-shadow:1px 1px 1px 3px #000}
+#designcontactmain  #designcontactheader1 #backgroundcolor{margin-top:3px; margin-left:0px; margin-right:0px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#designcontactmain  #designcontactheader1 #foregroundcolor{margin-top:3px; margin-left:0px; margin-right:0px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+
+#designcontactmain #designcontactheader1 .websitesamples{width:300px; height:40px; margin-left:10px}
+#designcontactmain #designcontactheader1 .websitesamples .labelboxes{width:50px; float:left; margin-left:-10px; margin-right:20px}
+#designcontactmain #designcontactheader1 .websitesamples .labelboxes .weblabels {margin-top:04px; margin-left:0px; margin-right:30px; margin-bottom:00px; font-size:12px; line-height:20px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#000; vertical-align:bottom; float:left; width:70px}
+#designcontactmain #designcontactheader1 .websitesamples .text-inputbox{margin-top:0px; margin-left:0px; margin-right:00px; font-size:12px; line-height:10px; font-weight:normal;color:#888; width:230px; height:23px; margin-bottom:0px; border:1px; outline:1px dotted #fff; float:left}
+#designcontactmain #designcontactheader1 .websitesamples .text-inputbox .text-inputss{margin-top:0px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal;color:#888; width:230px; height:23px; margin-bottom:0px; border:1px; outline:1px dotted #fff}
+
+
+.signupformnew #webdesignprojecthome #designpromo #launchwebdesign {font-size:45px; color:#cdc; font-weight:bold; margin-left:5px}
+.signupformnew #webdesignprojecthome #designpromo h2 {font-size:20px; color:#bcb; font-weight:bold; margin-top:20px; margin-bottom:20px; margin-left:10px; line-height:28px}
+.signupformnew #webdesignprojecthome #designpromo p {font-size:12px; color:#aba; font-weight:normal; margin-top:20px; margin-bottom:20px; line-height:19px; margin-left:10px}
+.signupformnew #webdesignprojecthome #designpromo p b{font-size:12px; color:#f00; font-weight:bold; margin-top:20px; margin-bottom:20px; line-height:19px; margin-right:5px; margin-left:0px}
+
+
+
+
+
+
+/*--------------------------------- STAGE 3 - FINAL STAGE OF WEBDESIGN ---------------------------------*/
+
+#brandings{position:relative; left:10px}
+#finalwebdesign{font-size:38px; line-height:41px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#565; margin-left:35px; margin-right:35px; margin-top:20px; font-weight:bold; text-align:left}
+#finalwebdesigner{font-size:18px; line-height:23px; font-weight:normal; text-shadow:1px 1px 1px #FFF; color:#343; margin-left:35px; margin-right:35px; margin-top:20px; font-weight:bold; text-align:left}
+#webdesignpromo{margin-left:35px; margin-right:30px; color:#010}
+.designforweb .webprojectnavigation .webprojectdurban{margin:0px; width:88px; height:48px; background:url(../images/webbuttondurban.png) top right no-repeat; float:left}
+.designforweb .webprojectnavigation .webprojectdurban:hover{margin:0px; width:88px; height:48px; background:url(../images/webbuttondurban.png) bottom right no-repeat; float:left}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*                                  BRANDING PACKAGES SIGNUP                                             */
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------- CONTACT FORM SIDE - PAGE 2 ----------------------------------*/
+
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #siteupdatesprofile{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #sitesamplesprofile{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #pagesprofile{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; 
+color:#888; width:70px; height:27px; margin-bottom:0px}
+
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #siteupdatestone{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #sitesamplestone{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+#webcompanyprojects #webdesignsouthafricaprojects #designcontact  #designcontactheader1 #pagestone{margin-top:3px; margin-left:0px; margin-right:30px; font-size:12px; line-height:10px; font-weight:normal; color:#888; width:70px; height:27px; margin-bottom:0px}
+
+#form358345bh1578fbjfsvbjstage23tone {height:40px; width:295px;  border:1px; outline:1px dotted #fff; color:#777}
+
+
+/*----------------------------------------- MOUSE OVER - FINAL PAGE ---------------------------------------*/
+.designforweb .webprojectnavigation .webprojectbranding{margin:0px; width:88px; height:48px; background:url(../images/webbuttonbranding.png) top right no-repeat; float:left}
+.designforweb .webprojectnavigation .webprojectbranding:hover{margin:0px; width:88px; height:48px; background:url(../images/webbuttonbranding.png) bottom right no-repeat; float:left}
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*                                                SEO PAGES                                              */
+/*-------------------------------------------------------------------------------------------------------*/
+
+#form358345bh1578fbjfsvbjstage23seo {height:90px; width:280px;  border:1px; outline:1px dotted #fff; color:#777}
+#seopromos{width:328px; height:500px}
+
+/*--------------------------------------------ERROR CONNECTING  ----------------------------------------*/
+#dialog #errorurgentcontact-us #errorurgentcontact-form #connectred{color:#030; text-shadow:1px 1px 1px #fff; margin-left:30px; margin-top:30px; font-size:25px; font-weight:bold}
+#dialog #errorurgentcontact-us #errorurgentcontact-form p{color:#010; text-shadow:1px 1px 1px #fff; margin-left:30px; margin-right:70px;  margin-top:15px; font-size:14px; font-weight:normal}
+#dialog #errorurgentcontact-us #errorurgentcontact-form p b{color:#010; text-shadow:1px 1px 1px #fff; font-weight:bold}
+
+  
+
+
+
+/*-------------------------------------------- MENU BUTTON  ---------------------------------------------*/
+.webnavigation {width:302px; margin-left:10px;  clear:both; margin-top:20px}
+.webnavigation .webblog{width:74px; height:30px; float:left; text-align:center; border-top:1px solid #eee; border-left:1px solid #eee; border-right:1px solid #eee; background:url(../images/links.png); cursor:pointer}
+.webnavigation .webblog:hover{width:74px; height:30px; float:left; text-align:center; border-top:1px solid #eee; border-left:1px solid #eee; border-right:1px solid #eee;  background:#fff url(../images/links.png)}
+.webnavigation .webblog .webbloggoldtree{color:#fff; text-align:center}
+.webnavigation .webblog .webbloggoldtree a{line-height:30px; font-size:10px; text-decoration:none; color:#777; text-shadow:1px 1px 1px #fff}
+.webnavigation .webblog .webbloggoldtree a:hover{line-height:30px; font-size:10px; text-decoration:underline; color:#444; text-shadow:1px 1px 1px #fff}
+
+.webnavigation .webblogselected{width:70px; height:30px; float:left; background:#eee url(../images/blogbg.png) left top; text-align:center; border-top:1px solid #eee; border-left:1px solid #eee; border-right:1px solid #eee; border-bottom:0px solid #f99;cursor:pointer }
+.webnavigation .webblogselected:hover{width:70px; height:30px; float:left; background:url(../images/blogbg.png) right top; text-align:center; border:1px solid #fff ; border-bottom:1px solid #f00}
+.webnavigation .webblogselected .webbloggoldtreeselected {color:#fff; text-align:center; text-align:center; text-shadow:1px 1px 3px #000;}
+.webnavigation .webblogselected .webbloggoldtreeselected  a{line-height:30px; color:#fff; text-shadow:1px 1px 15px #faa; text-align:center; text-decoration:none; font-size:12px; font-family:arial; font-weight:bold}
+
+#webdesigntop {position:relative; left:-10px}
+#webdesignportfolio {position:absolute; left:-305px; top:0px}
+
+
+
+/*------------------------------------------ SOCIAL BUTTONS ----------------------------------------------*/
+
+.goldtreenetworkimage {width:300px}
+.facebooktwitterlinkedin{background:url(../images/socialbg.png) left 0px no-repeat; height:90px; margin-top:15px; width:297px; position:relative; top:-2px}
+.facebooktwitterlinkedin .boxed{margin-left:32px; margin-top:0px}
+.facebooktwitterlinkedin .boxed .facebook{ width:70px; float:left; margin-left:10px; margin-top:18px}
+.facebooktwitterlinkedin .boxed .twitter{ width:70px; float:left; margin-left:10px; margin-top:18px}
+.facebooktwitterlinkedin .boxed .linkedin{ width:70px; float:left; margin-left:10px; margin-top:18px}
+
+
+
+/*----------------------------------------------  NEWS AREA -----------------------------------------------*/
+
+.webnews{width:300px; height:49px; border-bottom:1px dotted #eee; margin-top:0px; margin-top:0px}
+.webnews:hover{width:300px; height:49px; border-bottom:1px dotted #eee;cursor:pointer; margin-top:0px}
+.webnews .webnewslogo{float:left; width:60px; margin:0px; text-align:center; line-height:39px; vertical-align:middle}
+.webnews .webnewslogo img{margin:0px; text-align:center; vertical-align:middle}
+.webnews .webnewscontent{float:left; width:220px; margin:0px; margin-left:10px}
+.webnews .webnewscontent h1{color:#777; font-weight:bold; font-size:14px; text-shadow:1px 1px 1px #000; margin-left:15px; margin-top:5px; margin-right:0px}
+.webnews .webnewscontent h1 a{color:#aaa; font-weight:bold; font-size:14px; text-shadow:1px 1px 1px #000; text-decoration:none}
+.webnews .webnewscontent h1 a:hover{color:#ddd; font-weight:bold; font-size:14px; text-shadow:1px 1px 1px #000; text-decoration:none}
+.webnews .webnewscontent em{color:#999; font-weight:bold; font-size:9px; text-shadow:1px 1px 1px #000; margin-left:15px}
+.webdesignpromo .innerspace{width:300px; height:10px}
+
+.webnewsdiv{background:#000 url(../images/blog.png) top center no-repeat; width:300px}
+
+
+            
+/*----------------------------------------- CALL OUT BUTTON ----------------------------------------------*/
+
+#webdevproject {width:168px; height:28px; position:relative; left:20px; top:5px; background:url(../images/webdevproject.png) bottom center no-repeat; cursor:pointer; z-index:10000}
+#webdevproject:hover{width:168px; height:28px; position:relative; left:20px; top:5px; background:url(../images/webdevproject.png) top center no-repeat; cursor:pointer; z-index:10000}
+
+
+
+/*-----------------------------------------THE INVISIBLE LINKS ----------------------------------------------*/
+
+
+#ictawebproject{width:120px; height:30px; background:transparent; position:absolute; top:-90px; left:-750px; cursor:pointer }
+#bnglogoproject{width:160px; height:30px; background:transparent; position:absolute; top:-90px; left:-260px; cursor:pointer }
+#goldtreewebproject{width:70px; height:30px; background:transparent; position:absolute; top:-90px; left:-740px; cursor:pointer }
+#reddywebproject{width:110px; height:30px; background:transparent; position:absolute; top:-90px; left:-325px; cursor:pointer }
+#ithekuwebproject{width:150px; height:30px; background:transparent; position:absolute; top:-90px; left:-200px; cursor:pointer }
+
+/*
+#ictawebproject{width:120px; height:30px; background:transparent; position:absolute; top:378px; left:-750px; cursor:pointer }
+#bnglogoproject{width:160px; height:30px; background:transparent; position:absolute; top:319px; left:-260px; cursor:pointer }
+#goldtreewebproject{width:70px; height:30px; background:transparent; position:absolute; top:293px; left:-740px; cursor:pointer }
+#reddywebproject{width:110px; height:30px; background:transparent; position:absolute; top:285px; left:-325px; cursor:pointer }
+#ithekuwebproject{width:150px; height:30px; background:transparent; position:absolute; top:384px; left:-200px; cursor:pointer }
+*/
+
+
+/*------------------------------------- THE PORTFOLIO OF WEBSITES -----------------------------------------*/
+
+#finalwebattemp {background:url(../images/bg.gif) center top no-repeat; position:relative; top:-30px; z-index:9999900000}
+.webdesignblogsouthafrica {margin:0px auto; width:980px; margin-top:47px;}
+.webdesignblogsouthafrica .space{margin:0px auto; width:940px; height:00px}
+.webdesignblogsouthafrica #webdesignblog {width:625px; margin-left:00px; margin-top:0px; float:left; border-left:1px solid #ddd}
+.webdesignblogsouthafrica #webdesignblog .webdesignblogentry {border-bottom:#eee dotted 2px; width:625px; margin:0px; background:transparent url(../images/bodymain.png) repeat; position:relative}
+.webdesignblogsouthafrica #webdesignblog .webdesignblogentry .webdesignblogheader {border-bottom:#eee dotted 1px; width:625px; margin:0px; padding:0px}
+.webdesignblogsouthafrica #webdesignblog .webdesignblogentry .webdesignblogheader .webdesignblogh1 {color:#555; text-shadow:1px 1px 1px #fff; font-size:30px; line-height:38px; font-weight:bold; margin:20px; margin-top:0px; margin-bottom:14px; text-decoration:none}
+.webdesignblogsouthafrica #webdesignblog .webdesignblogentry .webdesignblogheader .webdesigntitle {color:#555; text-shadow:1px 1px 1px #fff; font-size:17px; line-height:10px; font-weight:normal !important; margin:20px; margin-top:0px}
+
+.webdesignblogsouthafrica #webdesignblog .webdesignblogentry {border-bottom:#eee dotted 2px; width:625px; margin:0px; background:none; position:relative}
+.webdesignblogsouthafrica #webdesignblog .webdesignblogentry .webrecentdesigntitle {color:#555; text-shadow:1px 1px 1px #fff; font-size:19px; line-height:10px; font-weight:bold !important; margin-left:0px; margin-top:30px; margin-bottom:20px; width:400px}
+.webdesignblogsouthafrica #webdesignblog .webdesignblogentry .designs {color:#444; text-shadow:1px 1px 1px #fff; font-size:17px; line-height:10px; font-weight:normal !important; margin:0px; margin-top:0px; width:500px !important; font-style:normal;}
+
+.webdesignblogheaderdate #webdesignblogheaderdateleft {float:left; width:500px; margin-left:20px; color:#aba}
+.webdesignblogsouthafrica #webdesignblog .webdesignblogentry .webdesignblogheader .webdesignblogh1 #myweb{margin-right:8px; padding-right:10px; margin-top:8px; margin-bottom:8px}
+.webdesignblogheaderdate {float:left; width:625px; margin:0px; border-bottom:1px solid #eee}
+.webdesignblogheaderdate .webdesignblogheaderdateleft {float:left; width:300px; margin-left:20px; color:#aba}
+.webdesignblogheaderdate .webdesignblogheaderdateleft span{font-size:10px; line-height:30px; margin-left:00px; color:#777; text-shadow:1px 1px 1px #efe;}
+.webdesignblogheaderdate .webdesignblogheaderdateleft span b a{font-size:10px; line-height:30px; margin-left:0px; margin-right:0px; color:#555; text-shadow:1px 1px 1px #efe;}
+.webdesignblogheaderdate .webdesignblogheaderdateleft span b a sup{font-size:8px; line-height:10px; margin-left:0px; margin-right:0px; color:#555; text-shadow:1px 1px 1px #efe; position:relative; top:-5px}
+.webdesignblogheaderdate .webdesignblogheaderdateright {float:right; width:200px; text-align:right; margin-right:20px}
+.webdesignblogheaderdate .webdesignblogheaderdateright span{font-size:10px; line-height:30px; margin-left:00px; margin-right:00px; color:#232; text-shadow:1px 1px 1px #efe;} 
+.webdesignblogheaderdate .webdesignblogheaderdateright span a{font-size:10px; line-height:30px; margin-left:00px; color:#232; text-shadow:1px 1px 1px #efe;} 
+.webdesignblogheaderdate .webdesignblogheaderdateright span a img{position:relative; top:3px}
+.webdesignblogheaderdate .webdesignblogheaderdateright span a b{font-size:10px; line-height:30px; margin-left:00px; color:#F00; text-shadow:1px 1px 1px #efe; text-decoration:none; font-weight:bold} 
+
+.webdesignblogbody{width:655px; margin:0px}
+.webdesignblogbody p{font-size:14px; line-height:20px; margin:20px; color:#333; text-shadow:1px 1px 1px #efe;}
+.webdesignblogbody p a{font-size:15px; line-height:20px; font-weight:bold; color:#111; text-shadow:1px 1px 1px #efe;}
+
+
+/*  TWEAKS TO HOME PAGE OF GT   */
+.webdesignblogbody .website{width:440px; height:238px; float:left; border:1px #eee solid; float:left; margin-left:0px}
+.webdesignblogbody .website img {position:relative; left:20px; margin:0px}
+.webdesignblogbody .websiteinfo{width:210px; height:250px; float:left; float:left; margin-left:0px}
+.webdesignblogbody .websiteinfo .websitelogo{text-align:left; margin-top:20px}
+.webdesignblogbody .websiteinfo .websitelogo img{margin-left:20px; margin-bottom:10px; background:none; background-color:transparent}
+.webdesignblogbody .websiteinfo .websitelogoinfo{width:160px}
+.webdesignblogbody .websiteinfo .websitelogoinfo b{font-size:13px; margin-left:20px; margin-top:5px; margin-bottom:15px}
+.webdesignblogbody .websiteinfo .websitelogoinfo p{font-size:11px; margin-top:10px; margin-right:0px; color:#777}
+.webdesignblogbody .websiteinfo .websitelogoinfo a{font-size:11px; margin-top:10px; color:#f00; text-decoration:none; margin-bottom:8px; margin-left:20px}
+.webdesignblogbody .websiteinfo .websitelogoinfo a:hover{font-size:11px; margin-top:10px; color:#f00; text-decoration:underline; margin-bottom:8px; margin-left:20px}
+.dottedline{margin-top:20px; height:2px; margin-left:20px; width:610px; border-bottom:1px dotted #eee}
+
+#webdesign1{margin-top:20px}
+#webdesign2{margin-top:20px}
+#webdesign3{margin-top:20px}
+#webdesign4{margin-top:20px}
+#webdesign5{margin-top:20px}
+
+
+
+
+
+
+.southafricascroll{width:0px; height:0px; border:0px; margin:0px; clear:both}
+#nav-lower{width:100%; margin-top:0px; margin-left:20px; margin-right:0px; border-bottom:1px #eee solid; border-top:1px #eee solid}
+#nav-lower h2{font-size:16px !important; font-weight:normal; color:#222; margin-left:10px !important; border-bottom:0px !important}
+#page-name{float:left; width:50px; font-size:13px; font-weight:bold; padding-left:10px; border-top:0px solid #eee; border-bottom:0px solid #eee}
+.page-number{float:left; width:25px; text-align:center; vertical-align:middle; border-left:#eee 1px solid; background:#333; color:#fff; border-top:1px solid #eee; border-bottom:1px solid #eee}
+#page-number-selected{float:left; width:25px; text-align:center; vertical-align:middle; border-left:#eee 1px solid;  background:#fff; color:#333}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         THE TABLES                                            */
+/*-----------------------------------------------------------------------------------------------*/
+
+#devicecompatibility{margin-left:10px; list-style:disc; list-style-position:inside; font-size:17px}
+#devicecompatibility li{margin-left:10px; font-size:12px}
+#familybutcherthumbnail {margin-right:20px}
+.views_text{ font-size: 30px;    background-image: url('images/up_stat.jpg');    background-repeat: no-repeat;	font-weight:normal !important}
+.website_specs_table{border: 1px solid #cdc; width:580px}
+.websitespecs{margin-left:10px}
+.website_specs_table span{margin-left:20px; color: #121; line-height:20px}
+.website_specs_header{ font-size: 14px;    font-weight: bold;}
+.website_specs_cell{ font-size: 12px;    font-weight:normal;    width: 180px;    background-color: #cdc;    color: #FFFFFF;}
+.website_specs_cell span{margin-left:10px; color: #121; text-shadow:1px 1px 1px #efe; line-height:20px}
+.link_it{    text-decoration: none;    font-weight: bold;    color: #bbcb00;}
+.website_pending_table{    width: 510px;}
+.right_bar_news{    color: #FF0000;    font-size: 18px; }
+.compatibility_table{	border:1px solid #cdc;	color:#121; width:580px}
+.compatibility_table span{line-height:20px}
+.compatibility_table img{margin-left:5px; line-height:20px}
+.compatibility_row_header{	background-color: #cdc;    color: #121; text-shadow:1px 1px 1px #efe}
+.post-entry{ width:580px; margin-top:0px; margin-left:20px; margin-bottom:0px; margin-right:20px; font-family: 'Century Gothic' , Candara, Calibri, Arial !important;}
+.need-right-line{margin-top:0px; margin-left:0px; margin-bottom:0px; padding:0px 0px 0px 0px; width:100%; margin-right:1px solid #eee}
+#highlightweb{width:580px}
+.webleftside {float:left; width:35px; margin-left:5px; margin-right:5px}
+#webleftsides span {font-size:90px; color:#bbb}
+#webcenterside {float:left; width:480px; margin-left:5px; margin-right:5px}
+#webcenterside span{font-size:23px; color:#555; line-height:18px; font-weight}
+#webrightside {float:left; width:35px; margin-left:5px; margin-right:5px}
+#webrightside span{font-size:90px; color:#bbb; position:relative; left:-10px}
+#2010_web_design_portfolio  {font-size:20px !important; line-height: 1.5em; font-weight: normal; color: #333 !important; text-decoration:underline}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                        PORTFOLIO WEBSITE                                      */
+/*-----------------------------------------------------------------------------------------------*/
+
+.web-site-designs-for-2010 table{border:1px solid #eee; border-bottom:0px; border-right:0px}
+.webportfolioheader{font-size:17px; color:#010; line-height:23px; font-weight:normal}
+.webdesignportfolio{width:340px}
+.webdesignportfolio td{border-bottom:1px solid #eee; border-right:1px solid #eee}
+.webdesignportfolio p{font-size:12px; color:#777; line-height:18px; margin-left:7px; margin-right:7px; margin-top:3px; margin-bottom:0px}
+.webdesignportfolio b{font-size:12px; color:#555; line-height:18px}
+.webdesignportfolioinfo{float:left; width:340px; margin:0px; position:relative; left:12px}
+.webdesignportfolioimage{float:left; width:240px; margin:0px}
+.2011webdesigns{width:600px; clear:both; background:#fff; border-bottom:0px; border-top:0px; border-left:0px; border-right:0px}
+.web-site-designs-for-2010 {width:580px}
+.web-site-designs-for-2010 a{	color:#121;	font-weight:bold}
+.web-site-designs-for-2010 a:hover{	background:#555; color:#fff; text-decoration:none; text-shadow:1px 1px 2px #000; font-weight:bold}
+.rating_text{   font-size: 32px;	font-weight:normal !important}
+.rating_small{ font-weight:bold;    font-size: 17px; color:#999}
+.rating_small_star{    font-weight:normal !important;    font-size: 25px;}
+.website_cell_info{margin:0px;    padding: 0px 0px 0px 0px; margin-right:18px; margin-left:18px}
+.website_cell_info p{font-size:12px; color:#777; line-height:18px; margin-left:7px; margin-right:7px; margin-top:3px; margin-bottom:0px}
+.website_cell_info p a{font-size:12px; color:#555; font-weight:normal; text-decoration:none}
+.website_cell_info p a:hover{font-size:12px; background:#333; color:#fff; text-shadow:1px 1px 3px #000; font-weight:normal; text-decoration:none}
+.border-less{padding-right:18px; margin-left:18px;}
+.space-table{height:10px}
+.space-table-web{height:40px}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                     THE PORTFOLIO COMMENTS                                    */
+/*-----------------------------------------------------------------------------------------------*/
+
+.post-entry h2{margin-top:3px; margin-left:0px !important; margin-right:10px !important; float: left; width: 100%; font-size:20px !important; line-height: 1.5em;font-weight: normal;color: #555!important; margin-bottom:15px   }
+.post-entry h1{margin-top:3px; margin-left:10px !important;	margin-right:30px !important; float: left; width: 100%; font-size:20px !important; line-height: 1.5em; font-weight: normal;
+color: #121 !important;}
+.post-entry h3{margin-top:3px; margin-left:0px !important;	margin-right:0px !important; float: left; width: 100%; font-size:20px !important; line-height: 1.5em; font-weight: normal;
+color: #010 !important; text-decoration:underline}
+.post-entry h1 a{margin-top:3px; margin-left:0px !important; margin-right:30px !important; float:left; width:100%; font-size:27px !important; line-height:1.5em;font-weight: normal; color: #333 !important;}
+.post-entry h2 a{    color: #555 !important;    text-decoration: none;	font-size:20px !important;	margin-left:10px !important; 	margin-right:10px !important; }.post-entry h2 a:hover{
+    color: #aa0 !important;    text-decoration: none;}
+.post-meta{    float: left;    width: 100%;    padding-bottom: 1em;}
+.post-meta-content h1{    margin: 0px;    padding: 0px 0px 2px;    float: left;    width: 100%;    color: #000000;    text-decoration: none;    font-size: 2.0em;    font-weight: normal;    border-bottom: 1px solid #ededed;}
+.post-meta-content h1 a{    color: #006699;    text-decoration: none;}
+.post-meta-content h1 a:hover{    color: #FF6600;    text-decoration: none;}
+.post-author{ color: #121;   font-size: 12px;   	margin-left:0px;    padding: 0px;    float: left;    width: 100%;    line-height: 20px;}
+.post-author a{    color: #121;    text-decoration: none;}
+.post-author a:hover{    color: #000000;    text-decoration: underline;}
+.post-category{    margin: 0px;    padding: 0px;    float: left;    width: 100%;    font-size: 1em;    line-height: 20px;    font-weight: bold;    color: #000000;}
+.post-category a{    color: #006699;    text-decoration: none;    font-weight: normal;}
+.post-category a:hover{    color: #000000;    text-decoration: underline;}
+.post-rate{    margin-left:0px;  float: left;    width: 100%;    color: #333;    text-decoration: none;	position:relative;	top:-10px; font-size:14px; color:#555}
+.post-web-content{    margin-left:5px  !important; margin-top:20px;	margin-right:5px  !important;   width: 510px !important;    font-size: 13px !important;    line-height: 16px !important;}
+.post-web-content h2{margin-bottom:0px !important; text-decoration:none !important}
+.post-web-content a{    color: #006699;    text-decoration: underline;}.span-inner{    margin-left:10px !important;	margin-right:10px !important;	font-size:12px !important;	color:#444;	background-color:#FFF;}
+#2010-portfolio-of-websites td{	border:0px !important;	margin-left:10px !important;	margin-right:10px !important;	padding:5px  !important;	}
+.text-link{	font-weight:bold; color:#333 !important}
+.post-web-content a:hover{    color: #000000;    text-decoration: none;}
+.post-web-content img{    border-width: 0px;}
+.post-social{    margin: 0px;    padding: 0px;    float: left;    width: 100%;}
+.post-social ul{    margin: 0px;    padding: 0px;    float: left;    width: 100%;    list-style-type: none;}
+.post-social ul li{ display:inline; margin:0px 5px 0px 0px; padding:0px 0px 0px 30px; float:left; background:url(images/social-left.gif) no-repeat left center; height:33px; line-height: 31px}
+.post-social ul li a{background:url(./images/social-right.gif) no-repeat right center; margin:0px; padding: 0px 20px 0px 0px; height:33px; float:left; display: inline-block; color: #555555;
+text-decoration: none;}
+.post-social ul li a:hover{background:url(images/social-right.gif) no-repeat right center; margin:0px; padding:0px 20px 0px 0px;  height:33px;  float:left; display:inline-block; color:#000000;
+text-decoration: none;}
+
+/*---------  INNER COMMENTS --------*/
+#comment-list-inner {width:90%}
+#comment-block-alt-inner{ width: 270px;    margin: 0px;    padding: 0px; position:relative; left:10px}
+.commantsspace{width:605px; clear:both; height:20px}
+
+
+
+.comment-list{width: 625px;  padding: 0px 0px 1.5em;  margin-top:45px; margin-left:10px; position:relative}
+.comment-avatar{margin:0px; padding:0px; float:left; height:102px;  width:150px;}
+.avatar {}
+.avatar img {margin:4px}
+.avatar span{font-size:11px; color:#555; margin:5px; margin-top:10px}
+.avatar span b{font-size:16px; color:#343; font-weight:bold}
+.avatar span b a{font-size:10px; color:#111; font-weight:bold; text-decoration:none}
+.avatar span strong{font-size:11px; color:#343; font-weight:bold}
+
+
+
+#commentsonwebdesigns {font-size:22px; color:#333; font-weight:normal; margin-top:20px; margin-bottom:10px}
+.comments-sections{position:relative; margin-left:0px; width:615px}
+.comment {width:110px; margin-left:00px; margin-bottom:40px}
+.comment .webcomments{float:left; height:18px; background:#fff; width:80px; border:1px solid #eee}
+.comment .webcomments span{line-height:11px; margin-left:2px; margin-top:0px}
+.comment .webcomments span:hover{line-height:11px; margin-left:2px; margin-top:0px; background:#eee}
+.comment .webcomments span a{position:relative; top:-2px; line-height:15px; margin-left:5px; margin-top:0px ; text-decoration:none; border:0px; vertical-align:middle; font-size:9px}
+.comment .webcomments span a img{position:relative; top:2px; width:12px; height:11px}
+.pointer{width:110px; height:50px; border-left:1px dotted #ddd; border-bottom:1px dotted #ddd; background:transprent; position:absolute; top:124px; left:25px}
+.comment-block-alt{float: left;    width: 475px;    margin: 0px;    padding: 0px;}
+.comment-block-alt .comment-author{    color: #000000;    margin: 0px;    padding: 0px 0px 2px;    float: left;    width: 99%;    font-size: 14px;    line-height: 20px;    font-family: "Trebuchet MS" , Tahoma, "VAGRounded BT" , Verdana;    font-weight: bold;    border-bottom: 1px dotted #CCCCCC;}
+.comment-block-alt .comment-date{    font-size: 0.9375em;    color: #333333;    margin: 0px;    padding: 0px;}
+.comment-block-alt .comment-date a{    color: #660000;    text-decoration: none;}
+.comment-block-alt .comment-date a:hover{    color: #000000;    text-decoration: underline;}
+.comment-block-alt .comment-text{color: #000000;    margin: 0px;    padding: 0px;    float: left;    width: 99%;    overflow: hidden;    font-size: 12px;    line-height: 20px;}
+.comment-block-alt .comment-text p{color: #000000;    margin: 0px;    padding: 0px;    float: left;    width: 99%;    overflow: hidden;    font-size: 12px;    line-height: 20px;    border-bottom: 1px dotted #CCCCCC;}
+.comment-block-alt .comment-author a{    color: #660000;    text-decoration: none;}
+.comment-block-alt .comment-author a:hover{    color: #000000;    text-decoration: none;}
+.comment-block-alt .comment-text a{    color: #660000;    text-decoration: underline;}
+.comment-block-alt .comment-text a:hover{    color: #000000;    text-decoration: none;}
+.comment-block-alt .comment-text code{    font-family: "Courier New" , "MS Sans Serif" , sans-serif, serif;    font-size: 1em;    color: #000000;}
+.comment-block-alt .comment-text blockquote{    margin: 10px 10px 10px 15px;    padding: 5px 5px 5px 8px;    clear: both;    border-left: 5px solid #000000;    font-size: 1.125em;    color: #000000;    border-top-width: 0px;    border-right-width: 0px;    border-bottom-width: 0px;}
+#commentheader{font-size:35px; position:relative; top:115px; left:-125px}
+#webdesignform {border:1px solid #ddd; width:625px; border-top:0px}
+#backtotop{margin-left:5px}
+#backtotop a{color:#222; text-decoration:none; font-size:12px}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*                                            ADVERTS                                        */
+/*-------------------------------------------------------------------------------------------*/
+
+/*---------  TOP MENU  ---------------*/
+.webdesignpromo{float:left; width:320px; margin-left:14px; margin-top:00px; margin-right:0px; margin-bottom:10px;  border-right:0px; border-left:0px; border-bottom:0px dotted #ddd}
+.webdesignpromo.webgraphicseonewsletter{width:300px; margin:0px; position:relative}
+.webdesignpromo .webgraphicseonewsletter .webbrandinglink{width:142px; height:40px; float:left; margin-left:6px; margin-right:0px; margin-top:6px; background:url(../images/web.png) left top no-repeat; text-align:left; cursor:pointer}
+.webdesignpromo .webgraphicseonewsletter .webbrandinglink:hover{width:142px; height:40px; float:left; margin-left:6px; margin-right:0px; margin-top:6px; background:url(../images/web.png) right top no-repeat; text-align:left; cursor:pointer}
+.webdesignpromo .webgraphicseonewsletter #webbrandinglinkred{width:142px; height:40px; float:left; margin-left:6px; margin-right:0px; margin-top:6px; 
+background:#aaa url(../images/webfreelancer.png) left top no-repeat; text-align:left; cursor:pointer}
+.webdesignpromo .webgraphicseonewsletter #webbrandinglinkred:hover{width:142px; height:40px; float:left; margin-left:6px; margin-right:0px; margin-top:6px; 
+background:url(../images/webfreelancer.png) right top no-repeat; text-align:left; cursor:pointer}
+.webdesignpromo .webgraphicseonewsletter span{line-height:40px; text-align:left; font-weight:bold; margin-left:20px}
+.webdesignpromo .webgraphicseonewsletter span a{color:#333; text-shadow:1px 1px 1px #fff; text-decoration:none; border:0px; font-weight:normal; font-size:11px; font-family:arial}
+.webdesignpromo .webgraphicseonewsletter span a:hover{color:#111; text-shadow:1px 1px 1px #fff; text-decoration:underline; border:0px; font-weight:normal; font-size:11px; font-family:arial}
+.webdesignpromo .webgraphicseonewsletter span a b{line-height:10px; position:relative; top:-30px; color:#555; text-shadow:1px 1px 1px #fff; font-size:9px; margin-left:20px}
+
+.webdesignpromo .webgraphicseonewsletter #webbrandinglinkred span{line-height:40px; text-align:center; font-weight:bold}
+.webdesignpromo .webgraphicseonewsletter #webbrandinglinkred span a{color:#F00; text-shadow:1px 1px 1px #fff; text-decoration:none; border:0px; font-weight:bold; font-size:11px; font-family:arial}
+
+/*---------- THEME FOREST ------------*/
+#themeforest{margin-top:20px}
+#themeforest a img{width:288px; height:248px; margin-left:6px}
+
+
+/*---------- TABBED PANELS ------------*/
+#topics{width:286px; margin-left:7px; margin-top:20px}
+#tabbedpaneslcontent1 {border:0px}
+#tabbedpaneslcontent1 ul{position:relative; left:15px}
+#tabbedpaneslcontent1 ul li{line-height:25px; width:260px}
+#tabbedpaneslcontent1 ul .dotted {width:245px; border-bottom:1px dotted #ddd; clear:both}
+#tabbedpaneslcontent1 ul li span {line-height:25px; width:260px}
+#tabbedpaneslcontent1 ul li span a{color:#444; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:10px; font-weight:normal}
+#tabbedpaneslcontent1 ul li span a:hover{color:#111; text-shadow:1px 1px 1px #fff; text-decoration:underline; font-size:10px; font-weight:normal}
+#tabbedpaneslcontent1 ul li span b{color:#333; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:12px; font-weight:bold; float:right}
+#tabbedpaneslcontent2 { background:url(../images/tabbedbelow.png) bottom center no-repeat; border:0px}
+#tabbedpaneslcontent2 ul{position:relative; left:15px}
+#tabbedpaneslcontent2 ul li{line-height:25px; width:260px}
+#tabbedpaneslcontent2 ul .dotted {width:245px; border-bottom:1px dotted #ddd; clear:both}
+#tabbedpaneslcontent2 ul li span {line-height:25px; width:260px}
+#tabbedpaneslcontent2 ul li span a{color:#444; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:10px; font-weight:normal}
+#tabbedpaneslcontent2 ul li span a:hover{color:#111; text-shadow:1px 1px 1px #fff; text-decoration:underline; font-size:10px; font-weight:normal}
+#tabbedpaneslcontent2 ul li span b{color:#333; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:12px; font-weight:bold; float:right}
+#tabbedpaneslcontent2 ul li span b strong{color:#f00; text-decoration:none; font-size:12px;}
+#tabbedpaneslcontent3 { background:url(../images/tabbedbelow.png) bottom center no-repeat; border:0px}
+#tabbedpaneslcontent3 ul{position:relative; left:15px}
+#tabbedpaneslcontent3 ul li{line-height:25px; width:260px}
+#tabbedpaneslcontent3 ul .dotted {width:245px; border-bottom:1px dotted #ddd; clear:both}
+#tabbedpaneslcontent3 ul li span {line-height:25px; width:260px}
+#tabbedpaneslcontent3 ul li span a{color:#444; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:10px; font-weight:normal}
+#tabbedpaneslcontent3 ul li span a:hover{color:#111; text-shadow:1px 1px 1px #fff; text-decoration:underline; font-size:10px; font-weight:normal}
+#tabbedpaneslcontent3 ul li span b{color:#333; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:12px; font-weight:bold; float:right}
+
+.TabbedPanelsTab div{width:94px; height:35px; background-position:center top; text-align:center}
+.TabbedPanelsTab div span{line-height:35px}
+.TabbedPanelsTab div:selected{width:94px; background:#fc0}
+
+#CollapsiblePanel2 .CollapsiblePanelTab b{color:#333; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:12px; font-weight:bold; width:120px; float:left}
+#CollapsiblePanel2 .CollapsiblePanelTab b:hover{color:#000; text-shadow:1px 1px 1px #fff; text-decoration:underline; font-size:12px; font-weight:bold; width:120px; float:left}
+#CollapsiblePanel2 .CollapsiblePanelTab strong{color:#f00; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:15px; font-weight:bold; margin-right:10px; width:100px; float:right}
+
+#CollapsiblePanel3 .CollapsiblePanelTab b{color:#333; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:12px; font-weight:bold; width:120px; float:left}
+#CollapsiblePanel3 .CollapsiblePanelTab b:hover{color:#000; text-shadow:1px 1px 1px #fff; text-decoration:underline; font-size:12px; font-weight:bold; width:120px; float:left}
+#CollapsiblePanel3 .CollapsiblePanelTab strong{color:#f00; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:15px; font-weight:bold; margin-right:10px; width:100px; float:right}
+
+#CollapsiblePanel4 .CollapsiblePanelTab b{color:#333; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:12px; font-weight:bold; width:120px; float:left}
+#CollapsiblePanel4 .CollapsiblePanelTab b:hover{color:#000; text-shadow:1px 1px 1px #fff; text-decoration:underline; font-size:12px; font-weight:bold; width:120px; float:left}
+#CollapsiblePanel4 .CollapsiblePanelTab strong{color:#f00; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:15px; font-weight:bold; margin-right:10px; width:100px; float:right}
+
+#controlcollapse0 {background:none; height:22px; width:280px}
+#controlcollapse1 {background:none; height:22px; width:280px}
+#controlcollapse2 {background:none; height:22px; width:280px}
+#tabbedpaneslcontent2 ul .dottedcollapsible {width:260px; margin-left:00px; line-height:20px; border-bottom:1px dotted #ccc}
+.webdesign{position:relative; left:-8px}
+
+#webarticles1{clear:both; width:270px; position:relative; left:-15px; margin-top:10px}
+#webarticles2{clear:both; width:270px; position:relative; left:-15px; margin-top:10px}
+#webarticles3{clear:both; width:270px; position:relative; left:-15px; margin-top:10px}
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*                                            BLOG                                           */
+/*-------------------------------------------------------------------------------------------*/
+#webdesigndurban{background:url(../images/main-bg-blog.jpg) center top no-repeat; width:100%; margin:0px; padding:0px}
+#durbanblog{background:url(../images/blogwebdesign.png) center top no-repeat; width:100%; height:100px; margin-top:40px}
+
+/*--------------------------------------------  FOOTER  --------------------------------------*/
+#footer{width:100%; height:267px; background:url(../images/footerarea.jpg) bottom center repeat-x; clear:both; position:relative; top:00px}
+#footer #footerarea{width:940px; height:260px; margin-left:auto; margin-right:auto;}
+#footer #footerarea #footerweb{width:710px; float:left; margin-left:0px; height:190px;}
+#footer #footerarea .webprintservices{width:180px}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*                     																		 */
+/*                                            SEO                                            */
+/*                     																		 */
+/*-------------------------------------------------------------------------------------------*/
+
+.webdesignblogbody h1{font-size:16px; color:#777; margin-left:17px; font-weight:bold}
+.webdesignblogbody h2{font-size:16px; color:#777; margin-left:17px; font-weight:bold}
+.webdesignblogbody h3{font-size:16px; color:#777; margin-left:17px; font-weight:bold}
+.webdesignblogbody p{font-size:13px; color:#444; margin-left:17px; margin-bottom:0px; margin-top:4px}
+.webdesignblogbody p a{font-size:13px; color:#f00; font-weight:normal; border-bottom:1px solid #f44; text-decoration:none}
+.webdesignblogbody p a:hover{font-size:13px; color:#f00; font-weight:normal; border-bottom:1px solid #000; text-decoration:none}
+.more {margin-left:20px}
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*                     																		 */
+/*                                   WEB DESIGN PRICES                                       */
+/*                     																		 */
+/*-------------------------------------------------------------------------------------------*/
+.webdesignprice{float:left; width:250px; margin:0px}
+.webdesignprice .designprice{font-size:15px !important; margin-bottom:0px !important; line-height:20px !important; color:#f00; margin-left:17px; font-weight:bold}
+.webdesignprice h1{font-size:15px !important; color:#f00; margin-bottom:0px !important; line-height:20px !important; margin-left:17px; font-weight:bold}
+.webdesignprice p{font-size:11px !important; color:#f00; margin-left:17px; font-weight:bold}
+
+.webdesignpricedurban{float:left; width:250px; margin:0px; margin-left:20px}
+.webdesignpricedurban .designprice{font-size:15px !important; margin-bottom:0px !important; line-height:20px !important; color:#f00; margin-left:17px; font-weight:bold}
+.webdesignpricedurban h1{font-size:15px !important;  margin-bottom:0px !important; line-height:20px !important; margin-left:17px; font-weight:bold}
+.webdesignpricedurban p{font-size:11px !important; margin-left:17px; font-weight:bold}
+
+.webdesignpricedurban p a{font-size:12px; color:#232; font-weight:normal; border-bottom:1px solid #f44; text-decoration:none}
+.webdesignpricedurban p a:hover{font-size:12px; color:#232; font-weight:normal; border-bottom:1px solid #a44; text-decoration:none}
+
+
+.webdesignpricehr{width:510px; margin-left:10px; background:#efe !important; border-bottom:#fff solid 1px; border-top:#898 solid 1px}
+
+
+
+/*------------------------------------- COLLAPSIBLE PANELS -------------------------------------*/
+.webdesignoffer{width:520px; margin-left:9px}
+.webdesignoffer .webdesignpricingheader {float:left; width:150px; margin-right:24px; margin-left:0px; 	border:1px solid #aba; margin-top:10px}
+#webnorightmargin{margin-right:0px; margin-left:0px}
+.webdesignoffer .webdesignpricingheader h2{font-size:12px !important;  margin-bottom:0px !important; line-height:18px !important; font-weight:bold; margin-left:0px}
+.webdesignoffer .webdesignpricingheader p{font-size:11px !important; margin-left:17px; margin-right:8px; font-weight:bold}
+.webdesignpricestructure {width:502px; border:1px #aba solid; margin-top:10px; margin-left:9px; margin-right:13px}
+.webdesignpricestructure p{font-size:11px !important; margin-left:17px; margin-right:8px; font-weight:bold}
+.webdesignpricestructure ul{margin-left:13px; font-size:10px; font-weight:bold; list-style:disc; list-style-position:inside; margin-right:10px;}
+.webdesignpricestructure ul li{margin-left:13px; font-size:10px; font-weight:bold; list-style-position:inside; color:#343; line-height:17px; margin-right:10px;}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*                     																		 */
+/*                                   BRANDING PRICES                                       */
+/*                     																		 */
+/*-------------------------------------------------------------------------------------------*/
+
+.brandingpricedurban {font-size:11px !important; margin-left:17px; margin-right:8px; font-weight:normal}
+#brandingprice{font-size:12px !important;  margin-bottom:0px !important; line-height:18px !important; font-weight:bold; margin-left:0px}
+#brandingsouthafrica {margin-left:5px; font-size:12px; font-weight:normal; list-style:decimal; list-style-position:inside; margin-right:10px; color:#f44 !important}
+#brandingsouthafrica li{margin-left:5px; font-size:22px; font-weight:normal; line-height:18px; list-style:none; list-style-position:inside; margin-right:10px; text-shadow:1px 1px 1px #fff; margin-bottom:20px; background:url(../images/price.png) left top no-repeat }
+#brandingsouthafrica li strong{font-size:15px; font-weight:bold !important; text-shadow:1px 1px 1px #fff; margin-bottom:20px; color:#232 !important}
+#brandingsouthafrica li span{margin-left:5px; font-size:12px; font-weight:normal; list-style:decimal; list-style-position:inside; margin-right:10px; text-shadow:1px 1px 1px #fff; margin-bottom:8px; color:#232}
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*                     																		 */
+/*                                        SEO PRICES                                         */
+/*                     																		 */
+/*-------------------------------------------------------------------------------------------*/
+
+.seopricesdurban {font-size:12px !important;  margin-bottom:0px !important; line-height:18px !important; font-weight:bold; margin-left:0px}
+
+#seosouthafrica {margin-left:5px; font-size:12px; font-weight:normal; list-style:decimal; list-style-position:inside; margin-right:10px; color:#f44 !important}
+#seosouthafrica li{margin-left:5px; font-size:22px; font-weight:normal; line-height:18px; list-style:none; list-style-position:inside; margin-right:10px; text-shadow:1px 1px 1px #fff; margin-bottom:20px; background:url(../images/price.png) left top no-repeat }
+#seosouthafrica li strong{font-size:15px; font-weight:bold !important; text-shadow:1px 1px 1px #fff; margin-bottom:20px; color:#232 !important}
+#seosouthafrica li span{margin-left:5px; font-size:12px; font-weight:normal; list-style:decimal; list-style-position:inside; margin-right:10px; text-shadow:1px 1px 1px #fff; margin-bottom:8px; color:#232}
+
+.seodurban {border:#bcb solid 1px; margin-left:3px; width:510px; margin-top:15px}
+.seodurban h1 {margin:0px; line-height:2px; width:1px; height:1px}
+.seodurban h1 a{margin:0px; line-height:2px; width:1px; height:1px}
+.seodurban h1 a img{margin:0px; line-height:2px; width:1px; height:1px}
+.seodurban h4 {font-size:22px; color:#f00; font-weight:bold !important; margin-left:7px}
+.seoinfo{font-size:11px !important; color:#343;  margin-bottom:0px !important; line-height:17px !important; font-weight:normal; margin-left:0px}
+.searchengineoptimization {margin-left:5px; font-size:12px; font-weight:normal; list-style:decimal; list-style-position:inside; margin-right:10px; color:#aaa !important}
+.searchengineoptimization li{margin-left:5px; font-weight:normal; line-height:24px; list-style:none; list-style-position:inside; margin-right:10px; text-shadow:1px 1px 1px #fff;}
+.searchengineoptimization li a{margin-left:0px; font-size:12px; font-weight:normal; text-shadow:1px 1px 1px #fff; margin-bottom:8px; color:#f00; text-decoration:none}  
+.searchengineoptimization li a span{margin-left:0px; margin-top:0px !important; font-size:12px; font-weight:normal; text-shadow:1px 1px 1px #fff; margin-bottom:8px; color:#f00; text-decoration:none; line-height:18px !important;  border-bottom:1px solid #f00}  
+.searchengineoptimization li a:hover{margin-left:5px; font-size:12px; font-weight:normal; text-shadow:1px 1px 1px #fff; margin-bottom:8px; color:#565; text-decoration:none} 
+.searchengineoptimization li a strong{margin-left:5px; font-size:10px; font-weight:bold; text-shadow:1px 1px 1px #fff; margin-bottom:8px; color:#787; text-decoration:none; border-bottom:0px}   
+#seo-tablex{ width:510px; height:1150px; margin-left:00px; margin-top:15px; background:url(../seo/seodurban/images/seobg.png) top left no-repeat ;}
+#seo-tablex #seo-detailx{ height:18px;   width:80px;    font-family:Arial;    color:#fff;    font-size:18px;    vertical-align:bottom;    text-align:center}
+#seo-tablex #seo-detailx-h1{ font-family:Arial;    color:#fff;    font-size:14px; font-weight:normal}
+#seo-tablex .seo-titles{ height:18px;    width:45px; vertical-align:top;}
+#seo-tablex .seo-names{text-align:center; line-height: 17px;  color: #000; font-weight: bold; font-family: Arial; font-size:18px; float:left; margin-left:1px;  margin-top:5px;    height:19px;    vertical-align:bottom}
+#seo-tablex .seo-pricings{text-align:center; line-height: 15px; color: #cc0;  font-style:normal;  font-weight: bold; font-family: Arial; font-size: 9px; float:right; margin-right:3px; margin-top:6px; height:10px}
+#seo-tablex .seo-monthlys{text-align:center; line-height:16px; color: #0bb; font-style:italic; font-weight: bold; font-family: Arial; font-size: 16px; float:left;    margin-left:8px;    margin-top:4px;    height:10px}
+#seo-tablex #optionx{margin-top:7px;    margin-left:0px;    height:40px}
+#seo-tablex #optionx-h1{color:#fff;    font-family:Arial;    font-size:24px;    margin-bottom:0px;    border-bottom-width:0px}
+#seo-tablex #custom-optionx{margin-top:7px;    margin-left:10px;    height:20px}
+#seo-tablex #custom-optionx a{color:#555;    font-family:Arial;    font-size:10px;    text-decoration:none}
+#seo-tablex #custom-optionx a:hover{color:#fff;    font-family:Arial;    font-size:10px;}
+
+#seo-tablex .durations{color:#777;    font-size:7px;    font-weight:bold;    float:right;    margin-right:3px;    margin-top:0px;    vertical-align:top;    height:8px; font-style:normal}
+#seo-tablex .monthlys{color:#333; font-size:7px; font-weight:bold; float:left;    margin-left:0px;    margin-top:0px;    vertical-align:top;    height:8px;    font-style:normal}
+#seo-tablex .specs{height:10px; vertical-align:middle;    text-align:center;}
+#seo-tablex .hr-specs{margin-left:0px;}
+#seo-tablex .left-specs{color:#fff;  font-family:Arial;  font-size:11px;  padding:1px 1px 1px 8px; width:100px}
+#seo-tablex .left-specs a{color:#cc0;  font-family:Arial;  font-size:11px; text-decoration:none}
+#seo-tablex .left-specs a:hover{color:#cc0;  font-family:Arial;  font-size:11px; text-decoration:underline}
+#seo-tablex .right-specs{color:#777; font-family:Arial;  font-size:10px; padding:1px 1px 1px 1px; width:50px}
+#seo-tablex .right-specs img{position:relative; left:5px}
+#seo-tablex .right-specs b{font-size:14px;}
+.seo-durban-submit{background:url(../seo/seodurban/images/button.png) left top no-repeat; width:50px; height:24px}
+.seo-durban-submit a{color:#343; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:10px; text-align:center; line-height:28px; margin-left:5px}
+.seo-durban-submit a:hover{color:#000; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:10px; text-align:center; line-height:28px; margin-left:5px}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*                     																		 */
+/*                                        SEO BLOG                                         */
+/*                     																		 */
+/*-------------------------------------------------------------------------------------------*/
+
+.seoh1 {font-size:35px; color:#787; text-shadow:1px 1px 1px #fff; margin-left:20px; font-weight:bold}
+.seoh1 a{font-size:35px; color:#787; text-shadow:1px 1px 1px #fff; font-weight:bold; text-decoration:none; margin-bottom:10px}
+
+
+.understanding-seo {width:625px; margin-left:00px; margin-top:0px; float:left; border-left:1px solid #ddd}
+.understanding-seo .southafrica {border-bottom:#eee dotted 2px; width:625px; margin:0px; background:transparent url(../images/bodymain.png) repeat; position:relative}
+.understanding-seo .southafrica .durban {border-bottom:#eee dotted 1px; width:625px; margin:0px; padding:0px}
+.understanding-seo .southafrica .durban .webdesignblogh1 {color:#555; text-shadow:1px 1px 1px #fff; font-size:30px; line-height:38px; font-weight:bold; margin:20px; margin-top:0px; margin-bottom:14px; text-decoration:none}
+.understanding-seo .southafrica .durban .webdesigntitle {color:#555; text-shadow:1px 1px 1px #fff; font-size:17px; line-height:10px; font-weight:normal !important; margin:20px; margin-top:0px}
+.understanding-seo .southafrica {border-bottom:#eee dotted 2px; width:625px; margin:0px; background:transparent url(../images/bodymain.png) repeat; position:relative}
+.understanding-seo .southafrica .webrecentdesigntitle {color:#555; text-shadow:1px 1px 1px #fff; font-size:19px; line-height:10px; font-weight:bold !important; margin-left:0px; margin-top:30px; margin-bottom:20px; width:400px}
+.understanding-seo .southafrica .designs {color:#444; text-shadow:1px 1px 1px #fff; font-size:17px; line-height:10px; font-weight:normal !important; margin:0px; margin-top:0px; width:500px !important; font-style:normal;}
+.understanding-seo .southafrica .durban .webdesignblogh1 #myweb{margin-right:8px; padding-right:10px; margin-top:8px; margin-bottom:8px}
+
+.durbanseocompany{width:655px; margin:0px}
+.durbanseocompany p{font-size:14px; line-height:20px; margin:20px; color:#333; text-shadow:1px 1px 1px #efe;}
+.durbanseocompany p a{font-size:15px; line-height:20px; font-weight:bold; color:#111; text-shadow:1px 1px 1px #efe;}
+
+.seodotted{background:none; height:1px; border-bottom:#fff solid 0px; width:610px; border-left:0px; border-right:0px; border-top:1px dotted #ddd; margin-left:30px}
+
+
+#seonav-lower{width:610px; margin-top:0px; margin-left:20px; margin-right:0px; border:1px #eee solid; height:60px}
+#seonav-lower h2{font-size:16px !important; font-weight:normal; color:#222; margin-left:10px !important; border-bottom:0px !important; line-height:60px}
+#seopage-name{float:left; width:50px; font-size:13px; font-weight:bold; padding-left:10px; border-top:0px solid #eee; border-bottom:0px solid #eee; height:60px; line-height:60px}
+.seopage-number{float:left; text-align:center; vertical-align:middle; border-left:#eee 1px solid; background:#ddd; color:#fff; border-top:0px solid #eee; border-bottom:1px solid #eee;  line-height:60px; cursor:pointer}
+.seopage-number:hover{float:left; text-align:center; vertical-align:middle; border-left:#eee 1px solid; background:#aaa; color:#fff; border-top:0px solid #eee; border-bottom:1px solid #eee;  line-height:60px; cursor:pointer}
+.seopage-number a{color:#777; margin-left:17px; margin-right:17px; text-decoration:none; text-shadow:1px 1px 1px #fff}
+.seopage-number a:hover{color:#333; margin-left:17px; margin-right:17px; text-decoration:underline; text-shadow:1px 1px 1px #fff}
+#seopage-number-selected{float:left; text-align:center; vertical-align:middle; border-left:#eee 1px solid;  background:#ccc; color:#333; cursor:pointer}
+#seopage-number-selected a{color:#222; margin-left:17px; margin-right:17px; text-decoration:none; text-shadow:1px 1px 1px #fff}
+#navigate{height:60px; background:url(../seo/seodurban/images/navigate.png) right top; width:40px; float:right; text-align:center; cursor:pointer}
+#navigate:hover{height:60px; background:url(../seo/seodurban/images/navigate.png) left top; width:40px; float:right; text-align:center; cursor:pointer}
+#navigate a{color:#fff; position:relative; top:42px; font-size:10px; text-decoration:none; text-shadow:1px 1px 5px #fff}
+#navigate a:hover{color:#ccc; position:relative; top:42px; font-size:10px; text-decoration:none; text-shadow:1px 1px 5px #fff}
+#seonext {float:left; text-align:center; background:url(../seo/seodurban/images/seo.png) left top no-repeat; cursor:pointer}
+#seonext a{color:#555; line-height:60px; font-size:14px; margin-left:30px; text-decoration:none; text-shadow:1px 1px 1px #fff}
+#seonext a b{color:#999; line-height:60px; font-size:14px; text-decoration:none; text-shadow:1px 1px 1px #fff}
+#seonext a strong{border-bottom:1px solid #f00; line-height:20px; text-shadow:1px 1px 9px #fff !important; color:#555}
+#seonext a strong:hover{border-bottom:1px solid #a00; line-height:20px}
+
+.seoprofit{color:#f00; font-size:20px;  font-weight:bold}
+.seored {color:#444; font-size:20px; font-weight:bold}
+
+.searchenginemarketing{width:615px; margin-left:20px; border:1px solid #eee}
+.searchenginemarketing .seosouthafrica{border-left:0px; height:50px; background:url(../seo/seodurban/images/seoback.png) left top no-repeat}
+.searchenginemarketing .seosouthafrica .seodigit{height:50px; width:70px; background:url(../seo/seodurban/images/seonavigate.png) left top no-repeat; float:left; margin:0px; cursor:pointer}
+.searchenginemarketing .seosouthafrica .seodigit a{line-height:50px; color:#333; font-size:12px; margin-left:22px; text-shadow:1px 1px 1px #fff}
+.searchenginemarketing .seosouthafrica #seoselected{height:50px; width:70px; background:url(../seo/seodurban/images/seonavigateselected.png) left top no-repeat; float:left; margin:0px;  cursor:pointer}
+.searchenginemarketing .seosouthafrica #seoselected a{line-height:50px; color:#fff; font-size:18px; margin-left:20px; text-shadow:1px 1px 5px #fff; text-decoration:none;}
+.searchenginemarketing .seosouthafrica .durbanseo{height:50px; width:530px; float:left; margin:0px}
+.searchenginemarketing .seosouthafrica .durbanseo a{line-height:50px; color:#777; font-size:12px; margin-left:25px; text-shadow:1px 1px 5px #fff; text-decoration:none; border-bottom:#ddd solid 1px;}
+.searchenginemarketing .seosouthafrica .durbanseo a:hover{line-height:50px; color:#777; font-size:12px; margin-left:25px; text-shadow:1px 1px 5px #fff; text-decoration:none; border-bottom:#f00 solid 1px;}
+.seolinks{color:#777 !important; text-decoration:none; border-bottom:#f00 solid 1px; font-weight:normal !important}
+.seolinks:hover{color:#222; text-decoration:none; border-bottom:#d00 solid 1px}
+.optimized{color:#f00 !important; position:relative; left:20px; text-shadow:1px 1px 1px #fff; font-size:20px !important; border-bottom:1px solid #000; text-decoration:none; max-width:600px}
+.optimized h1{color:#f00 !important; position:relative; left:25px; line-height:30px; text-shadow:1px 1px 1px #fff; font-size:20px !important; border-bottom:1px solid #ddd; text-decoration:none; max-width:600px}
+.quotation{width:640px; margin:0px; height:220px}
+.quotation .quotationmark{float:left; width:80px; text-align:left; margin:0px}
+.quotation .quotationmark span{font-size:190px; color:#999; font-family:"Times New Roman", Times, serif; color:#f00}
+.quotation .quotationmarkright{float:left; width:40px; text-align:right; margin:0px}
+.quotation .quotationmarkright span{font-size:190px; color:#999; font-family:"Times New Roman", Times, serif; color:#f00}
+.quotation .quotationinfo  {float:left; width:520px; text-align:center; margin:0px}
+.quotation .quotationinfo span{font-size:25px; color:#555; position:relative; top:50px;  font-family:Arial, Helvetica, sans-serif}
+#roisouthafrica {color:#0F0}
+#roidurban {font-size:18px; color:#ff0}
+#searchengineotimizationroi {font-size:20px; color:#444; text-decoration:underline; margin-bottom:18px; margin-left:20px}
+#roipermonth {border:#ddd dotted 1px; width:390px; height:240px; margin-left:100px}
+#roiperiod {width:180px; float:left; margin-left:20px; color:#999; line-height:25px}
+#roiheader{text-decoration:underline}
+#roiamount{color:#f00; font-weight:bold}
+
+#roirands{width:180px; float:left; color:#555; line-height:25px}
+#roirands strong b{border-bottom:1px solid #333; border-top:1px solid #333; line-height:30px; position:relative; left:-8px}
+#seo #seopricing h1 a{font-size:25px; color:#ff0; font-weight:bold; text-decoration:underline}
+#seopricings {width:620px; margin-left:20px}
+#seopricings h4 {font-size:25px; color:#fff; font-weight:bold; text-decoration:none; background:#f00; padding-left:10px; padding-top:7px; padding-bottom:7px; padding-right:10px; max-width:620px; text-shadow:1px 1px 14px #fff}
+#seopricings h1 a{font-size:25px; color:#fff; font-weight:bold; text-decoration:none; max-width:620px}
+#seopricings .seoh2header{color:#333; font-size:16px; margin-top:9px; margin-bottom:3px; font-weight:bold}
+#seopricings .seoh2header strong{color:#ff0}
+#seopricings #seokeyword{color:#ff0; font-size:13px}
+#seoroistrong .roisouthafrica{margin-right:12px; background:url(../images/price.png) left top no-repeat; font-weight:bold; font-size:12px; height:30px; width:26px; float:left; text-align:center}
+#seoroistrong .roisouthafrica strong {font-weight:normal; font-size:12px; line-height:27px; height:35px; text-shadow:1px 1px 1px #fff; color:#000}
+#seopricings ul li {font-size:13px; line-height:17px}
+#seopricings ul li b{font-size:15px}
+#seopricings ul li span{font-size:11px}
+#seopricings .seonumber {color:#ff0; font-size:11px}
+#seopricings #other{font-size:18px; font-weight:bold}
+#seopricings .alink{font-size:12px; font-weight:bold; color:#ff0}
+#seopricings .green{color:#0F0; font-size:16px}
+#seo-prices-only{width:610px; background-image:url(../seo/seodurban/images/seo-bg.jpg);   background-repeat:no-repeat; background-position:top left}
+.seoblogpost{margin-left:0px; margin-right:0px; font-size:12px; font-weight:normal; line-height:16px;}
+.seopricings h4{font-size:25px; color:#fff; font-weight:bold; text-decoration:none; background:#f00; padding-left:10px; padding-top:7px; padding-bottom:7px; padding-right:10px; max-width:620px; text-shadow:1px 1px 14px #fff; margin-left:20px; margin-top:15px}
+#seopricingafrica {font-size:12px; list-style-position:inside; list-style:disc; margin-left:40px; margin-top:0px}
+#seopricingafrica li{color:#555; line-height:18px}
+#seopricingafrica li a{color:#555; line-height:18px; text-decoration:none; border-bottom:1px #f00 solid; color:#444}
+#seopricingafrica li a:hover{color:#555; line-height:18px; text-decoration:none; border-bottom:1px #a00 solid; color:#111}
+#reputatiommanagementwork {font-size:12px; list-style-position:inside; list-style:decimal; margin-left:40px; margin-top:0px}
+#reputatiommanagementwork  li{color:#555; line-height:18px; }
+
+.redseo{color:#f00;}
+.seoblogpost h3{margin-left:0px; margin-right:0px; font-size:12px; font-weight:normal; line-height:16px;}
+
+
+.seohighlights {width:600px; margin-left:20px; border:1px dotted #eee; text-align:center}
+.seohighlights .innerseo {font-size:17px; line-height:23px; font-weight:normal; color:#aaa; padding:18px}
+
+#seopriceroi{font-size:12px; list-style-position:inside; list-style:decimal; margin-left:40px; margin-top:0px}
+#seopriceroi li{color:#555; line-height:18px;}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                    THE PICTURE THUMBNAILS SECTIONS                            */
+/*-----------------------------------------------------------------------------------------------*/
+#earlierwebdesignwork{width:665px; margin:0px; clear:both}
+#earlierwebdesignwork h1 {color:#555; font-size:17px; line-height:28px; font-weight:normal; margin-left:20px; margin-top:0px; margin-bottom:14px; text-decoration:none}
+#earlierwebdesignwork .webdesignwork{width:190px; float:left; margin-left:20px}
+#earlierwebdesignwork #more{margin-left:20px}
+.webdesignwork span {line-height:15px !important; font-size:11px; color:#555; margin-left:0px; margin-top:10px; margin-right:10px; margin-bottom:0px !important;}
+.webdesignwork span h1{line-height:18px !important; font-weight:normal; font-size:16px; color:#555; margin-left:0px !important; font-weight:bold; margin-bottom:0px !important;}
+.webdesignwork span h1 a{font-weight:normal; font-size:16px; color:#f00; margin-left:0px !important; font-weight:bold; text-decoration:none; margin-bottom:0px !important;}
+.webdesignwork span h1 a:hover{font-weight:normal; font-size:16px; color:#f00; margin-left:0px !important; font-weight:bold; text-decoration:none; margin-bottom:0px !important; border-bottom:1px solid #f00}
+.webdesignwork .seo {line-height:15px !important; font-size:11px; color:#555; margin-left:0px; margin-top:0px !important; margin-right:15px; position:relative; top:-8px}
+
+
+.webdesignwork span h2{line-height:15px !important; font-weight:normal; font-size:14px; color:#777; margin-top:0px !important; margin-left:0px !important; font-weight:bold; margin-bottom:0px !important; position:relative; top:-5px}
+.webdesignwork ul {list-style-image:url(../images/seolist.png); list-style-position:inside; margin-top:0px !important; position:relative; top:-10px}
+.webdesignwork ul li{line-height:15px}
+.webdesignwork ul li a{font-weight:normal; font-size:10px; color:#f00; margin-left:0px !important; font-weight:normal; text-decoration:none; margin-bottom:0px !important;}
+.webdesignwork ul li a:hover{font-weight:normal; font-size:10px; color:#f00; margin-left:0px !important; font-weight:normal; text-decoration:none; margin-bottom:0px !important; border-bottom:1px solid #f00}
+
+
+.seoserviceswork{width:665px; margin:0px; clear:both}
+.seoserviceswork .seoimage{width:190px; float:left; margin-left:20px}
+.seoserviceswork .seoservices{width:420px; float:left; margin-left:20px}
+.seoserviceswork .seoheader {width:400px; border-bottom:dotted 1px #eee}
+.seoserviceswork .seoheader h1{line-height:38px !important; font-weight:normal; font-size:18px; color:#777; margin-top:0px !important; margin-left:0px !important; font-weight:bold; margin-bottom:0px !important; position:relative; top:-5px}
+.seoserviceswork ul {list-style-image:url(../images/seolist.png); list-style-position:inside; margin-top:5px !important}
+.seoserviceswork ul li{line-height:27px}
+.seoserviceswork ul li a{font-weight:normal; font-size:12px; color:#f00; margin-left:0px !important; font-weight:normal; text-decoration:none; margin-bottom:0px !important;}
+.seoserviceswork ul li a:hover{font-weight:normal; font-size:12px; color:#f00; margin-left:0px !important; font-weight:normal; text-decoration:none; margin-bottom:0px !important; border-bottom:1px solid #f00}
+.seoserviceswork ul li a strong{font-weight:normal; font-size:12px; color:#777; margin-left:0px !important; font-weight:normal; text-decoration:none; margin-bottom:0px !important;}
+.seoserviceswork ul li a b{font-weight:normal; font-size:12px; color:#f00; margin-left:0px !important; font-weight:normal; text-decoration:none; margin-bottom:0px !important;}
+           	
+
+/*------- WEB PROJECT FOOTER ------*/
+
+#footer-web-project{width:100%; height:25px; background:url(../images/footerwebproject.png) bottom center repeat; clear:both; position:relative; margin-bottom:0px; margin-top:63px; bottom:0px;}
+#footer-web-project #footerarea-web-project{width:940px; height:18px; margin-left:auto; margin-right:auto;}
+#footer-web-project #footerarea-web-project #footerweb{width:710px; float:left; margin-left:0px; height:190px;}
+#footer-web-project #footerarea-web-project .webprintservices{width:180px}
+
+
+/*------- THE INNER DESIGN, SEO, NEWSLETTER, BRANDING STAGES ----*/
+
+#durban-stage-in-between{width:100%; height:100%; background:#000 url(../images/designer.png) repeat}
+
+
+
+
+
+
+
+
+/*--------- FOOTER LISTS ----------*/
+#footer #footerarea #footerweb ul{list-style:none; list-style-position:inside; height:150px; color:#555; text-shadow:1px 1px 1px #ccc; float:left; margin-right:20px; margin-left:0px; margin-top:45px; width:210px}
+#footer #footerarea #footerweb ul li{list-style-position:inside; margin-left:10px}
+#footer #footerarea #footerweb ul li a{list-style-position:inside; color:#777; text-shadow:1px 1px 1px #ccc; font-size:11px; text-decoration:none}
+#footer #footerarea #footerweb ul li a:hover{color:#555; text-shadow:1px 1px 1px #ccc; text-decoration:none}
+#footer #footerarea #footerweb ul li a strong{list-style-position:inside; color:#555; text-shadow:1px 1px 1px #ccc; font-size:11px; line-height:18px; text-decoration:none; font-weight:bolder }
+#footer #footerarea #footerweb ul li a strong:hover{color:#222; text-shadow:1px 1px 1px #ccc; text-decoration:none}
+#footer #footerarea #footerweb ul li h1{color:#444; text-shadow:2px 2px 2px #ccc; font-size:15px}
+#footer #footerarea #footerweb ul li h1 a{color:#444; text-shadow:2px 2px 2px #ccc; font-size:15px; text-decoration:none}
+#footer #footerarea #footerweb ul li h1 a:hover{color:#222; text-shadow:2px 2px 2px #ccc; font-size:15px; text-decoration:none}
+#footer #footerarea #footerweb ul li h1 a strong{color:#444; text-shadow:2px 2px 2px #ccc; font-size:15px; font-weight:bold; line-height:22px; text-decoration:none}
+#footer #footerarea #footerweb ul li h1 a strong:hover{color:#222; text-shadow:2px 2px 2px #ccc; font-size:15px; font-weight:bold; line-height:22px; text-decoration:none}
+#footer #footerarea #footerweb ul li ul{clear:both; list-style:none; margin-left:0px; margin-top:5px; margin-bottom:7px}
+#footer #footerarea #footerweb ul li ul li{list-style:none; margin-left:0px; float:left; display:block; width:60px; height:30px; margin-right:8px; margin-left:0px; margin-bottom:7px; background:url(../images/social.png) center top; text-align:center}
+#footer #footerarea #footerweb ul li ul li a{float:left; list-style:none; display:block; margin-left:0px; width:60px; height:30px; margin-right:14px; background:url(../images/social.png) center top; text-align:center}
+
+.social li .socialbg li{border:1px solid #ccc}
+
+
+
+
+
+/*--------- SOCIAL ICONS ----------*/
+#footer #footerarea #footerweb ul li ul li #facebook {line-height:30px; font-size:11px; text-shadow:1px 1px 1px #fff; color:#555}
+#footer #footerarea #footerweb ul li ul li #twitter {line-height:30px; font-size:11px; text-shadow:1px 1px 1px #fff; color:#555}
+#footer #footerarea #footerweb ul li ul li #linkedin {line-height:30px; font-size:11px; text-shadow:1px 1px 1px #fff; color:#555}
+#footer #footerarea #footerweb ul li ul li #buzz {line-height:30px; font-size:12px; text-shadow:1px 1px 1px #fff; color:#555}
+#footer #footerarea #footerweb ul li ul li #stumbleupon {line-height:30px; font-size:10px; text-shadow:1px 1px 1px #fff; color:#555}
+#footer #footerarea #footerweb ul li ul li #skype {line-height:30px; font-size:13px; text-shadow:1px 1px 1px  #fff; color:#555}
+
+
+/*--THE AREA FOR OTHER DESIGNERS --*/
+#footer #footerarea #webservicescompany {float:left; width:220px; height:194px; margin-top:47px; margin-right:5px; background:url(../images/southafricadesign.png) center top no-repeat}
+#footer #footerarea #webservicescompany h1 {line-height:19px; font-weight:bold; font-size:16px; text-shadow:1px 1px 1px #fff; color:#555; margin-left:25px; margin-right:10px; margin-top:12px; margin-bottom:12px}
+#footer #footerarea #webservicescompany p{line-height:15px; font-size:12px; text-shadow:1px 1px 1px #fff; color:#444; margin-left:25px; margin-right:10px; margin-bottom:0px}
+#footer #footerarea #webservicescompany p a{line-height:15px; font-size:12px; text-shadow:1px 1px 1px #fff; color:#222; font-weight:bold; text-decoration:none}
+
+
+/*-- FOOTER HOME AND DISCLAIMER --*/
+#footer #footerarea #webfooter { clear:both; width:940px; height:25px; margin-left:10px; margin-top:00px; margin-bottom:10px}
+#footer #footerarea #webfooter #navigation-lower{width:300px; float:left; text-align:left}
+#footer #footerarea #webfooter #navigation-lower a{line-height:20px; font-size:9px; text-shadow:2px 2px 2px #000; color:#999; text-decoration:none}
+#footer #footerarea #webfooter #navigation-lower a:hover{line-height:20px; font-size:9px; text-shadow:2px 2px 2px #000; color:#fff}
+#footer #footerarea #webfooter #webdesigncompanydurban{width:400px; float:right; text-align:right}
+#footer #footerarea #webfooter #webdesigncompanydurban a{line-height:20px; font-size:9px; text-shadow:2px 2px 2px #000; color:#999; text-decoration:none}
+#footer #footerarea #webfooter #webdesigncompanydurban a:hover{line-height:20px; font-size:9px; text-shadow:2px 2px 2px #000; color:#fff}
+
+#footer #footerarea #webdesignlinks{float:none; clear:both}
+
+/*--- WEB PROJECT FOOTER -------*/
+
+#footer-web-project #footerarea-web-project #webfooter-web-project { clear:both; width:940px; height:25px; margin-left:10px; margin-top:00px; margin-bottom:10px}
+#footer-web-project #footerarea-web-project #webfooter-web-project #navigation-lower{width:300px; float:left; text-align:left; color:#aaa}
+#footer-web-project #footerarea-web-project #webfooter-web-project #navigation-lower a{line-height:20px; font-size:9px; text-shadow:1px 1px 1px #fff; color:#333; text-decoration:none}
+#footer-web-project #footerarea-web-project #webfooter-web-project #navigation-lower a:hover{line-height:20px; font-size:9px; text-shadow:1px 1px 1px #fff; color:#000;}
+#footer-web-project #footerarea-web-project #webfooter-web-project #webdesigncompanydurban{width:400px; float:right; text-align:right}
+#footer-web-project #footerarea-web-project #webfooter-web-project #webdesigncompanydurban a{line-height:20px; font-size:9px; text-shadow:1px 1px 1px #fff; color:#333; text-decoration:none}
+#footer-web-project #footerarea-web-project #webfooter-web-project #webdesigncompanydurban a:hover{line-height:20px; font-size:9px; text-shadow:1px 1px 1px #fff; color:#000;}
+
+
+/*--------DEFAULT PAGE FOOTER ----*/
+#navigationweb{width:500px; float:left; text-align:left; color:#ded; margin-left:10px}
+#navigationweb a{line-height:20px; font-size:9px; text-shadow:1px 1px 1px #fff; color:#333; text-decoration:none}
+#navigationweb a:hover{line-height:20px; font-size:9px; text-shadow:1px 1px 1px #000; color:#fff; background:#000}
+#webdesigncompanydurbanweb{width:440px; float:right; text-align:right;  color:#ded}
+#webdesigncompanydurbanweb a{line-height:20px; font-size:9px; text-shadow:1px 1px 1px #fff; color:#333; text-decoration:none}
+#webdesigncompanydurbanweb a:hover{line-height:20px; font-size:9px; text-shadow:1px 1px 1px #000; color:#fff; text-decoration:none; background:#000 }
+
+
+/*------ DEFAULT FOOTER ----------*/
+#default_footer{width:100%; background:#fff; height:150px; margin:0px; margin-top:30px; border-top:1px solid #cdc}
+#default_footer #slider_footer{height:120px; width:940px; margin:0px auto; text-align:center}
+#default_footer #links_footer{width:960px; margin:0px auto; border-top:1px solid #ded; border-bottom:1px solid #ded;}	
+#flickerimg{background:none; :hover:none; background:#fff !important; position:relative; top:2px}
+
+#w3scvalidated{width:51px; height:18px; border:0px; position:relative; top:2px; left:-7px; background:#fff !important}
+#w3scvalidated:hover{width:51px; height:18px; border:0px; position:relative; top:2px; left:-7px;  background:#fff !important}
+
+
+#webdesignmenu .higher #hor li a {position:relative !important;  top:20px !important}

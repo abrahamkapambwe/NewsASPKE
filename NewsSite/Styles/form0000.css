@@ -1,0 +1,66 @@
+
+body{font-family:'Century Gothic',arial}
+
+
+
+
+
+.third {padding-bottom:1em;}
+.third .third-top{background:url(../images/third-bg-top.jpg) no-repeat -0px 0px; height:9px; width:308px;}
+.third .third-body{background:url(../images/third-bg-body.jpg) repeat-y -0px 0px; width:308px;}
+.third .third-bottom{background:url(../images/third-bg-bottom.jpg) no-repeat -0px 0px; height:10px; width:308px;}
+.fourth-top{background:url(../images/fourth-bg-top.jpg) no-repeat -0px 0px; height:9px; width:308px;}
+.fourth-body{background:url(../images/fourth-bg-body.jpg) repeat-y -0px 0px; width:308px;}
+.fourth-bottom{background:url(../images/fourth-bg-bottom.jpg) no-repeat -0px 0px; height:10px; width:308px;}
+.third p{margin-left:13px; margin-right:18px}
+.third ul{margin-left:13px; margin-right:13px}
+.third ul{margin-left:13px; margin-right:13px}
+.third big {font-size:1.6em}
+.third #shrink{width:30%; height:10%}
+.third a:hover{color:#000; font-weight:bold}
+.third h3 a {color:#fff;text-decoration: width:300px; font-size:2.9em; }
+.third h3 a:hover {color:#ff0;; font-size:2.9em;}
+.third img.icon {float:right;margin:0 0 1em .4em;}
+#third .cms-hr{color:#333; margin-top:10px; padding-bottom:2px; width:50%}
+#third .eshop-hr{color:#333; margin-top:10px; padding-bottom:2px; width:25%}
+#third img #cms-top {float:left}
+#center-text-ul li{margin-left:40px; margin-right:10px}
+#ecommerce-list li{margin-left:40px; margin-right:10px}
+.h3-header{width:332px; height:80px; text-align:center; vertical-align:middle; background:url(../images/h3-head.png) no-repeat center; margin-bottom:20px; position:relative; left:-17px; color:#fff }
+.h3-header2-title{color:#fff}
+.h3-header2{width:332px; height:80px; text-align:center; vertical-align:middle; background:url(../images/h3-head2.png) no-repeat center; margin-bottom:20px; position:relative; left:-17px }
+.h3-header2 h3{color:#fff; font-size:16px}
+#cms-website-header3, #cms-website-header4, #cms-website-header5{font-size:14px}
+.third .h3-header .cms-website-header{color:#444; font-size:16px}
+#index-form-container{background:url(../images/form-bg.png); position:relative; left:45px}
+#index-iframe-bg{margin-left:20px; background:transparent}
+
+#processing-left, #processing-right{width:110px; height:20px}
+#processing-mid{width:64px; height:100px}
+#processing-mid img{margin-top:100px}
+
+#thank-left, .processing-right{float:left; width:5px; height:20px}
+#thank-mid{float:left; width:275px; height:100px; font-size:26px; text-align:center}
+#thank-mid img{margin-top:40px}
+#thanks{font-family:'Century Gothic',arial; font-weight:bold; font-size:15px; text-align:center}
+
+#index-iframe {margin:0px 0px 0px 0px}
+.third #form-index{background:url(../images/form-bg.png) #fefefe;  border:#ddd thin solid; width:285px; height:403px; position:relative; left:-10px}
+.label-form{height:30px; line-height:30px; font-size:11px}
+.third #form-left{float:left; margin-left:10px; margin-right:10px; margin-top:15px}
+.third #form-left #name-btn,  #etc-btn, #email-btn{ margin-bottom:2px}
+.third #form-right{float:left; margin-left:-10px; margin-right:0px; left:-5px; margin-top:15px}
+.third #form-right .name-text{ margin-bottom:2px; width:215px; height:20px; }
+.third #form-right .name-text .name-text-input{width:190px; margin:3px 5px; height:20px; border:#ddd thin solid;  color:#555;  font-size:10px}
+.third #form-right .email-text{ margin-top:10px; width:215px; height:20px;}
+.third #form-right .email-text .name-text-input{width:190px; margin:3px 5px; height:20px; border:#ddd thin solid;  color:#555;  font-size:10px}
+.third #form-right .textarea-text{ margin-top:13px; width:215px; height:85px;}
+.textarea-input{width:190px; margin:12px 5px; height:78px; border:#ddd thin solid; color:#555; font-size:11px; font-family:arial}
+#submit-text{float:left; color:#555; font-weight:bolder; font-size:11px; font-family:'Century Gothic',arial; position:relative; top:8px}
+.third #form-right  .submit-input{float:right; width:39px; margin:9px 5px; height:26px; background-image:url(../images/submit-btn.png); background-repeat:no-repeat; background-position:top;  position:relative; left:-8px;  top:3px }
+.third #form-right  .submit-input:hover{float:right; width:39px; margin:9px 5px; height:26px; background-image:url(../images/submit-btn.png); background-repeat:no-repeat; background-position:bottom; position:relative; left:-8px; top:3px}
+#ecommerce-img{position:relative; left:20px}
+
+
+
+
