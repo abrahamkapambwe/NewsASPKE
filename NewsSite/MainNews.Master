@@ -75,7 +75,8 @@
                             </div>
                             <div class="space-small">
                             </div>
-                            <img src="../images/kenya.png" width="60px" height="60px"title="News times" alt="Logo Image" border="0px" />
+                            <img src="../images/kenya.png" width="60px" height="60px" title="News times" alt="Logo Image"
+                                border="0px" />
                             <div class="space-small">
                             </div>
                             <div class="space-small">
@@ -285,7 +286,7 @@
     <div class="FooterBackground">
         <div id="Footer" section="ftr">
             <div class="brandLogo">
-               <%-- <a href="" >KE News</a>--%>
+                <%-- <a href="" >KE News</a>--%>
                 <br>
                 Copyright © News Kenya Interactive Inc. All rights reserved.
             </div>
@@ -352,6 +353,19 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31318747-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
     </form>
 </body>
 </html>
