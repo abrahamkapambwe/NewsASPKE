@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="8tI9ZEOmJZMx-Ov8yp0-JWWjSjwYxC9SFdwUNyGkNAs" />
     <title>News - Kenya</title>
     <link href="Styles/stylesheet.css" rel="stylesheet" type="text/css" />
     <link href="Styles/style.css" rel="stylesheet" type="text/css" />
@@ -48,6 +49,19 @@
 
         });
     </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31318747-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
 </head>
 <body class="main-body">
     <form id="form1" runat="server">
@@ -69,7 +83,7 @@
                             Target="_parent" runat="server">BUSINESS</asp:HyperLink>
                     </div>
                     <div>
-                        <asp:HyperLink ID="property" NavigateUrl="http://www.epropertysearch.co.za" Target="_blank"
+                        <asp:HyperLink ID="property" NavigateUrl="http://epropertysearchke.apphb.com" Target="_blank"
                             runat="server">PROPERTIES </asp:HyperLink>
                     </div>
                     <div>
@@ -163,8 +177,8 @@
                             runat="server">LIFESTYLE </asp:HyperLink>
                     </div>
                     <div>
-                        <asp:HyperLink ID="hypproperty" runat="server" NavigateUrl="http://www.epropertysearch.co.za"
-                            Target="_parent">PROPERTIES </asp:HyperLink>
+                        <asp:HyperLink ID="hypproperty" runat="server" NavigateUrl="http://epropertysearchke.apphb.com"
+                            Target="_blank">PROPERTIES </asp:HyperLink>
                     </div>
                     <div>
                         <asp:HyperLink ID="HyperLink5" NavigateUrl="~/Views/othernews.aspx?category=WorldNews"
@@ -538,19 +552,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-31318747-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-</script>
+    
     </form>
 </body>
 </html>
