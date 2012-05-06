@@ -63,6 +63,17 @@ namespace NewsSite.Views
                 var comedy = GetNewsFromAmazon.GetVideosFromCache(Settings.Default.KenyaVideo).Where(t => t.Category == Categories.COMEDY).ToList();
                 lstComedy.DataSource = comedy;
                 lstComedy.DataBind();
+
+
+                lstCommedyHeadlines.DataSource = comedy.Skip(4).Take(10);
+                lstCommedyHeadlines.DataBind();
+
+
+                var tourism = GetNewsFromAmazon.GetVideosFromCache(Settings.Default.KenyaVideo).Where(t => t.Category == Categories.TOURISM).ToList();
+                lsttourism.DataSource = tourism.Take(4);
+                lsttourism.DataBind();
+                lsttourismHeadlines.DataSource = tourism.Skip(4).Take(10);
+                lsttourismHeadlines.DataBind();
             }
 
         }
@@ -82,6 +93,18 @@ namespace NewsSite.Views
 
             }
         }
+        protected void lstCommedyHeadlines_itemDatabound(object sender, ListViewItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListViewItemType.DataItem)
+            {
+                Multimedia newsComponents = (Multimedia)e.Item.DataItem;
+
+                HyperLink lnk = (HyperLink)e.Item.FindControl("hyperNavi");
+                lnk.NavigateUrl = "~/Views/multimediaItem.aspx?VideoId=" + newsComponents.VideoId;
+
+
+            }
+        }
         protected void lsttourism_itemDatabound(object sender, ListViewItemEventArgs e)
         {
             if (e.Item.ItemType == ListViewItemType.DataItem)
@@ -95,6 +118,18 @@ namespace NewsSite.Views
                 htmlAnchor.HRef = "~/Views/multimediaItem.aspx?VideoId=" + newsComponents.VideoId;
                 HyperLink linksummary = (HyperLink)e.Item.FindControl("linksummary");
                 linksummary.NavigateUrl = "~/Views/multimediaItem.aspx?VideoId=" + newsComponents.VideoId;
+
+            }
+        }
+        protected void lsttourismHeadlines_itemDatabound(object sender, ListViewItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListViewItemType.DataItem)
+            {
+                Multimedia newsComponents = (Multimedia)e.Item.DataItem;
+
+                HyperLink lnk = (HyperLink)e.Item.FindControl("hyperNavi");
+                lnk.NavigateUrl = "~/Views/multimediaItem.aspx?VideoId=" + newsComponents.VideoId;
+
 
             }
         }
@@ -126,18 +161,7 @@ namespace NewsSite.Views
 
             }
         }
-        protected void lsttourismHeadlines_itemDatabound(object sender, ListViewItemEventArgs e)
-        {
-            if (e.Item.ItemType == ListViewItemType.DataItem)
-            {
-                Multimedia newsComponents = (Multimedia)e.Item.DataItem;
-
-                HyperLink lnk = (HyperLink)e.Item.FindControl("hyperNavi");
-                lnk.NavigateUrl = "~/Views/multimediaItem.aspx?VideoId=" + newsComponents.VideoId;
-
-
-            }
-        }
+       
         protected void lstBusiness_itemDatabound(object sender, ListViewItemEventArgs e)
         {
             if (e.Item.ItemType == ListViewItemType.DataItem)

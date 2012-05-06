@@ -365,7 +365,7 @@
                 </div>
                 <div class="information-design">
                     <div class="template-information">
-                        <asp:ListView runat="server" ID="ListView2" OnItemDataBound="lstEntertainmentHeadlines_itemDatabound">
+                        <asp:ListView runat="server" ID="lstCommedyHeadlines" OnItemDataBound="lstCommedyHeadlines_itemDatabound">
                             <LayoutTemplate>
                                 <div runat="server" id="itemPlaceholder">
                                 </div>
@@ -402,7 +402,7 @@
     <div class="story">
         <div class="inner-design-large">
             <div class="sub-title">
-                <span>Tourism</span>
+                <span>Travel</span>
             </div>
             <div style="float: left;">
                 <asp:ListView runat="server" ID="lsttourism" OnItemDataBound="lsttourism_itemDatabound">
