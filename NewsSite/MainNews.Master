@@ -14,17 +14,17 @@
 <script type="text/javascript" src="supersleight-min.js"></script>
 <![endif]-->
     <script src="Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
-     <script type="text/javascript">
+    <script type="text/javascript">
 
-         var _gaq = _gaq || [];
-         _gaq.push(['_setAccount', 'UA-31318747-1']);
-         _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31318747-1']);
+        _gaq.push(['_trackPageview']);
 
-         (function () {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
     </script>
 </head>
@@ -40,11 +40,11 @@
                         <asp:HyperLink ID="home" NavigateUrl="~/Views/homepage.aspx" Target="_parent" runat="server">HOME</asp:HyperLink>
                     </div>
                     <div>
-                        <asp:HyperLink ID="politics" NavigateUrl="~/Views/othernews.aspx?category=POLITICS"
+                        <asp:HyperLink ID="politics" NavigateUrl="~/Views/othernews.aspx?category=Politics"
                             Target="_parent" runat="server">POLITICS</asp:HyperLink>
                     </div>
                     <div>
-                        <asp:HyperLink ID="business" NavigateUrl="~/Views/othernews.aspx?category=BUSINESS"
+                        <asp:HyperLink ID="business" NavigateUrl="~/Views/othernews.aspx?category=Business"
                             Target="_parent" runat="server">BUSINESS</asp:HyperLink>
                     </div>
                     <div>
@@ -52,7 +52,7 @@
                             runat="server">PROPERTIES </asp:HyperLink>
                     </div>
                     <div>
-                        <asp:HyperLink ID="HyperLink5" NavigateUrl="~/Views/othernews.aspx?category=WORLDNEWS"
+                        <asp:HyperLink ID="HyperLink5" NavigateUrl="~/Views/othernews.aspx?category=WorldNews"
                             Target="_blank" runat="server">WORLD NEWS </asp:HyperLink>
                     </div>
                     <div>
@@ -86,11 +86,12 @@
                     <div id="banner">
                         <a href="" title="Count">
                             <div class="space-small">
+                                <div style="padding: 10px">
+                                    <img src="../images/kenya-logo-white.png" width="100px" height="80px" title="News times"
+                                        alt="Logo Image" border="0px" /></div>
                             </div>
                             <div class="space-small">
                             </div>
-                            <img src="../images/kenya.png" width="60px" height="60px" title="News times" alt="Logo Image"
-                                border="0px" />
                             <div class="space-small">
                             </div>
                             <div class="space-small">
@@ -286,6 +287,15 @@
                                 </ItemTemplate>
                             </asp:ListView>
                         </div>
+                        <div style="clear: both">
+                        </div>
+                        <div class="propertybanner">
+                            <div style="padding-top: 10px">
+                                <a Target="_blank" href="http://epropertysearchzke.apphb.com">
+                                    <img src="../images/eproperty1.png" alt="property" width="230px" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -367,7 +377,6 @@
             </div>
         </div>
     </div>
-   
     </form>
 </body>
 </html>

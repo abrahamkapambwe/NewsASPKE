@@ -20,11 +20,27 @@ namespace NewsSite.Views
                 {
                     string term = Request.QueryString["value"];
                     var news = CheckContent(GetNewsFromAmazon.GetNewsFromCache(), term);
+                    LoadSession(news);
                     lstSearch.DataSource = news;
                     lstSearch.DataBind();
 
                 }
             }
+        }
+        private void LoadSession(List<NewsComponents> newswn)
+        {
+            Session["SessionNews"] = newswn;
+        }
+        protected void lstPropertyView_PagePropertiesChanged(object sender, EventArgs e)
+        {
+            if (Session["SessionNews"] != null)
+            {
+                var newswn = (List<NewsComponents>)Session["SessionNews"];
+                lstSearch.DataSource = newswn;
+                lstSearch.DataBind();
+
+            }
+
         }
         private List<NewsComponents> CheckContent(List<NewsComponents> newsCache, string term)
         {

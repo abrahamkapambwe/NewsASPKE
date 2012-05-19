@@ -39,7 +39,7 @@
                     </ul>
                 </LayoutTemplate>
                 <ItemTemplate>
-                    <li>
+                    <li style="list-style-type: none">
                         <div>
                             <asp:HyperLink runat="server" ID="hypeRelated"><%#Eval("NewsHeadline")%></asp:HyperLink>
                         </div>
@@ -54,7 +54,7 @@
         <br />
         <div class="comments" style="padding-top: 10px; padding-bottom: 10px; border: 1px solid #E3E3E3;
             background: #F5F5F5; border-radius: 3px 3px 3px 3px;">
-            <asp:ListView runat="server" ID="lstComments">
+            <asp:ListView runat="server" ID="lstComments" OnPagePropertiesChanged="lstPropertyView_PagePropertiesChanged">
                 <LayoutTemplate>
                     <ul id="itemPlaceholder" runat="server" style="list-style-type: none">
                     </ul>
@@ -78,6 +78,36 @@
                     </li>
                 </ItemTemplate>
             </asp:ListView>
+        </div>
+        <div style="clear: both">
+            <br />
+            <br />
+            <br />
+        </div>
+        <div style="font-size: 11px; margin-left: 20px; margin-right: 20px; margin-bottom: 10px;
+            margin-top: 10px">
+            <asp:DataPager runat="server" ID="BeforeListDataPager" PagedControlID="lstComments"
+                PageSize="20">
+                <Fields>
+                    <asp:TemplatePagerField>
+                        <PagerTemplate>
+                            <div style="width: 550px; float: left;">
+                                Page
+                                <asp:Label ID="CurrentPageLabel" runat="server" Text="<%# Container.TotalRowCount>0 ? (Container.StartRowIndex / Container.PageSize) + 1 : 0 %>" />
+                                of
+                                <asp:Label ID="TotalPagesLabel" runat="server" Text="<%# Math.Ceiling ((double)Container.TotalRowCount / Container.PageSize) %>" />
+                                (
+                                <asp:Label ID="TotalItemsLabel" runat="server" Text="<%# Container.TotalRowCount%>" />
+                                records)</div>
+                        </PagerTemplate>
+                    </asp:TemplatePagerField>
+                    <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="true" ShowNextPageButton="false"
+                        ShowPreviousPageButton="false" />
+                    <asp:NumericPagerField ButtonCount="10" />
+                    <asp:NextPreviousPagerField ButtonType="Link" ShowLastPageButton="true" ShowNextPageButton="false"
+                        ShowPreviousPageButton="false" />
+                </Fields>
+            </asp:DataPager>
         </div>
         <div style="padding-top: 20px; padding-bottom: 20px">
             <asp:UpdatePanel runat="server" ID="updateComments">
@@ -132,7 +162,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td> <asp:Label runat="server" ForeColor="Red" ID="lblResult"></asp:Label>
+                            <td>
+                                <asp:Label runat="server" ForeColor="Red" ID="lblResult"></asp:Label>
                             </td>
                             <td>
                                 <asp:Button runat="server" ID="btnSubmit" CausesValidation="True" OnClick="btnSubmit_Click"

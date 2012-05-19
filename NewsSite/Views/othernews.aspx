@@ -9,7 +9,7 @@
             <asp:Label runat="server" ID="lblHeadline"></asp:Label></b><br />
         <br />
         <div>
-            <asp:ListView ID="lstothernews" runat="server" OnItemDataBound="lstothernews_itemDatabound">
+            <asp:ListView ID="lstothernews" runat="server" OnPagePropertiesChanged="lstPropertyView_PagePropertiesChanged" OnItemDataBound="lstothernews_itemDatabound" >
                 <LayoutTemplate>
                     <div id="itemPlaceholder" runat="server">
                     </div>

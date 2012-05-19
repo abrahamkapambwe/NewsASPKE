@@ -94,6 +94,15 @@ namespace NewsSite.Views {
         protected global::System.Web.UI.WebControls.ListView lstComments;
         
         /// <summary>
+        /// BeforeListDataPager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataPager BeforeListDataPager;
+        
+        /// <summary>
         /// updateComments control.
         /// </summary>
         /// <remarks>

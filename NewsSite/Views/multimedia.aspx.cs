@@ -173,6 +173,7 @@ namespace NewsSite.Views
                 lnk.NavigateUrl = "~/Views/multimediaItem.aspx?VideoId=" + newsComponents.VideoId;
                 htmlAnchor.HRef = "~/Views/multimediaItem.aspx?VideoId=" + newsComponents.VideoId;
                 HyperLink linksummary = (HyperLink)e.Item.FindControl("linksummary");
+                linksummary.Height = 50;
                 linksummary.NavigateUrl = "~/Views/multimediaItem.aspx?VideoId=" + newsComponents.VideoId;
 
             }

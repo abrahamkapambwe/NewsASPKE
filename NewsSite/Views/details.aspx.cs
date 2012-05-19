@@ -21,9 +21,10 @@ namespace NewsSite.Views
                 {
                     string newsid = Convert.ToString(Request.QueryString["NewsID"]);
                     var news = GetNewsFromAmazon.GetNewsFromCache().Where(n => n.NewsID == Guid.Parse(newsid)).FirstOrDefault();
-                    var comments = GetNewsFromAmazon.GetCommentsFromCache(Settings.Default.DomainNameComment).Where(n => n.NewsID == Convert.ToString(newsid));
+                    var comments = GetNewsFromAmazon.GetCommentsFromCache(Settings.Default.DomainNameComment).Where(n => n.NewsID == Convert.ToString(newsid)).ToList();
                     lstComments.DataSource = comments;
                     lstComments.DataBind();
+                    LoadSession(comments.ToList());
                     lstRelatedNews.DataSource = GetNewsFromAmazon.GetNewsFromCache().Where(p => p.Tag.Contains(news.Tag)).Take(5);
                     lstRelatedNews.DataBind();
                     divNewsItem.InnerHtml = Server.HtmlDecode(news.NewsItem);
@@ -49,6 +50,21 @@ namespace NewsSite.Views
                 txtName.Text = user.UserName;
                 txtEmail.Text = user.Email;
             }
+        }
+        private void LoadSession(List<Comment> newscom)
+        {
+            Session["SessionComments"] = newscom;
+        }
+        protected void lstPropertyView_PagePropertiesChanged(object sender, EventArgs e)
+        {
+            if (Session["SessionComments"] != null)
+            {
+                var newscom = (List<Comment>)Session["SessionComments"];
+                lstComments.DataSource = newscom;
+                lstComments.DataBind();
+
+            }
+
         }
         protected void lstRelatedNews_itemDatabound(object sender, ListViewItemEventArgs e)
         {

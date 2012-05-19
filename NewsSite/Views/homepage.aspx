@@ -161,8 +161,9 @@
                         <ItemTemplate>
                             <div style="clear: both; margin-right: 10px; height: 200px; margin-bottom: 5px; margin-top: 5px">
                                 <div class="viewport">
-                                   <a id="photourl" runat="server"> <asp:Image ID="imgPhoto" runat="server" Style="margin-bottom: 20px" alt='<%#Eval("NewsHeadline") %>'
-                                        Width="100%" Height="100%" title='<%#Eval("NewsHeadline") %>' /></a>
+                                    <a id="photourl" runat="server">
+                                        <asp:Image ID="imgPhoto" runat="server" Style="margin-bottom: 20px" alt='<%#Eval("NewsHeadline") %>'
+                                            Width="100%" Height="100%" title='<%#Eval("NewsHeadline") %>' /></a>
                                 </div>
                                 <div class="information-design">
                                     <div class="template-name">
@@ -229,8 +230,9 @@
                         <ItemTemplate>
                             <div style="clear: both; margin-right: 10px; height: 200px; margin-bottom: 5px; margin-top: 5px">
                                 <div class="viewport">
-                                    <a id="photourl" runat="server"> <asp:Image ID="imgPhoto" runat="server" Style="margin-bottom: 20px" alt='<%#Eval("NewsHeadline") %>'
-                                        Width="100%" Height="100%" title='<%#Eval("NewsHeadline") %>' /></a>
+                                    <a id="photourl" runat="server">
+                                        <asp:Image ID="imgPhoto" runat="server" Style="margin-bottom: 20px" alt='<%#Eval("NewsHeadline") %>'
+                                            Width="100%" Height="100%" title='<%#Eval("NewsHeadline") %>' /></a>
                                 </div>
                                 <div class="information-design">
                                     <div class="template-name">
@@ -254,7 +256,7 @@
                             </LayoutTemplate>
                             <ItemTemplate>
                                 <div>
-                                    <span><span class="smaller"></span></span>
+                                    <span><span class="smaller"></span><span>
                                     <asp:HyperLink runat="server" ID="hyperNavi">
                                         <%#Eval("NewsHeadline")%> </asp:HyperLink><br />
                                     </span>
@@ -297,8 +299,9 @@
                         <ItemTemplate>
                             <div style="clear: both; margin-right: 10px; height: 200px; margin-bottom: 5px; margin-top: 5px">
                                 <div class="viewport">
-                                   <a id="photourl" runat="server"> <asp:Image ID="imgPhoto" runat="server" Style="margin-bottom: 20px" alt='<%#Eval("NewsHeadline") %>'
-                                        Width="100%" Height="100%" title='<%#Eval("NewsHeadline") %>' /></a>
+                                    <a id="photourl" runat="server">
+                                        <asp:Image ID="imgPhoto" runat="server" Style="margin-bottom: 20px" alt='<%#Eval("NewsHeadline") %>'
+                                            Width="100%" Height="100%" title='<%#Eval("NewsHeadline") %>' /></a>
                                 </div>
                                 <div class="information-design">
                                     <div class="template-name">
@@ -365,8 +368,9 @@
                         <ItemTemplate>
                             <div style="clear: both; margin-right: 10px; height: 200px; margin-bottom: 5px; margin-top: 5px">
                                 <div class="viewport">
-                                   <a id="photourl" runat="server">  <asp:Image ID="imgPhoto" runat="server" Style="margin-bottom: 20px" alt='<%#Eval("NewsHeadline") %>'
-                                        Width="100%" Height="100%" title='<%#Eval("NewsHeadline") %>' /></a>
+                                    <a id="photourl" runat="server">
+                                        <asp:Image ID="imgPhoto" runat="server" Style="margin-bottom: 20px" alt='<%#Eval("NewsHeadline") %>'
+                                            Width="100%" Height="100%" title='<%#Eval("NewsHeadline") %>' /></a>
                                 </div>
                                 <div class="information-design">
                                     <div class="template-name">

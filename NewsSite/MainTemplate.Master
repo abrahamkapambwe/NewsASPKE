@@ -61,7 +61,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
 
-</script>
+    </script>
 </head>
 <body class="main-body">
     <form id="form1" runat="server">
@@ -118,14 +118,15 @@
         <div id="top-top">
             <div id="main-title">
                 <div id="keywords">
+                    <div class="space-small">
+                        <div style="padding: 10px">
+                            <img src="../images/kenya-logo-white.png" width="100px" height="80px" title="News times"
+                                alt="Logo Image" border="0px" /></div>
+                    </div>
                     <div id="banner">
                         <a href="" title="Count">
                             <div class="space-small">
                             </div>
-                            <div class="space-small">
-                            </div>
-                            <img src="../images/kenya.png" width="60px" height="60px" title="News times" alt="Logo Image"
-                                border="0px" />
                             <div class="space-small">
                             </div>
                             <div class="space-small">
@@ -460,6 +461,17 @@
                                     </ItemTemplate>
                                 </asp:ListView>
                             </div>
+                            <div style="clear: both">
+                            </div>
+                            <div class="propertybanner">
+                                <div style="padding-top: 10px">
+                                    <a Target="_blank" href="http://epropertysearchke.apphb.com">
+                                        <img src="../images/eproperty1.png" alt="property" width="230px" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="googleAdvense">
+                            </div>
                         </div>
                     </div>
                     <div class="clear">
@@ -485,7 +497,7 @@
     <div class="FooterBackground">
         <div id="Footer" section="ftr">
             <div class="brandLogo">
-               <%-- <a href="" >KE News</a>--%>
+                <%-- <a href="" >KE News</a>--%>
                 <br>
                 Copyright © News Kenya Interactive Inc. All rights reserved.
             </div>
@@ -552,7 +564,6 @@
             </div>
         </div>
     </div>
-    
     </form>
 </body>
 </html>

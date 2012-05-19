@@ -96,7 +96,7 @@
                                         <span>
                                             <asp:HyperLink runat="server" ID="hyperNavi" class="brand type-of-story">
                                             <%# Eval("Title")%></asp:HyperLink><br />
-                                            <asp:HyperLink ID="linksummary" class="template-author" runat="server">
+                                            <asp:HyperLink ID="linksummary"  class="template-author" runat="server">
                                                 <%# Eval("Content")%></asp:HyperLink></span>
                                     </div>
                                 </div>
@@ -178,8 +178,8 @@
                             </LayoutTemplate>
                             <ItemTemplate>
                                 <div>
-                                    <span><span class="smaller"></span></span>
-                                    <asp:HyperLink runat="server" ID="hyperNavi">
+                                    <span><span class="smaller"></span><span>
+                                        <asp:HyperLink runat="server" ID="hyperNavi">
                                         <%#Eval("Title")%> </asp:HyperLink><br />
                                     </span>
                                 </div>
@@ -226,7 +226,7 @@
                                         <span>
                                             <asp:HyperLink runat="server" ID="hyperNavi" class="brand type-of-story">
                                             <%# Eval("Title")%></asp:HyperLink><br />
-                                            <asp:HyperLink ID="linksummary" class="template-author" runat="server">
+                                            <asp:HyperLink ID="linksummary" Style="height: 100px" class="template-author" runat="server">
                                                 <%# Eval("Content")%></asp:HyperLink></span>
                                     </div>
                                 </div>
@@ -291,7 +291,7 @@
                                         <span>
                                             <asp:HyperLink runat="server" ID="hyperNavi" class="brand type-of-story">
                                             <%# Eval("Title")%></asp:HyperLink><br />
-                                            <asp:HyperLink ID="linksummary" class="template-author" runat="server">
+                                            <asp:HyperLink ID="linksummary" Style="height: 100px" class="template-author" runat="server">
                                                 <%# Eval("Content")%></asp:HyperLink></span>
                                     </div>
                                 </div>
@@ -355,7 +355,7 @@
                                         <span>
                                             <asp:HyperLink runat="server" ID="hyperNavi" class="brand type-of-story">
                                             <%# Eval("Title")%></asp:HyperLink><br />
-                                            <asp:HyperLink ID="linksummary" class="template-author" runat="server">
+                                            <asp:HyperLink ID="linksummary" Style="height: 100px" class="template-author" runat="server">
                                                 <%# Eval("Content")%></asp:HyperLink></span>
                                     </div>
                                 </div>

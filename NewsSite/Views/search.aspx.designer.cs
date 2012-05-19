@@ -13,6 +13,15 @@ namespace NewsSite.Views {
     public partial class search {
         
         /// <summary>
+        /// lblHeadline control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHeadline;
+        
+        /// <summary>
         /// lstSearch control.
         /// </summary>
         /// <remarks>
@@ -20,5 +29,14 @@ namespace NewsSite.Views {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView lstSearch;
+        
+        /// <summary>
+        /// BeforeListDataPager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataPager BeforeListDataPager;
     }
 }

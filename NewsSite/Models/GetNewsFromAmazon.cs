@@ -186,7 +186,7 @@ namespace Newsza.Models
         {
             List<Multimedia> multimedias = new List<Multimedia>();
             Multimedia multimedia;
-            String selectExpression = "Select  * From " + domainName;
+            String selectExpression = "Select  * From " + domainName + " LIMIT 1000";
             SelectRequest selectRequestAction = new SelectRequest().WithSelectExpression(selectExpression);
             SelectResponse selectResponse = sdbClient.Select(selectRequestAction);
             if (selectResponse.IsSetSelectResult())
@@ -247,7 +247,7 @@ namespace Newsza.Models
         {
             List<NumberViews> numberViewses = new List<NumberViews>();
             NumberViews numberViews;
-            String selectExpression = "Select * From " + domainName;
+            String selectExpression = "Select * From " + domainName + " LIMIT 1000";
             SelectRequest selectRequestAction = new SelectRequest().WithSelectExpression(selectExpression);
             SelectResponse selectResponse = sdbClient.Select(selectRequestAction);
             if (selectResponse.IsSetSelectResult())
@@ -297,7 +297,7 @@ namespace Newsza.Models
             List<Comment> comments = new List<Comment>();
             Comment comment;
 
-            String selectExpression = "Select * From " + domainName;
+            String selectExpression = "Select * From " + domainName + " LIMIT 1000";
             SelectRequest selectRequestAction = new SelectRequest().WithSelectExpression(selectExpression);
             SelectResponse selectResponse = sdbClient.Select(selectRequestAction);
             if (selectResponse.IsSetSelectResult())
@@ -356,7 +356,11 @@ namespace Newsza.Models
                             i++;
                         }
                     }
-                    comments.Add(comment);
+                    var coment = (from c in comments
+                                  where c.CommentItem == comment.CommentItem
+                                  select c).FirstOrDefault();
+                    if (coment == null)
+                        comments.Add(comment);
                 }
             }
             return comments;
@@ -405,7 +409,7 @@ namespace Newsza.Models
             List<NewsComponents> newsItems = new List<NewsComponents>();
             NewsComponents newsItem = null;
 
-            String selectExpression = "Select NewsID,Source,Section,Publish,NewsHeadline,NewsAdded,Photos,Summary,Category,SummaryContent,ThumbNailUrl From " + domainName;
+            String selectExpression = "Select NewsID,Source,Section,Publish,NewsHeadline,NewsAdded,Photos,Summary,Category,SummaryContent,ThumbNailUrl From " + domainName + " LIMIT 1000";
             SelectRequest selectRequestAction = new SelectRequest().WithSelectExpression(selectExpression);
             SelectResponse selectResponse = sdbClient.Select(selectRequestAction);
             if (selectResponse.IsSetSelectResult())
@@ -594,7 +598,7 @@ namespace Newsza.Models
         public static List<Comment> GetCommentsFromCache(string domainName)
         {
 
-            List<Comment> comments= null;
+            List<Comment> comments = null;
             if (HttpRuntime.Cache["CommentItems"] != null)
             {
                 comments = (List<Comment>)HttpRuntime.Cache["CommentItems"];

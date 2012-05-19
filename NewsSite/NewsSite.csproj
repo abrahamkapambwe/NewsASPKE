@@ -148,6 +148,7 @@
     <Content Include="images\editor-hover.jpg" />
     <Content Include="images\editor-hovereee.png" />
     <Content Include="images\editor-hovers.png" />
+    <Content Include="images\eproperty1.png" />
     <Content Include="images\facebook.jpg" />
     <Content Include="images\footer-pointer.jpg" />
     <Content Include="images\gingrich-louisiana.JPG" />
@@ -161,6 +162,7 @@
     <Content Include="images\headlineYYY.jpg" />
     <Content Include="images\home-btn.png" />
     <Content Include="images\hover.png" />
+    <Content Include="images\kenya-logo-white.png" />
     <Content Include="images\kenya.png" />
     <Content Include="images\laptopinfobg.png" />
     <Content Include="images\laptopkeypad.jpg" />
@@ -237,6 +239,7 @@
     <Content Include="images\whitedot.png" />
     <Content Include="images\whoonga.jpg" />
     <Content Include="images\youtube.jpg" />
+    <Content Include="images\zambia-logo-white.png" />
     <Content Include="Scripts\amplify-vsdoc.js" />
     <Content Include="Scripts\amplify.js" />
     <Content Include="Scripts\amplify.min.js" />
