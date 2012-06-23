@@ -35,7 +35,8 @@ namespace NewsSite.Views
                     lblSource.Text = news.Source;
                     NumberViews number=new NumberViews();
                     number.NewsID = Convert.ToString(news.NewsID);
-                    number.Views = news.Views +1;
+                    number.Views = news.Views + 1;
+                    number.ViewsID = news.ViewID;
 
                     GetNewsFromAmazon.SaveViews(Settings.Default.NumberView, number);
 
