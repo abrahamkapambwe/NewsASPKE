@@ -11,7 +11,8 @@ namespace NewsSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Server.Transfer("~/Views/homepage.aspx");
+            //Server.Transfer("~/Views/homepage.aspx");
+            Response.Redirect("http://newske.azurewebsites.net");
         }
     }
 }
